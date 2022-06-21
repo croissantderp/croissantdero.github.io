@@ -202,6 +202,7 @@ body {
 
     .details p {
         display: inline-block;
+        width: 100%;
         padding-left: 25px;
         padding-top: 20px;
         padding-right: 50px;
@@ -223,4 +224,6 @@ body {
         height: 200px;
         width: auto;
         padding-top: 25px;
+        margin-right: 25px;
+        padding-left: 25px;
     }
