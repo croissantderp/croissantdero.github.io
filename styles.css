@@ -1,0 +1,207 @@
+@font-face {
+    font-family: quicksand;
+    src: url("./Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: raleway;
+    src: url("./Raleway-VariableFont_wght.ttf");
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #73877B;
+    margin: 0;
+    padding: 0;
+    font-family: raleway;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+#menu {
+    display: flex;
+    z-index: 3;
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    align-items: center;
+    color: white;
+}
+
+    #menu a {
+        font-family: quicksand;
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: .25s ease-in-out;
+    }
+
+        #menu a:hover {
+            color: #73877B;
+        }
+
+.header {
+    margin-top: 75px;
+    margin-left: 25px;
+    height: 300px;
+    width: 300px;
+    background-image: url("./geckoSquare.png");
+    background-size: contain;
+    color: white;
+}
+
+    .header h1 {
+        padding-top: 75px;
+        padding-left: 75px;
+        font-size: 64px;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    .header h2 {
+        margin: 0;
+        padding-top: 0px;
+        padding-left: 75px;
+        font-size: 24px;
+        font-weight: 200;
+    }
+
+#projects {
+    margin: 0;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.eng .square {
+    background-color: #F6C28B !important;
+}
+
+.art .square {
+    background-color: #E072A4 !important;
+}
+
+.cod .square {
+    background-color: #3D3B8E !important;
+}
+
+#projects div:nth-child(even) div.background {
+    height: 100px;
+    background-color: #E6E6E6 !important;
+}
+
+#projects div:nth-child(even) div.square div.squareOverlay {
+    height: 100px;
+    background-color: #00000010;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+    .item input {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        z-index: 100;
+    }
+
+        .item input:checked ~ .details {
+            max-height: 500px;
+        }
+
+        .item input:checked ~ .details * {
+            opacity: 100%;
+        }
+
+        .item input:checked ~ .arrow {
+            transform-origin: 50% 50%;
+            transform: rotate(180deg);
+        }
+
+        .item input:checked ~ h1 {
+            font-size: 64px;
+            padding-top: 16px;
+        }
+
+    .item .square {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50px;
+        width: 100px;
+        background-color: #E09F3E;
+    }
+
+    .item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item h1 {
+        margin: 0;
+        height: 50px;
+        font-weight: 200;
+        padding-top: 50px;
+        padding-left: 10px;
+        transition: font-size 0.5s ease,padding-top 0.5s ease;
+    }
+
+    .item .arrow {
+        margin: 25px;
+        width: 50px;
+        height: 50px;
+        margin-right: 50px;
+        margin-left: auto;
+        background-image: url(./arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: transform 0.5s ease;
+    }
+
+    .item .background {
+        position: absolute;
+        z-index: -1;
+        height: 100px;
+        width: 100%;
+        background-color: white;
+    }
+
+
+.details {
+    flex-basis: 100%;
+    width: 100%;
+    background-color: #FFFFFF50;
+    margin: 0;
+    max-height: 0px;
+    height: fit-content;
+    transition: max-height 0.5s ease;
+}
+
+    .details * {
+        opacity: 0;
+        transition: opacity 0.25s ease;
+    }
+
+    .details p {
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+
+    .details a {
+        display: block;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
