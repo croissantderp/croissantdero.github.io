@@ -1,11 +1,11 @@
 @font-face {
     font-family: quicksand;
-    src: url("./Quicksand-VariableFont_wght.ttf");
+    src: url("./assets/Quicksand-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: raleway;
-    src: url("./Raleway-VariableFont_wght.ttf");
+    src: url("./assets/Raleway-VariableFont_wght.ttf");
 }
 
 body {
@@ -50,7 +50,7 @@ body {
     margin-left: 25px;
     height: 300px;
     width: 300px;
-    background-image: url("./geckoSquare.png");
+    background-image: url("./assets/geckoSquare.png");
     background-size: contain;
     color: white;
 }
@@ -149,12 +149,17 @@ body {
     }
 
     .item h1 {
+        flex: 1 0;
         margin: 0;
-        height: 50px;
+        min-width: 0;
         font-weight: 200;
         padding-top: 50px;
         padding-left: 10px;
         transition: font-size 0.5s ease,padding-top 0.5s ease;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: visible;
+        text-overflow: ellipsis;
     }
 
     .item .arrow {
@@ -162,10 +167,11 @@ body {
         width: 50px;
         height: 50px;
         margin-right: 50px;
-        margin-left: auto;
-        background-image: url(./arrow.svg);
+        margin-left: 25px;
+        background-image: url(./assets/arrow.svg);
         background-repeat: no-repeat;
         background-size: contain;
+        background-origin: content-box;
         transition: transform 0.5s ease;
     }
 
@@ -186,6 +192,7 @@ body {
     max-height: 0px;
     height: fit-content;
     transition: max-height 0.5s ease;
+    padding-left: 25px;
 }
 
     .details * {
@@ -194,14 +201,26 @@ body {
     }
 
     .details p {
-        padding-left: 50px;
+        display: inline-block;
+        padding-left: 25px;
         padding-top: 20px;
         padding-right: 50px;
         padding-bottom: 20px;
     }
 
+        .details p a {
+            display: inline;
+            padding: 0;
+        }
+
     .details a {
-        display: block;
-        padding-left: 50px;
+        display: inline-block;
+        padding-left: 25px;
         padding-bottom: 20px;
+    }
+
+    .details img {
+        height: 200px;
+        width: auto;
+        padding-top: 25px;
     }
