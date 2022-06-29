@@ -119,6 +119,7 @@ body {
     float: left;
     width: calc(0.3333 * 100vw);
     height: 50px;
+    transition: color 0.25s, background-color 0.25s;
 }
 
 .engIndicator {
@@ -149,18 +150,22 @@ body {
     left: calc(0.6667 * 100vw);
 }
 
+.engButton:hover ~ .buttons .engIndicator, .codButton:hover ~ .buttons .codIndicator, .artButton:hover ~ .buttons .artIndicator {
+    color: white !important;
+}
+
 .engButton:checked ~ .buttons .engIndicator {
-    background-color: #F6C28B30;
+    background-color: #F6C28B50;
     color: #444444;
 }
 
 .codButton:checked ~ .buttons .codIndicator {
-    background-color: #3D3B8E30;
+    background-color: #3D3B8E50;
     color: #444444;
 }
 
 .artButton:checked ~ .buttons .artIndicator {
-    background-color: #E072A430;
+    background-color: #E072A450;
     color: #444444;
 }
 
