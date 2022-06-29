@@ -21,15 +21,20 @@ body {
 
 #menu {
     display: flex;
-    z-index: 3;
-    background-color: black;
+    z-index: 5000000;
+    background-color: #00000050;
     height: 50px;
     position: fixed;
     top: 0;
     width: 100vw;
     align-items: center;
     color: white;
+    transition: background-color 0.25s;
 }
+
+    #menu:hover {
+        background-color: #000000B9;
+    }
 
     #menu a {
         font-family: quicksand;
@@ -49,17 +54,18 @@ body {
     margin-top: 75px;
     margin-bottom: 25px;
     margin-left: 25px;
-    height: 250px;
-    width: 250px;
+    height: clamp(200px, 40vw, 300px);
+    width: auto;
     background-image: url("./assets/geckoSquare.png");
     background-size: contain;
+    background-repeat: no-repeat;
     color: white;
 }
 
     .header h1 {
-        padding-top: 75px;
-        padding-left: 75px;
-        font-size: 50px;
+        padding-top: clamp(50px, 10vw, 75px);
+        padding-left: clamp(50px, 10vw, 75px);
+        font-size: clamp(40px, 10vw, 60px);
         font-weight: 200;
         margin: 0;
     }
@@ -67,7 +73,7 @@ body {
     .header h2 {
         margin: 0;
         padding-top: 0px;
-        padding-left: 75px;
+        padding-left: clamp(50px, 10vw, 75px);
         font-size: 20px;
         font-weight: 200;
     }
@@ -90,11 +96,18 @@ body {
     background-color: #00000020;
 }
 
+    .buttons div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .buttons div h1 {
-        margin-top: 5px;
         text-align: center;
         font-family: raleway;
         font-weight: 100;
+        font-size: clamp(20px, 5vw, 30px);
+        justify-content: center;
     }
 
 .spacer {
@@ -206,6 +219,10 @@ body {
             transform: rotate(180deg);
         }
 
+        .item input:checked ~ .square img {
+            filter: none;
+        }
+
     .item .square {
         flex-grow: 0;
         flex-shrink: 0;
@@ -213,23 +230,31 @@ body {
     }
 
         .item .square img {
+            filter: grayscale(0.5);
             margin-left: 35px;
             height: 300px;
             width: auto;
+            transition: filter 0.25s;
+        }
+
+        .item:hover .square img {
+            filter: none;
         }
 
     .item h1 {
         position: absolute;
         flex: 1 0;
-        padding: 5px;
+        padding: 7px;
         min-width: 0;
         font-weight: 300;
         font-size: 20px;
-        margin-top: 220px;
-        margin-left: 35px;
+        margin-top: 250px;
+        margin-left: 50px;
         transition: font-size 0.5s ease,padding-top 0.5s ease;
         max-width: 190px;
         height: auto;
+        background-color: #00000085 !important;
+        color: white;
     }
 
     .item .arrow {
@@ -243,6 +268,7 @@ body {
         background-size: contain;
         background-origin: content-box;
         transition: transform 0.5s ease;
+        z-index: 2;
     }
 
     .item .details {
@@ -252,6 +278,11 @@ body {
         height: 750px;
         max-height: 0;
         transition: max-height 0.5s ease;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
         .item .details * {
@@ -259,13 +290,15 @@ body {
             transition: opacity 0.25s ease;
         }
 
+        .item .details img {
+            padding-top: 25px;
+            height: 200px;
+            width: auto;
+        }
+
         .item .details p {
             display: inline-block;
             width: contain;
-            padding-left: 25px;
-            padding-top: 20px;
-            padding-right: 25px;
-            padding-bottom: 20px;
         }
 
             .item .details p a {
@@ -273,16 +306,12 @@ body {
                 padding: 0;
             }
 
-        .item .details a {
-            display: inline-block;
-            padding-left: 20px;
-            padding-bottom: 10px;
+        .item .details .a_container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-self: flex-end;
         }
-
-        .item .details img {
-            height: 200px;
-            width: auto;
-            padding-top: 25px;
-            margin-right: 25px;
-            padding-left: 25px;
-        }
+            .item .details .a_container a {
+                display: inline-block;
+            }
