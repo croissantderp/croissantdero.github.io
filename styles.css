@@ -63,20 +63,27 @@ body {
 
 .header {
     margin-top: 75px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    height: clamp(200px, 40vw, 300px);
-    width: auto;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 0;
+    height: 250px;
+    height: clamp(200px, 30vw, 300px);
+    width: calc(30% - 15px);
+    min-width: 200px;
     background-image: url("./assets/geckoSquare.png");
     background-size: contain;
     background-repeat: no-repeat;
     color: white;
+    float: left;
 }
 
     .header h1 {
-        padding-top: clamp(50px, 10vw, 75px);
-        padding-left: clamp(50px, 10vw, 75px);
-        font-size: clamp(40px, 10vw, 60px);
+        padding-top: 50px;
+        padding-top: clamp(40px, 8vw, 75px);
+        padding-left: 75px;
+        padding-left: clamp(50px, 8vw, 75px);
+        font-size: 50px;
+        font-size: clamp(40px, 5vw, 60px);
         font-weight: 200;
         margin: 0;
     }
@@ -84,9 +91,11 @@ body {
     .header h2 {
         margin: 0;
         padding-top: 0px;
-        padding-left: clamp(50px, 10vw, 75px);
+        padding-left: 75px;
+        padding-left: clamp(50px, 8vw, 75px);
         font-size: 20px;
         font-weight: 200;
+        white-space: nowrap;
     }
 
 .eng .background, .eng .square {
@@ -102,15 +111,18 @@ body {
 }
 
 .buttons {
-    width: 100%;
+    width: calc(70% - 15px);
     height: 50px;
     min-height: 50px;
+    margin-top: 325px;
+    float: right;
+    margin-bottom: 7.5px;
 }
 
     .buttons div {
         margin-right: 15px;
         float: right;
-        width: fit-content;
+        width: auto;
         height: 50px;
         transition: color 0.25s, background-color 0.25s;
     }
@@ -132,31 +144,46 @@ body {
             padding-left: 15px;
             background-color: white;
             font-family: raleway;
-            font-weight: 100;
+            font-weight: 200;
             font-size: clamp(20px, 5vw, 30px);
             justify-content: center;
             text-align: center;
         }
 
-        @media screen and (max-width: 650px) {
+@media screen and (max-width: 875px) {
+    .header {
+        float: none;
+        width: auto;
+    }
 
-            .buttons div h1 {
-                display: none;
-            }
+    .buttons {
+        width: 100%;
+        margin-top: 0;
+    }
 
-            .engButton {
-                right: 15px !important;
-            }
+    .engButton, .codButton, .artButton {
+        top: unset !important;
+    }
+}
 
-            .codButton {
-                right: 80px !important;
-            }
+@media screen and (max-width: 625px) {
 
-            .artButton {
-                right: 145px !important;
-            }
+    .buttons div h1 {
+        display: none;
+    }
 
-        }
+    .engButton {
+        right: 15px !important;
+    }
+
+    .codButton {
+        right: 80px !important;
+    }
+
+    .artButton {
+        right: 145px !important;
+    }
+}
 
 .spacer {
     width: 100%;
@@ -182,6 +209,7 @@ body {
     height: 50px;
     opacity: 0;
     right: 145px;
+    top: 325px;
 }
 
 .codButton {
@@ -232,7 +260,7 @@ body {
     margin-left: 7.5px;
     margin-right: 7.5px;
     height: auto;
-    width: auto;
+    width: 100%;
 }
 
 .item {
@@ -324,7 +352,7 @@ body {
         background-color: rgba(256,256,256,0.5);
         width: 335px;
         margin: 0;
-        height: 750px;
+        height: 500px;
         max-height: 0;
         display: flex;
         flex-wrap: wrap;
@@ -332,6 +360,7 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         transition: max-height 0.5s ease;
+        overflow-y: auto;
     }
 
         .item .details * {
