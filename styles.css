@@ -65,7 +65,7 @@ body {
     left: 0;
     width: 100vw;
     height: 50px;
-    background-color: rgba(0,0,0,0.25);
+    background-color: #1A281FCC;
     transition: background-color 0.25s;
     z-index: 4999999;
 }
@@ -561,7 +561,6 @@ body {
 
         .item .details p {
             display: block;
-            width: fit-content;
             width: 50%;
             min-width: 300px;
         }
@@ -569,6 +568,13 @@ body {
             .item .details p a {
                 display: inline;
                 padding: 0;
+            }
+
+            .item .details p iframe {
+                display: block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
             }
 
         .item .details .a_container {
