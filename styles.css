@@ -378,6 +378,15 @@ body {
             transform: rotate(270deg);
         }
 
+.lab .cover .square, .lab .item .square {
+    background-color: #F6C28B;
+}
+
+.school .cover .square, .school .item .square {
+    background-color: #E072A4;
+}
+
+
 .item {
     position: relative;
     display: flex;
@@ -515,6 +524,7 @@ body {
             margin: 0;
             margin-top: 25px;
             font-weight: 100;
+            align-self: flex-start;
         }
 
         .item .details img {
@@ -531,14 +541,14 @@ body {
 
         .item .details video {
             padding-top: 25px;
-            width: 40vw;
+            width: 50%;
             min-width: 300px;
         }
 
         .item .details p {
             display: block;
             width: fit-content;
-            max-width: 50%;
+            width: 50%;
             min-width: 300px;
         }
 

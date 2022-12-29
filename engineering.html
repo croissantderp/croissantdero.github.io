@@ -25,137 +25,685 @@
     <div class="intro">
         <h1>Engineering</h1>
         <p>
-            Lorem ipsum
+            A collection of all my 3D printing, engineering, and design projects. I began this journey in the 8th grade with my first 3D print and printer. Over time, I improved on my skills over various projects. 
+            During the pandemic, I got to design printable equipment for a lab; then in 11th grade, I joined the school robotics team and served as head of CAD.
+            The software I am familiar with and use regularly are, Autodesk Inventor, Fusion, Onshape, and Ultimaker Cura.
         </p>
     </div>
 
     <div class="spacer"></div>
 
     <div class="projects">
-        <div class="item" id="hydrualic-arm">
-            <input type="checkbox" />
-            <div class="square"><img src="./assets/hydraulicArm.png" /></div>
 
+        <div class="group lab">
+            <input type="checkbox" />
+            <div class="cover">
+                <div class="square"><img src="./assets/lab.png" /></div>
+
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Lab Projects</h1>
+            </div>
+            <div class="item" id="Fish-Feeder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/feeder.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Fish Feeder</h1>
+                <div class="details">
+                    <h2>Fish Feeder</h2>
+                    <p>A modular semi-automatic fish feeder.</p><video controls>
+                        <source src="./assets/feeder.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>It is comprised of a funnel which connects to the tank, an adapter, and the single-print feeder.</p>
+                    <img src="./assets/feederInner.png" title="A section (cutaway) view of the feeder" alt="A section (cutaway) view of the feeder" />
+                    <p>The feeder stores food in a upper hopper, which feeds into a rotating compartment. When the lever is pushed, this compartment rotates and dispenses the food.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_feeder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Microscope-Plate">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/plate.jpg" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Microscope Plate</h1>
+                <div class="details">
+                    <h2>Microscope Plate</h2>
+                    <p>A gliding table for microscopes.</p><video controls>
+                        <source src="./assets/plate.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>It is comprised of three plates driven by a rack and pinion system. Guide rails are used to reduce friction while keeping vibration to a minimum.</p>
+                    <img src="./assets/plateKnobs.jpg" title="The plate with new knobs attached" alt="The plate with new knobs attached" />
+                    <p>Later, I designed knobs for the pinions to make it easier to move the table.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gliding_table" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="DoveTail-Blocks">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/dovetailBlocks.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>DoveTail Blocks</h1>
+                <div class="details">
+                    <h2>DoveTail Blocks</h2>
+                    <p>A modular tube holder.</p><p>For a while, I had held off on making a tube holder because of how trivial I thought it was. However it turned out to be one of my most successful creations. Prior to designing it, I had a few goals in mind. The existing commercial designs consisted of a single large molded part. This makes it difficult to use if you only need 1 or 2 tubes. To address this, I made the system consist of smaller modules which can connect together. The blocks themselves were not all that special, but the connectors used a bit of compliance with a printable spring built into standard dovetails. After some tweaking, I got the spring tension to be just right so blocks could be connected without much hassle and still stay together.</p>
+                    <img src="./assets/PXL_20220818_182737567.jpg" title="The initial released blocks" alt="The initial released blocks" />
+                    <p>For the initial release, I designed a couple of blocks designed to fit some of the more common tubes. This design ended up being one of my most popular, and gained a lot of traction online. With this popularity, I also released the base blocks for others to modify; and within a few days, other people had already used it for their own projects.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/dovetail_blocks" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Pipette-Holder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/pipetteHolder.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Pipette Holder</h1>
+                <div class="details">
+                    <h2>Pipette Holder</h2>
+                    <p>A clamping pipette stand.</p><p>Like other lab equipment I've designed, pipette stands are usually ridiculously expensive. Although most designs out there were freestanding, I decided to go for something that would clamp to a shelf or table. My first design was a simple clamp that would slide onto a table and two sticks in front would hold the top of the pipette. As I made more designs to fit tables of various thicknesses, I realized I could use a screw like on my marble slide project to make an adjustable model.</p>
+                    <img src="./assets/PXL_20220718_133046977.jpg" title="The pipette holder with the adjustable screw" alt="The pipette holder with the adjustable screw" />
+                    <p>After the initial model was done, I created several spinoff designs. One attached a test tube to the sticks, which could then be used as a pencil holder or more. Another was a simple C shaped variation that could be used to guide wires and cables along shelves.</p>
+                    <img src="./assets/PXL_20220510_154929212.jpg" title="The three designs being used in the lab" alt="The three designs being used in the lab" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/pipette_holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Agarose-Scoop">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/agaroseScoop.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Agarose Scoop</h1>
+                <div class="details">
+                    <h2>Agarose Scoop</h2>
+                    <p>A scoop designed to mix exactly enough agarose powder for a standard amount of agarose gel.</p>
+                    <video controls>
+                        <source src="./assets/PXL_20221004_220255242.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/powder_scoop" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Agar-Imprinter">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/agar.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Agar Imprinter</h1>
+                <div class="details">
+                    <h2>Agar Imprinter</h2>
+                    <p>A device which imprints grooves on agar.</p><p>Other people have attempted to make 3D printable molds for agar. The problem is that agar is usually very hot when poured and causes warping in the molds. I intended to try to design a mold which will not deform under the heat. I tried to minimize the surface area contacting the agar and included three handles for convenient lifting. This included a print-in-place joint for a lift-out handle on the top of the mold. The last way I tried to prevent warping was to use PETG as a material because of its higher melting point. Unfortunately, this wasn't as effective as I thought it would be and still had some warping. This project was my first time working with materials other than PLA and I would lead me to try materials like ABS and PETG more over the coming years.</p>
+                    <img src="./assets/PXL_20210928_211419404.jpg" title="The agar imprinter being used in the lab" alt="The agar imprinter being used in the lab" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/agar_imprinter" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Petri-Dish-Holder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/petri.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Petri Dish Holder</h1>
+                <div class="details">
+                    <h2>Petri Dish Holder</h2>
+                    <p>A simple petri dish holder with a hexagonal base.</p><p>One of my first projects for scientific use. Dovetail connectors let them be tiled horizontally while taking up the least amount of space possible. </p>
+                    <video controls>
+                        <source src="./assets/dishHolder.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/petridish_holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Fish-Embryo-Box">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/embryo.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Fish Embryo Box</h1>
+                <div class="details">
+                    <h2>Fish Embryo Box</h2>
+                    <p>A container for transporting live fish embryos.</p><p>It is designed to make shipping embryos much more reliable, compact, and organized. Using a damp paper towel inside the lid allows it to hold enough moisture for shipping. The grid layout allows up to 100 embryos to be neatly stored and extracted.</p>
+                    <img src="./assets/embryoExample.jpg" title="A partially filled up embryo box" alt="A partially filled up embryo box" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_embryo_box" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Tape-Holder-Holder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/tapetape.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Tape Holder Holder</h1>
+                <div class="details">
+                    <h2>Tape Holder Holder</h2>
+                    <p>A bracket that secures rolls of tape inside a dispenser.</p><p>The tape dispensers we used had a problem when you pulled straight up, causing the rolls to fall out. To hold the tape rolls down, I designed a simple clip that slid over the frame and held the spool down.</p>
+                    <video controls>
+                        <source src="./assets/PXL_20221123_044725566.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/tape-holder-holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Gel-Extractor">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/agarExtract.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Gel Extractor</h1>
+                <div class="details">
+                    <h2>Gel Extractor</h2>
+                    <p>A handy tool which cuts and preserves a piece of agar.</p><p>Yet again, commercial gel extractors proved to be expensive and overpriced for what they do. Gel Extractors are disposable devices that can cut and pick up a small piece of agar from a larger chunk. I designed a square tube which would be the main cutting surface of the extractor. In the back, there was a slider which could be pushed to eject the cut agar. Using my experience in making single print parts,  I made the slider and tube print in a single piece with some internal stoppers to prevent the slider from falling out. The final gel extractor is barely 1 gram, cost cents to produce, and is as effective as the commercial edition.</p>
+                    <video controls>
+                        <source src="./assets/gel cutting demo.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gel_extractor" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Pipette-Tip-Ejector">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/tipEjector.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Pipette Tip Ejector</h1>
+                <div class="details">
+                    <h2>Pipette Tip Ejector</h2>
+                    <p>A alternative to expensive pipette tip ejectors.</p><p>Typical pipette tip ejectors sell for around $20 from most companies. However they pretty much are just static pieces of plastic, not very hard to 3D print. After studying the original design and its function, I made a design that takes just under an hour to print and costs cents in material. The only potential drawback is that it is potentially not an easy print, but a few tries is still cheap in comparison to the factory price.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/pipette_tip_ejector" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Door-Lock">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/fridge.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Door Lock</h1>
+                <div class="details">
+                    <h2>Door Lock</h2>
+                    <p>A latch that prevents a door from opening.</p><p>In California, it is standard practice to have a lock on fridge in case of earthquakes. Besides that, they are also good for making sure the fridge is properly shut. In New York, earthquakes are less common, but we still wanted to make sure fridges were shut properly. Thus, I designed a latch which ensures a door has been shut properly and holds it shut. Each closer consists of a base which mounts to the side of the fridge, an L shaped bar which actually locks the fridge, and a stopper for the bar.</p>
+                    <video controls>
+                        <source src="./assets/door.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>Due to the bar section breaking often, I redesigned the bar to be stronger. There was also a cabinet next to an expensive microscope that could be damaged if the cabinet was opened carelessly. To address this, I made a variant of the lock which actually could lock in the closed position.</p>
+                    <video controls>
+                        <source src="./assets/PXL_20221226_220415748.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/shutter" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Fridge-Label">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/label.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Fridge Label</h1>
+                <div class="details">
+                    <h2>Fridge Label</h2>
+                    <p>A hanging label for wire racks in a fridge.</p><p>In order to label some wire shelves in a fridge, there needed to be a smooth surface to put labels on. I designed this label that hangs on the wire ledges. I also made some arrows that attach to the sides of the label to indicate where a label was referring.</p>
+                    <img src="./assets/fridgeLabel.jpg" title="A fridge with a few labels and arrows on the shelves" alt="A fridge with a few labels and arrows on the shelves" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fridge_label" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Tweezer-Limiter">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/tweezer.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Tweezer Limiter</h1>
+                <div class="details">
+                    <h2>Tweezer Limiter</h2>
+                    <p>An adjustable attachment which limits a tweezer's range of movement and allows for finer control.</p>
+                    <img src="./assets/limiter.jpg" title="The adjustable limiter mounted on a tweezer" alt="The adjustable limiter mounted on a tweezer" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/tweezer_limiter" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Gel-Shovel">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/gelShovel.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Gel Shovel</h1>
+                <div class="details">
+                    <h2>Gel Shovel</h2>
+                    <p>A shovel and catcher for moving agarose and other gels.</p>
+                    <img src="./assets/gelShovelExample.jpg" title="A gel shovel and two catchers of different sizes" alt="A gel shovel and two catchers of different sizes" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gel_shovel" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Fry-Plate">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/fryPlate.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Fry Plate</h1>
+                <div class="details">
+                    <h2>Fry Plate</h2>
+                    <p>A tool for measuring small fish.</p><p>Needing a way to accurately measure small fish, I designed a simple grooved plate where fish could fit into the grooves and easily be measured using built in tick marks.</p>
+                    <img src="./assets/Screenshot 2022-12-11 130432.png" title="A screenshot of the design in Inventor" alt="A screenshot of the design in Inventor" />
+                    <p>Despite its simplicity, it is one of the most used designs in the lab.</p>
+                    <img src="./assets/PICA1072.jpg" title="Two fish being measured" alt="Two fish being measured" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fry_plate" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Tiny-Scoop">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/scoop.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Tiny Scoop</h1>
+                <div class="details">
+                    <h2>Tiny Scoop</h2>
+                    <p>A small multipurpose scoop. Designed to scoop up the right amount of food for a single fish.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/scoop" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="group school">
+            <input type="checkbox" />
+            <div class="cover">
+                <div class="square"><img src="./assets/school.png" /></div>
+
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>School Projects</h1>
+            </div>
+
+            <div class="item" id="Hydraulic-Arm">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/hydraulicArm.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Hydraulic Arm</h1>
+                <div class="details">
+                    <h2>Hydraulic Arm</h2>
+                    <p>The final project of my Principles of Engineering class.</p><img src="./assets/arm1.jpg" title="The finished arm alongside a sketch of the initial design" alt="The finished arm alongside a sketch of the initial design" />
+                    <p>We were given a budget, and tasked to create a hydraulic arm to compete against other teams. The intent was for teams to buy wood and other materials from the teacher to use for their creation. I could not help but notice, however, that there was no cost on 3D printing, which is why I decided to print the entire thing. With this, we also made it our main objective to make an overall profit. The actual hydraulics and tubing were our only expense, which meant we still had to earn money somehow. We ended up selling 3D print services to other teams, but other teams had less money than anticipated. Ultimately we were a tiny bit short from breaking even. The arm itself uses multiple techniques I learned from previous projects, the planetary gears from the gearbox project, low friction guide rails from the microscope plate, and integrated usage of bolts. I also got to use several new techniques, generative design using inventor, a workflow between different software, and compliant mechanisms. The teacher also required me to submit professional drawings which I learned to produce using Fusion. My partner was in charge of all the electronics for the electromagnet mounted at the end of the arm, and I helped out with the batteries and mounts.</p>
+                    <img src="./assets/arm2.jpg" title="The final position of the arm" alt="The final position of the arm" />
+                    <p>After the end of the project, I took the arm home to display. I took some pictures of it functioning, and then stripped it of most active hydraulic components. Currently, it is holding up a Lego Saturn V moon rocket. Minor upgrades have been made to improve strength and durability for this purpose.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/hydraulic-arm" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Gearbox">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/gearbox.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Gearbox</h1>
+                <div class="details">
+                    <h2>Gearbox</h2>
+                    <p>The first project for my Principles of Engineering class.</p><p>The goal was to make the smallest hoist that could lift the most amount of weight in teams of 2. Beforehand, the teacher taught us everything we needed to know about gears. I started this project with researching gearboxes and thinking about 3D printing them. My first idea was a set of planetary gears, which I quickly 3D printed.</p>
+                    <img src="./assets/planetary.png" title="The planetary gears I made" alt="The planetary gears I made" />
+                    <p> Unfortunately these were too large to be useful and I had to come up with a different design. Next I used a much more standard gear chain, only stacked on two shafts to conserve space.</p>
+                    <img src="./assets/gearSketch.png" title="The final sketch I submitted as our design" alt="The final sketch I submitted as our design" />
+                    <p>To make this design, I used, steel shafts, laser-cut wooden sides, and 3d printed gears. The completed hoist uses 8 gears to achieve a total reduction of 2048:1. The hoist was powered by a small brushless motor and used 550 cord to lift objects, which was my partner's side of the project. In testing, this design successfully lifted 100 pounds, which is impressive considering most of the gears and spool were 3D printed.</p>
+                    <img src="./assets/20211108_072911.jpg" title="A picture of the completed hoist" alt="A picture of the completed hoist" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/gearboxes" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Marble-Slide-Project">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/20220304_072106.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Marble Slide Project</h1>
+                <div class="details">
+                    <h2>Marble Slide Project</h2>
+                    <p>The second project for my Principles of Engineering class.</p><p>This was quite different from the gearbox. We had to create a marble machine, mostly utilizing cheap materials like cardboard and toothpicks. I decided to work in the same team as I did for the gearbox. Each person had to create their own marble lifting system and the rest was collaborative. We were given much more freedom this project, so we started off with the most insane ideas. Our first one, was to use the Lorentz force to push the steel marbles up. In other words, a railgun. We vastly underestimated the power demands of a system like this, and it went, literally, nowhere. Luckily, I had a backup plan, and I kept the theme of ballistics with a trebuchet. I used a rubber band to provide the force to throw the marble and used a snail cam to reload. The catapult was actually pretty consistent, and a small platform was all that was needed to catch the marble. The actual difficult part was to load one marble at a time into the system.</p>
+                    <img src="./assets/20220304_072110.jpg" title="The completed catapult module" alt="The completed catapult module" />
+                    <p>How I ended up doing it was a seesaw which is pushed down by the trebuchet arm and lifts a marble out of the queue. After the catapult, we were supposed to have a module for the marbles to go down. I decided to add a binary marble counter I designed using a series of switches for the marbles to go down. They then go up a conveyor belt my partner designed and then back down to the queue for the catapult to complete the circuit.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/marbleslide" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Diffy-Swerve">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/diffydiffy.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Diffy Swerve</h1>
+                <div class="details">
+                    <h2>Diffy Swerve</h2>
+                    <p>An experimental swerve drive for robotics.</p><p>After getting into robotics at Ward Melville, I was talking to a friend from my old school Gunn about the FIRST Robotics Competition and various technical aspects of competing. We were discussing drive systems, and the topic of swerve drive came up. Swerve drive is a type of drive system where each wheel can be individually steered and is the drive most high level teams use. The Gunn Robotics Team is well known for designing and manufacturing their own swerve drives, and I wanted to try that out with the Ward Melville team. However, most of the team believed that it would be too hard to do since we were less experienced and lacking in funds. I needed to prove that designing a drive system would be feasible first. I decided to look into differential swerve drives as my pick for the drive system for a few reasons. They use both motors to steer and drive instead of one for each, and they had a lower part count meaning they would be easier to machine. Using fusion 360, I was able to design a few 3D printable prototypes. I still started off with a traditional swerve drive, before trying to design anything experimental. My second drive was a bit stranger, using an off-center wheel to stop the motor from being backdriven when the module rotates. This design was one of the two actually printed and assembled for testing.</p>
+                    <img src="./assets/20221101_212525.jpg" title="The off-center swerve module" alt="The off-center swerve module" />
+                    <p>Other than traditional swerve, I also made a differential or diffy swerve design. This was the most fleshed out design with actual motors and mounting points.</p>
+                    <img src="./assets/combined.png" title="Two of my swerve drive designs" alt="Two of my swerve drive designs" />
+                    <p>After several nights of troubleshooting my printer and stealing bolts from the engineering classroom, I finished the module and connected it up to a battery pack. The module worked fine, but the motors I used did not have any fine control built in, and I did not have time to properly build a controller for it. I also had planned to make a second module, so it could be fully tested on a robot, but I did not have time for that either. Unfortunately, the robotics team decided to buy pre-made swerve modules for this year. I hope that I can finish this later in the summer and possibly use them in the robot next year.</p>
+                    <video controls>
+                        <source src="./assets/20221115_193048.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/diffy-swerve" target="none">Fusion Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Drinkinator">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/20221023_150113.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>Drinkinator</h1>
+                <div class="details">
+                    <h2>Drinkinator</h2>
+                    <p>A device that let me drink water from water bottle refillers.</p><p>For covid reasons, the school turned off all the water fountains. However, even after the majority of the threat has passed, they still have not turned them back on. I had two options, either carry a water bottle or buy overpriced bottled water from the school. With my small bag though, I could not fit a water bottle into it. I also really did not want to buy water, so I decided to solve the problem with engineering. The school turned off all the regular water fountains, but left all the water bottle refills on. If I could somehow catch the water, I could then drink it. Towards the end of my sophomore year, I made the first version of my solution. It was a cone shaped cup with a hole for a straw at the bottom. It worked well for letting me drink from the fountains, but had several flaws that made it impractical. It was hard to carry in my small bag as it was a fairly wide cone. It would also overflow and get my hands wet everytime I took a drink for more than 2 seconds. For the rest of my sophomore year, I decided to just tough it out and drink water once I got back from school.</p>
+                    <img src="./assets/20220201_192338.jpg" title=" The first version of the drinkinator" alt=" The first version of the drinkinator" />
+                    <p>The need for water rose again during my junior year though. I had clubs almost every day of the week and needed to stay hydrated. So, I redesigned my invention to be a flat shape, and made a special channel for excess water to drain out of. I was also able to apply a lot of new techniques to my creation, further improving it.</p>
+                    <img src="./assets/20221023_150147.jpg" title=" The new drinkinator with and without the cap" alt=" The new drinkinator with and without the cap" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/drinkinator" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="ID-Card-Holder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/id.jpg" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <h1>ID Card Holder</h1>
+                <div class="details">
+                    <h2>ID Card Holder</h2>
+                    <p>A clip that holds my id card on my bag.</p><p>For whatever reason, the school decided to make wearing ID cards mandatory. The school did provide lanyards with the IDs, but I was not keen to add more straps around my neck. Instead, I wanted to attach my ID to the strap of my messenger bag. To do this, I made a custom clamp using compliant mechanisms. Then a keychain ring attaches the ID card.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/id-card-holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item" id="Cloak">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/placeholder.png" /></div>
             <div class="background"></div>
             <div class="arrow"></div>
-
-            <h1>
-                Hydraulic Arm
-            </h1>
-
+            <h1>Cloak</h1>
             <div class="details">
-                <img src="./assets/arm1.jpg" title="The finished arm alongside a sketch of the initial design" alt="The finished arm alongside a sketch of the initial design" />
-
-                <p>
-                    The final project of my Principles of Engineering class.
-                    I worked with a partner and was in change of designing and printing the physical structures.
-                    This arm uses multiple techniques from previous projects, the planetary gears from the gearbox project, guide rails from the microscope plate, and integrated usage of bolts.
-                    I also got to use several new techniques, generative design using inventor, a workflow between different software, and compliant mechanisms.
-                    The project required me to submit professional drawings which I learned to produce using Fusion.
-                    My partner was in charge of all the electronics for the electromagnet mounted at the end of the arm, and I helped out with the batteries and mounts.
-                </p>
-
-                <img src="./assets/arm2.jpg" title="The final position of the arm, holding a lego saturn V rocket" alt="The final position of the arm, holding a lego saturn V rocket" />
-
-                <p>
-                    After the end of the project, The arm was stripped of most active hydraulic components and is currently used to hold a Lego Saturn V moon rocket.
-                    Minor upgrades have been made to improve strength and durability for this purpose.
-                </p>
-
+                <h2>Cloak</h2>
+                <p>A wearable velvet cloak.</p><p>Around 2020, the Joann in Palo Alto closed. Before closing, they had a grand sale of everything left on their shelves and I went with my mom to check it out. On one of these expeditions, I found this bolt of turquoise velvet and I knew I wanted to make a cloak with it. Before getting started, I researched how to make cloaks. After figuring out that you need a 180 degree piece of fabric. I used Autocad to draw a suitable design. Then, with help from my mom, I made sewing patterns which I used to cut out the cloak. Over winter break, I used a combination of sewing machine and hand sowing to stitch the parts together. After the cloak itself was complete, I needed a clasp to finish it. I was going to purchase one, but I decided to 3D print one instead. I designed a modular clasp that let me design decorative elements in the future which could then attach to the existing clasp. The bare part on it's own also looks quite good. Unfortunately, the project went on hiatus when I moved to New York and it sat in my closet for more than a year. Finally, in the fall of 2022, I decided to finish it. Because of the increased cold of New York, I bought some warm fabric to line the inside of the cloak. After sewing that on, I finished by finally sowing the clasp onto the cloak.</p>
                 <p class="a_container">
-                    <a href="./assets/hydraulicArmSketches.pdf" target="none">Drawings</a> •
-                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/hydraulic-arm" target="none">Files</a>
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/cloak-clasp" target="none">Stl and Design Files</a>
                 </p>
             </div>
         </div>
 
-        <div class="item" id="feeder">
-            <input type="checkbox" />
-            <div class="square"><img src="./assets/feeder.png" /></div>
-
-            <div class="background"></div>
-            <div class="arrow"></div>
-
-            <h1>
-                Feeder
-            </h1>
-
-            <div class="details">
-                <video controls>
-                    <source src="./assets/feeder.mp4" type="video/mp4" />
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-
-                <p>
-                    A semi-automatic fish feeder made for a lab. It is comprised of a funnel which connects to the tank, an adapter, and the single-print feeder.
-                </p>
-
-                <img src="./assets/feederInner.png" title="A section (cutaway) view of the feeder" alt="A section (cutaway) view of the feeder" />
-
-                <p>
-                    The feeder stores food in a upper hopper, which feeds into a rotating compartment. When the lever is pushed, this compartment rotates and dispenses the food.
-                </p>
-
-                <p class="a_container">
-                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_feeder" target="none">Stl Files</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="item" id="microscope-table">
-            <input type="checkbox" />
-            <div class="square"><img src="./assets/plate.jpg" /></div>
-            <div class="arrow"></div>
-
-            <h1>
-                Microscope Plate
-            </h1>
-
-            <div class="details">
-                <video controls width="275">
-                    <source src="./assets/plate.mp4" type="video/mp4" />
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
-
-                <p>
-                    A gliding table for microscopes. It is comprised of three plates driven by a rack and pinion system. Guide rails are used to reduce friction while keeping vibration to a minimum.
-                </p>
-
-                <img src="./assets/plateKnobs.jpg" title="The plate with new knobs attached" alt="The plate with new knobs attached" />
-
-                <p>
-                    Later, I designed knobs for the pinions to make it easier to move the table.
-                </p>
-
-                <p class="a_container">
-                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gliding_table" target="none">Stl Files</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="item" id="shoulder-rest">
+        <div class="item" id="Shoulder-Rest">
             <input type="checkbox" />
             <div class="square"><img src="./assets/rest.png" /></div>
-
             <div class="background"></div>
             <div class="arrow"></div>
-
-            <h1>
-                Shoulder Rest
-            </h1>
-
+            <h1>Shoulder Rest</h1>
             <div class="details">
+                <h2>Shoulder Rest</h2>
+                <p>A custom shoulder rest for my YEV-105 electric violin.</p><img src="./assets/20210122_154843.jpg" title="The initial design of the shoulder rest in Autodesk Inventor" alt="The initial design of the shoulder rest in Autodesk Inventor" />
+                <p>After a crack developed in one of the wooden sides, a regular shoulder rest would no longer work. Instead, I designed a custom rest which mounts on the central body of the violin and does not put stress on the crack. This is one of my most difficult projects in terms of the geometry involved.</p>
                 <img src="./assets/shoulderRestOld.png" title="An older prototype of the shoulder rest" alt="An older prototype of the shoulder rest" />
-
-                <p>
-                    A custom shoulder rest designed for my YEV-105 electric violin after a crack developed in one of the wooden sides. It mounts on the central body of the violin and does not put stress on the crack. This is one of my most difficult projects in terms of the geometry involved.
-                </p>
-
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/shoulder-rest" target="none">Stl Files</a>
                 </p>
             </div>
         </div>
+
+        <div class="item" id="sliding-curtain">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/20220422_145718.jpg" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>sliding curtain</h1>
+            <div class="details">
+                <h2>sliding curtain</h2>
+                <p>A unique 3D printable curtain.</p><p>I gave my future room very much thought when moving in to the new house. The style I wanted to try out was industrial, and I needed some decorations that matched. One idea I had was to make a sliding curtain that rolls along a long curtain rod. To make this, I made a single segment that could join together into much longer rods. To roll, I made ending segments with wheels that suspended the curtain below. It worked pretty well after I installed it, and it was surprisingly easy to roll the curtain back and forth. However, after a while the curtain began to buckle in the middle due to the segmented nature of the rod.</p>
+                <img src="./assets/20220422_193221.jpg" title="The original curtain configuration" alt="The original curtain configuration" />
+                <p>Eventually, I retired it after a few segments broke, and I ultimately did not use it all that much. That would have been the end of this project, but half a year later, I needed a way to suspend a 3d printed moon from the ceiling as part of my moon rocket diorama for the hydraulic arm. Instead of creating a new system, I recycled the curtain rod and reversed it to act like a pulley instead. The pulleys let me raise and lower the height of the moon easily. Then, I printed a mount to stick it onto the ceiling which rotated so I could adjust the position of the moon. The segments also received some strengthening sleeves for try to keep them from breaking. Despite these upgrades, the segments are still slowly bending over time, but they are holding for now.</p>
+                <img src="./assets/20220620_203750.jpg" title="The current configuration used to hold up the moon" alt="The current configuration used to hold up the moon" />
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/curtain-slider" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="wire-coiler">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/coiler.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>wire coiler</h1>
+            <div class="details">
+                <h2>wire coiler</h2>
+                <p>A compact spool for wires.</p><p>This is what I would consider to be the first of my "modern" designs. Designed in the beginning of 2021, it is substantially more complex than any of my previous designs. Anyway, I used to use wired headphones back then, and the wire kept getting tangled in my set-up. My idea was to make a spool that the wire winds around with a rotating cap that automatically wound and unwound the wire. It would also have a knob at the bottom of the spool to make winding and unwinding faster.</p>
+                <img src="./assets/20221225_142339.jpg" title="The disassembled coiler" alt="The disassembled coiler" />
+                <p>The entire design had a total of 6 parts and combined various techniques I had only used separately at that point. Although the design worked fine, I ultimately stopped using wired headphones. Now, the device is occasionally used for my electric violin and amp.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/wire-coiler" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="Printer-Pulley-System">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/20221202_201419.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>Printer Pulley System</h1>
+            <div class="details">
+                <h2>Printer Pulley System</h2>
+                <p>A fix to my printer's sag using pulleys.</p><p>After around a year of reliable printing, I noticed that one side of my printer was beginning to sag a bit. Usually the solution would be to add another z-axis motor on the sagging side, but I did not have another stepper motor and Monoprice did not design the printer to accommodate that. The solution I came up with was to make a pulley system that transfers the height from the stable side to the sagging side. By tieing a cable to the bottom of one side, I could run it to a pulley at the base of the printer, then up over the top and attach it to the sagging side. I bought some slot nuts and designed some brackets that mounted on the top of the printer frame. Using a thin steel cable, I was able to attach and fix the sag.</p>
+                <img src="./assets/20221126_200307.jpg" title="The base pulley assembly" alt="The base pulley assembly" />
+                <p>However, because of the stiffness of the cable, it began sagging after a while. It also was pretty difficult to precisely tune the cable. To properly tension the cable, I then made a scissor mechanism that lifted the cable upwards at the top of the printer.</p>
+                <img src="./assets/20221202_201434.jpg" title="The cable tensioner mounted on the printer" alt="The cable tensioner mounted on the printer" />
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/printer-tensioner" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="fountain">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/fountain.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>fountain</h1>
+            <div class="details">
+                <h2>fountain</h2>
+                <p>A model of a fountain from a video game.</p><p>At this point, I had experience designing functional items. I was interested in trying out some artistic modeling though. Usually, people use programs like Blender for this, but I decided to use Inventor because I was familiar with it. The object I wanted to design and print was the fountain from the City of Tears in Hollow Knight. The original purpose was as a decoration for my geckos, but I decided to use it as a desk ornament instead. Inventor is not meant to be used for artistic purposes, but  most of the fountain being symmetrical made it surprisingly easy. When it came to the top of the fountain where the statues are, I experimented with the loft feature to create the bodies. To assemble the fountain, I just used superglue. I was pretty happy with the final product, and it was pretty good looking.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/fountain" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="Gecko-Mister">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/20220715_140744.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>Gecko Mister</h1>
+            <div class="details">
+                <h2>Gecko Mister</h2>
+                <p>A rapidly developed automatic gecko mister.</p><p>With an impending one week trip to London coming up, I began to worry about my geckos not getting enough moisture. Fortunately, I had been learning Arduino recently, and I thought about using one to activate a spray bottle pointed into my geckos' cage. With less than a week left to produce and test the device, I had to work fast. I used a combination of old parts from other projects and new parts. The arduino mounted on the body of the spray bottle would turn a servo every 30 minutes. The servo was attached to the spray bottle with zip ties and pulled the trigger with a steel wire. the entire assembly would hang on the top of the gecko cage aimed downwards. In the few days left, I would run it overnight to test how much water it used. It turned out to be fairly efficient, only using a fraction of its maximum capacity. On the day of my departure, I filled the bottle completely and started the contraption. Every 3 hours, it would also reboot in case the arduino ran into a problem. </p>
+                <img src="./assets/20220715_140755.png" title="The completed assembly of parts" alt="The completed assembly of parts" />
+                <p>When I returned from London, it was still going with around a quarter of the water left. My geckos were also alive and doing fairly well. I dismantled the device to use the spray bottle and arduino on other projects.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/gecko-mister" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="gecko-cage">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/20210821_230555.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>gecko cage</h1>
+            <div class="details">
+                <h2>gecko cage</h2>
+                <p>A homemade acrylic gecko cage.</p><p>After moving to New York, I needed to figure out how to house my geckos. I could use the same cage as I did in Palo Alto, but it was a bit small. I could use the cage of my old bearded dragon, but it was missing a lid and I could not find any online. The most cost-effective solution I found was to build my own cage. I used acrylic sheet from Home Depot with some aquarium sealant. I drew a design out in Inventor. I cut the acrylic and assembled the panels with the sealant.</p>
+                <img src="./assets/20210808_124127.png" title="The cage as I assembled it" alt="The cage as I assembled it" />
+                <p>After waiting a few days for the sealant to cure, I moved the cage into my room and filled it up with dirt and my geckos' stuff. After a year of service, I did clean it out and do a bit of resealing, but it has held together remarkably well.</p>
+
+            </div>
+        </div>
+
+        <div class="item" id="lizard-project">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/geckogecko.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>lizard project</h1>
+            <div class="details">
+                <h2>lizard project</h2>
+                <p>A collection of designs for my reptiles.</p><p>This collection includes lizard carriers, terrarium decor, and functional pieces. This includes my very first design and was the reason I got into 3D printing in the first place. My very first project was a set of tubes that my geckos could crawl through. This branched out into other projects for my lizards like a two compartment lizard carrier and many themed decorations.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/lizard-projects" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="motion-sensor-light-switch">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/switch.jpg" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>motion sensor light switch</h1>
+            <div class="details">
+                <h2>motion sensor light switch</h2>
+                <p>A motion sensing light switch.</p><p>My second project with my Arduino. After figuring out how to use a servo for my gecko mister project, I discovered that I could flip switches with the same servo. In the basement of my house, there is a annoyingly positioned switch at the bottom of a staircase; because that is a frequently travelled part of the house, I decided to install a motion detector at the switch to turn on the light as soon as anyone approached.</p>
+                <img src="./assets/20220712_225334.jpg" title="The initial wiring of the device" alt="The initial wiring of the device" />
+                <p>I wired up the design using an arduino as the core. Then, I added two buttons which would be an on/off switch and a button which turns off the motion detector. After wiring the electronics, I designed a 3D printable shelf and box to mount everything in. I used some double-sided tape to mount everything in the basement.</p>
+                <video controls>
+                    <source src="./assets/20221228_090331.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/arduino-light-switch" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="stand-modifier">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/stand.jpg" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>stand modifier</h1>
+            <div class="details">
+                <h2>stand modifier</h2>
+                <p>A device which hangs under my music stand.</p><p>My music stand has always been cluttered with various objects, and it makes organizing my music excessively difficult without at least a pencil falling off. To fix this, I decided to make a extension to my stand that hangs off one side to increase the space I have. This new module would be able to carry a metronome and a few pencils.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/stand-modifier" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="tower">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/tower.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>tower</h1>
+            <div class="details">
+                <h2>tower</h2>
+                <p>A hand modeled version of a skyscraper from the game Hollow Knight. It was meant for my geckos, but was never constructed.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/tower" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="headphone-hanger">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/hanger.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>headphone hanger</h1>
+            <div class="details">
+                <h2>headphone hanger</h2>
+                <p>A place to put my headphones.</p><p>A classic 3D printer project is the headphone holder, and I happened to need one of those. I decided to make a hangar that attached to the side of my monitor. I first made a modular rack that mounted to two holes at the side of the monitor. The headphones holder would then attach to the rack along with any other modules I needed.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/monitor-rack" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="phone-holder">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/phoneHolderReal.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <h1>phone holder</h1>
+            <div class="details">
+                <h2>phone holder</h2>
+                <p>A segmented phone stand for a friend.</p><p>In 8th grade, my friend was really into filming and making videos, and I would occasionally participate as the cameraman. I was also just getting into 3D printing and designing, so one day, I suggested designing, printing a phone holder and selling it to him. The actual design was a three segment arm with a table clamp on one end, and a phone holder on the other. It had some minor issues, like being shaky and not easy to adjust, but I was satisfied back then. I sold the arm for $20 to my friend, but I am not sure how it was used since he stopped making videos soon after.</p>
+                <img src="./assets/phoneHolder.png" title="A 3D model of the phone holder arm" alt="A 3D model of the phone holder arm" />
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/phone-mount" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
 
     </div>
 
