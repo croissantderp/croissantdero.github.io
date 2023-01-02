@@ -18,7 +18,7 @@ body {
     font-family: raleway;
     font-weight: 200;
     overflow-x: hidden;
-    min-height: calc(100vh - 100px);
+    min-height: 100vh;
 }
 
 #menu {
@@ -80,7 +80,7 @@ body {
     margin-bottom: 0px;
     margin-left: 10vw;
     margin-right: 0;
-    height: 25vh;
+    height: 20vh;
     min-height: 400px;
     width: 45vw !important;
     min-width: 225px;
@@ -132,10 +132,11 @@ body {
         min-width: 200px;
     }
 
-    #about .imageContainer img {
-        width: 95%;
-        padding-top: 0;
-    }
+        #about .imageContainer img {
+            width: 95%;
+            padding-top: 0;
+            border-radius: 5px;
+        }
 
         #about .imageContainer p {
             width: 95%;
@@ -154,12 +155,13 @@ body {
         padding-left: 10px;
     }
 
-    #about .container h1 {
-        font-size: 40px;
-        width: 100%;
-        margin: 0;
-        margin-bottom: 10px;
-    }
+        #about .container h1 {
+            font-size: 40px;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
 
         #about .container .covers {
             position: relative;
@@ -519,7 +521,7 @@ body {
         }
 
             .group .cover .square img {
-                filter: grayscale(0.5);
+                filter: grayscale(0.5) brightness(0.75);
                 margin-left: 35px;
                 width: 200px;
                 height: auto;
@@ -534,7 +536,7 @@ body {
             font-weight: 300;
             font-size: 20px;
             top: 100px;
-            left: 50px;
+            right: 0;
             transition: font-size 0.5s ease,padding-top 0.5s ease;
             max-width: 190px;
             height: auto;
@@ -653,7 +655,7 @@ body {
     }
 
         .item .square img {
-            filter: grayscale(0.5);
+            filter: grayscale(0.5) brightness(0.75);
             margin-left: 35px;
             width: 200px;
             height: auto;
@@ -668,9 +670,9 @@ body {
         font-weight: 300;
         font-size: 20px;
         top: 100px;
-        left: 50px;
+        right: 0;
         transition: font-size 0.5s ease,padding-top 0.5s ease;
-        max-width: 190px;
+        max-width: 180px;
         height: auto;
         background-color: rgba(0, 0, 0, 0.5) !important;
         color: white;
@@ -680,8 +682,8 @@ body {
         position: absolute;
         width: 35px;
         height: 35px;
-        top: 150px;
-        right: 15px;
+        top: 155px;
+        right: 10px;
         background-image: url(./assets/arrow3.svg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -722,12 +724,13 @@ body {
 
         .item .details h2 {
             display: inline-block;
-            width: 60vw;
+            width: 60%;
             font-size: 40px;
             margin: 0;
-            margin-top: 25px;
+            margin-top: 50px;
+            margin-bottom: 25px;
             font-weight: 100;
-            align-self: flex-start;
+            align-self: center;
         }
 
         .item .details img {
@@ -801,7 +804,7 @@ body {
 footer {
     position: absolute;
     bottom: 0;
-    color: white;
+    color: #FFFFFFC0;
     width: 100vw;
     display: flex;
     z-index: 51;
@@ -809,12 +812,13 @@ footer {
 
     footer p {
         margin-left: 10px;
+        padding-bottom: 5px;
     }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
+    footer a {
+        color: #FFFFFFC0;
+        text-decoration: none;
+    }
 
     footer a:hover {
         text-decoration: underline;
@@ -824,7 +828,7 @@ footer a {
     position: absolute;
     background-color: #1D1D1D;
     width: 110vw;
-    height: 75px;
+    height: 100px;
     bottom: 0;
     left: calc(50% - 50vw);
     z-index: 50;
