@@ -8,6 +8,10 @@
     src: url("./assets/Raleway-VariableFont_wght.ttf");
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     position: relative;
     height: fit-content;
@@ -17,7 +21,6 @@ body {
     padding: 0;
     font-family: raleway;
     font-weight: 200;
-    overflow-x: hidden;
     min-height: 100vh;
 }
 
@@ -119,9 +122,9 @@ body {
     margin: 15px;
     margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 0;
     color: white;
-    padding-bottom: 100px;
+    padding-bottom: 125px;
+    margin-bottom: 0;
 }
 
 #about div {
@@ -718,8 +721,7 @@ body {
         .item .details * {
             opacity: 0;
             transition: opacity 0.25s ease;
-            padding-left: 25px;
-            padding-right: 25px;
+            padding: 0px;
         }
 
         .item .details h2 {
@@ -826,7 +828,7 @@ footer {
 
 #footBackground {
     position: absolute;
-    background-color: #1D1D1D;
+    background-color: #121B15;
     width: 110vw;
     height: 100px;
     bottom: 0;
