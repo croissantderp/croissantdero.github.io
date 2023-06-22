@@ -30,7 +30,7 @@ body {
 }
 
 p {
-    text-indent: 10px;
+    text-indent: 0;
     font-family: inter;
     text-align: justify;
 }
@@ -176,6 +176,19 @@ p {
             margin-bottom: 10px;
             white-space: nowrap;
         }
+
+        #about .container div.tldr, .container div.full {
+            width: auto !important;
+            margin: 0 !important;
+        }
+
+            #about .container div p {
+                padding: 0;
+            }
+
+            #about .container div p + p {
+                margin-top: 8px;
+            }
 
         #about .container .covers {
             position: relative;
