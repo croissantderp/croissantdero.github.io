@@ -755,7 +755,7 @@ p {
         max-height: 0;
         flex-direction: column;
         transition: max-height 0.5s ease;
-        overflow-y: auto;
+        overflow-y: scroll;
         overflow-x: hidden;
         align-items: center;
         z-index: 101;
@@ -782,12 +782,15 @@ p {
             padding-top: 25px;
             max-width: 60%;
             height: auto;
-            max-height: 500px;
+            max-height: 750px;
             align-self: center;
         }
 
         .item .details iframe {
-            padding-top: 25px;
+            margin-top: 25px;
+            width: 60%;
+            min-height: 500px;
+            align-self: center;
         }
 
         .item .details video {
