@@ -20,13 +20,19 @@ html {
 body {
     position: relative;
     height: fit-content;
-    max-width: 1225px;
+    max-width: 1275px;
     margin: 0 auto;
     background-color: #73877B;
     padding: 0;
     font-family: raleway;
     min-height: 100vh;
     font-weight: 200;
+}
+
+@media screen and (max-width: 1275px) {
+    body {
+        overflow-x: hidden;
+    }
 }
 
 p {
@@ -62,10 +68,13 @@ p {
         margin-right: 7.5px;
         margin-left: 7.5px;
         transition: .25s ease-in-out;
-        min-width: 50px;
         min-height: 50px;
         line-height: 50px;
     }
+
+        #menu a:first-child {
+            min-width: 50px;
+        }
 
 
         #menu a:hover {
@@ -250,14 +259,14 @@ p {
             opacity: 0;
             height: 0;
             margin: 0;
-            content-visibility: hidden;
+            display: none;
         }
 
             #about .container .full.coverText {
                 opacity: 100%;
                 color: black;
                 margin-left: 24px;
-                content-visibility: visible;
+                display: block;
             }
 
         #about .container .coverText {
@@ -288,7 +297,7 @@ p {
 
         #about .container input:checked ~ .full {
             opacity: 100;
-            content-visibility: visible;
+            display: block;
             height: auto;
             margin-block-start: 1em;
             margin-block-end: 1em;
@@ -501,7 +510,7 @@ p {
         position: absolute;
         height: 200px;
         width: 235px;
-        margin: 5px;
+        margin: 10px;
         opacity: 0;
         z-index: 100;
         cursor: pointer;
@@ -511,7 +520,7 @@ p {
         background-color: rgba(0, 0, 0, 0.75);
         height: 200px;
         width: 235px;
-        margin: 5px;
+        margin: 10px;
         display: none;
         color: white;
     }
@@ -552,7 +561,7 @@ p {
     .group .cover {
         height: 200px;
         width: 235px;
-        margin: 5px;
+        margin: 10px;
         position: relative;
         display: flex;
     }
@@ -603,21 +612,37 @@ p {
             transform-origin: 50% 25%;
         }
 
-.lab {
-    background-color: #F6C28B60;
+.lab, .lab .desc {
+    background-color: #26281A60;
 }
 
-.school {
-    background-color: #E072A460;
+.school, .school .desc {
+    background-color: #1A282760;
+}
+
+.crest, .crest .desc {
+    background-color: #22421760
+}
+
+.chess, .chess .desc {
+    background-color: #17423860;
 }
 
 
 .lab .cover .square, .lab .item .square {
-    background-color: #F6C28B;
+    background-color: #26281A;
 }
 
 .school .cover .square, .school .item .square {
-    background-color: #E072A4;
+    background-color: #1A2827;
+}
+
+.crest .cover .square, .crest .item .square {
+    background-color: #224217;
+}
+
+.chess .cover .square, .chess .item .square {
+    background-color: #174238;
 }
 
 
@@ -627,7 +652,7 @@ p {
     flex-wrap: wrap;
     width: 235px;
     height: min-content;
-    margin: 5px;
+    margin: 10px;
 }
 
     .item input {
@@ -779,7 +804,8 @@ p {
         }
 
         .item .details img {
-            padding-top: 25px;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
             max-width: 60%;
             height: auto;
             max-height: 750px;
@@ -801,6 +827,10 @@ p {
             volume: 0;
         }
 
+        .item .details p:first-of-type{
+            font-weight: bold;
+        }
+
         .item .details p {
             display: block;
             width: 60%;
@@ -812,13 +842,14 @@ p {
                 padding: 0;
             }
 
-            .item .details p iframe {
+            .item .details iframe {
                 display: block;
                 margin: 0;
                 padding: 0;
                 padding-top: 1em;
                 padding-bottom: 1em;
                 width: 100%;
+                border: 0;
             }
 
         .item .details .a_container {
@@ -891,18 +922,22 @@ footer {
 }
 
 .fancyitem {
-    width: 100%;
+    width: calc(100% - 120px);
     height: 300px;
     background-color: #1A281F;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.fancyitem:nth-child(2n){
+    margin-left: 120px;
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .fancyitem {
         flex-direction: column;
-        height: 600px;
+        height: 650px;
     }
 
         .fancyitem .bar {
@@ -926,20 +961,20 @@ footer {
 
 .fancyitem .text {
     color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
         .fancyitem .text * {
             margin: 0;
             font-size: 15px;
-            margin-right: 5px;
+            margin-right: 30px;
         }
 
         .fancyitem .text h1 {
             margin-top: 15px;
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .fancyitem .text p {
-            margin-top: 10px;
+            margin-top: 15px;
             margin-bottom: 10px;
         }

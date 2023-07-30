@@ -18,6 +18,7 @@
         <a href="./engineering.html">Engineering</a>
         <a href="./cs.html">CompSci</a>
         <a href="./art.html">Art</a>
+        <a href="./activities.html">Activities</a>
     </div>
 
     <div id="background"></div>
@@ -28,242 +29,51 @@
             I began this journey in 8th grade with my first 3D printer, and learned steadily through various projects, which broadly fell in three categories: 1) printable tools for lab research, 2) designs for school activities, and 3) various creations for use at home.
         </p>
         <p>
-            Currently, I am part of the Ward Melville robotics team, and served as the head of CAD. The software I am familiar with and use regularly are, Autodesk Inventor, Fusion, Onshape, and Ultimaker Cura.
+            Currently, I am part of the Ward Melville robotics team, and served as the head of CAD. The software I am familiar with and use regularly are, Autodesk Inventor, Fusion, Onshape, and Ultimaker Cura. The materials I have been experimenting with range from plastics, to wood, to metals, and carbon fiber.
         </p>
     </div>
 
     <div class="spacer"></div>
 
     <div class="projects">
-
         <div class="group lab">
             <input type="checkbox" />
             <div class="cover">
                 <div class="square"><img src="./assets/lab.png" /></div>
-
                 <div class="background"></div>
                 <div class="arrow"></div>
             </div>
-
             <div class="desc">
-                <p>
-                    3D printable alternatives to often overpriced lab equipment. In the spirit of the Open Design Movement, the aim to make research accessible for the general public and customizable for specialists. I reach these two targets via Twitter and my dad’s lab page under the alias “Bod Owens”.
-                </p>
-            </div>
-            <div class="item" id="Fish-Feeder">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/feeder.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Fish Feeder</h1>
-                <div class="details">
-                    <h2>Fish Feeder</h2>
-                    <p>A modular semi-automatic fish feeder.</p><video controls muted>
-                        <source src="./assets/feeder.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p>It is comprised of a funnel which connects to the tank, an adapter, and the single-print feeder.</p>
-                    <img src="./assets/feederInner.png" title="A section (cutaway) view of the feeder" alt="A section (cutaway) view of the feeder" />
-                    <p>The feeder stores food in a upper hopper, which feeds into a rotating compartment. When the lever is pushed, this compartment rotates and dispenses the food.</p>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_feeder" target="none">Stl Files</a>
-                    </p>
-                </div>
+                <p>3D printable alternatives to often overpriced lab equipment. In the spirit of the Open Design Movement, the aim to make research accessible for the general public and customizable for specialists. I reach these two targets via Twitter and my dad’s lab page under the alias “Bod Owens”.</p>
             </div>
 
-            <div class="item" id="Microscope-Plate">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/plate.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Microscope Plate</h1>
-                <div class="details">
-                    <h2>Microscope Plate</h2>
-                    <p>A gliding table for microscopes.</p><video controls muted>
-                        <source src="./assets/plate.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p>It is comprised of three plates driven by a rack and pinion system. Guide rails are used to reduce friction while keeping vibration to a minimum.</p>
-                    <img src="./assets/plateKnobs.jpg" title="The plate with new knobs attached" alt="The plate with new knobs attached" />
-                    <p>Later, I designed knobs for the pinions to make it easier to move the table.</p>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gliding_table" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Spring-Dovtail-Blocks">
+            <div class="item" id="Spring-Dovetail-Blocks">
                 <input type="checkbox" />
                 <div class="square"><img src="./assets/dovetailBlocks.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
 
-                <h1>Spring Dovtail Blocks</h1>
+                <h1>Spring Dovetail Blocks</h1>
                 <div class="details">
-                    <h2>Spring Dovtail Blocks</h2>
-                    <p>Modularized tube racks that can be freely arranged based on needs.  Special Spring Dovetail design for easy assembly and disassembly.</p><img src="./assets/PXL_20220818_182737567.jpg" title="Modularized tube racks that can be freely arranged based on needs.  Special Spring Dovetail design for easy assembly and disassembly." alt="Modularized tube racks that can be freely arranged based on needs.  Special Spring Dovetail design for easy assembly and disassembly." />
-                    <video controls muted>
+                    <h2>Spring Dovetail Blocks</h2>
+                    <p>A modularized tube rack set that can be freely arranged by need. Designed to assemble and disassemble with ease using my Spring Dovetail design.</p><video controls muted>
                         <source src="./assets/PXL_20220818_191855557.mp4" type="video/mp4" />
                         Sorry, your browser doesn't support embedded videos.
                     </video>
-                    <p>One of my proundest designs so far. I designed a new joinery for modulization of 3D-printed items, by adding my own compliance mechanism touch on the historical dovetail joint of woodworking. An extra curved spring layer is added in the dovetail junction to buffer printing errors and prevent over-tight/loose engagement. Prior to designing it, I had a few goals in mind. The existing commercial designs consisted of a single large molded part. This makes it difficult to use if you only need 1 or 2 tubes. To address this, I made the system consist of smaller modules which can connect together. The blocks themselves were not all that special, but the connectors used a bit of compliance with a printable spring built into standard dovetails. After some tweaking, I got the spring tension to be just right so blocks could be connected without much hassle and still stay together. </p>
-                    <img src="./assets/141633.jpg" title=" Save desk space" alt=" Save desk space" />
-                    <img src="./assets/141732.jpg" title=" An extra curved layer in the dovetail junction to rase rack assembly and disassembly" alt=" An extra curved layer in the dovetail junction to rase rack assembly and disassembly" />
-                    <p>This design ended up being one of my most popular, and gained a lot of traction  <a href="https://twitter.com/ChiKuoHimself/status/1560526602508828677">online </a> . The original editable files are also shared with the public under Creative Commons Public License.  Not only many people use them, but some also customize them for derived uses, including a startup company <a href="https://twitter.com/pioreactor/status/1584607971744845824">integrating my design into their commercial bio-reactor products</a>.</p>
-                    <img src="./assets/FyHqNWaaAAA5uKT.jpg" title=" A modified version from the community" alt=" A modified version from the community" />
-                    <img src="./assets/Ff2m6snXwAANA7m.jpg" title=" Integration into a commercial bioreactor" alt=" Integration into a commercial bioreactor" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20220818_184850358.jpg" title="Modularized tube racks that can be freely arranged based on needs with the spring dovetail design for easy assembly and disassembly." alt="Modularized tube racks that can be freely arranged based on needs with the spring dovetail design for easy assembly and disassembly." />
+                    <p>    One of my proundest designs so far. I designed a new joinery for modulization of 3D-printed items, by adding my own touch on the historical dovetail joint of woodworking. I coined the term "Spring Dovetail" for it.</p><p>    An extra curved spring layer is added in the dovetail junction to buffer printing errors and prevent over-tight/loose engagement. </p><p>  </p>
+                    <img src="./assets/PXL_20220818_180916214.PORTRAIT.jpg" title="The dovetail mechanism in question" alt="The dovetail mechanism in question" />
+                    <p>    The original application of my Spring Dovetail design is for a system of modularized tube rack sets. In the lab, there are all types of tubes with different dimensions and volume for different purposes. Existing commercial tube racks consist of a single large molded part. The fixed format and large foorprint make them difficult to use, especially when many tube types are required in the experiments. I thus designed modularized racks which can connect together via Spring Dovetail. The spring tension is fine-tuned to be just right so the block unis could be connected and disconnected without much hassle and still stay together.</p><p>  </p>
+                    <img src="./assets/dovetail_pipette_edited.png" title=" Save desk space" alt=" Save desk space" />
+                    <p>  </p>
+                    <img src="./assets/dovetail_showcase_edited.png" title=" An extra curved layer in the dovetail junction to rase rack assembly and disassembly" alt=" An extra curved layer in the dovetail junction to rase rack assembly and disassembly" />
+                    <p>    This design ended up being one of my most popular, and gained a lot of traction <a href="https://twitter.com/ChiKuoHimself/status/1560526602508828677">online</a> . The original editable files are also shared with the public under Creative Commons Public License. Not only they are used by many, but also some derived versions are customized by the community, including integrated into a commercial product made by a startup company <a href="https://twitter.com/pioreactor/status/1584607971744845824">integrating my design into their commercial bio-reactor products</a>.</p><p>  </p>
+                    <img src="./assets/FyHqNWaaAAA5uKT_with_credit.png" title=" A modified version from the community" alt=" A modified version from the community" />
+                    <p>  </p>
+                    <img src="./assets/Ff2m6snXwAANA7m_with_credit.png" title=" Integration into a commercial bioreactor" alt=" Integration into a commercial bioreactor" />
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/dovetail_blocks" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-
-
-            <div class="item" id="Pipette-Holder">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/pipetteHolder.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Pipette Holder</h1>
-                <div class="details">
-                    <h2>Pipette Holder</h2>
-                    <p>A clamping pipette stand.</p><p>Like other lab equipment I've designed, pipette stands are usually ridiculously expensive. Although most designs out there were freestanding, I decided to go for something that would clamp to a shelf or table. My first design was a simple clamp that would slide onto a table and two sticks in front would hold the top of the pipette. As I made more designs to fit tables of various thicknesses, I realized I could use a screw like on my marble slide project to make an adjustable model.</p>
-                    <img src="./assets/PXL_20220718_133046977.jpg" title="The pipette holder with the adjustable screw" alt="The pipette holder with the adjustable screw" />
-                    <p>After the initial model was done, I created several spinoff designs. One attached a test tube to the sticks, which could then be used as a pencil holder or more. Another was a simple C shaped variation that could be used to guide wires and cables along shelves.</p>
-                    <img src="./assets/PXL_20220510_154929212.jpg" title="The three designs being used in the lab" alt="The three designs being used in the lab" />
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/pipette_holder" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Agarose-Scoop">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/agaroseScoop.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Agarose Scoop</h1>
-                <div class="details">
-                    <h2>Agarose Scoop</h2>
-                    <p>A scoop designed to mix exactly enough agarose powder for a standard amount of agarose gel.</p>
-                    <video controls muted>
-                        <source src="./assets/PXL_20221004_220255242.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/powder_scoop" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Agar-Imprinter">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/agar.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Agar Imprinter</h1>
-                <div class="details">
-                    <h2>Agar Imprinter</h2>
-                    <p>A device which imprints grooves on agar.</p><p>Other people have attempted to make 3D printable molds for agar. The problem is that agar is usually very hot when poured and causes warping in the molds. I intended to try to design a mold which will not deform under the heat. I tried to minimize the surface area contacting the agar and included three handles for convenient lifting. This included a print-in-place joint for a lift-out handle on the top of the mold. The last way I tried to prevent warping was to use PETG as a material because of its higher melting point. Unfortunately, this wasn't as effective as I thought it would be and still had some warping. This project was my first time working with materials other than PLA and I would lead me to try materials like ABS and PETG more over the coming years.</p>
-                    <video controls muted>
-                        <source src="./assets/PXL_20210929_153849406.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/agar_imprinter" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Petri-Dish-Holder">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/petri.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Petri Dish Holder</h1>
-                <div class="details">
-                    <h2>Petri Dish Holder</h2>
-                    <p>A simple petri dish holder with a hexagonal base.</p><p>One of my first projects for scientific use. Dovetail connectors let them be tiled horizontally while taking up the least amount of space possible. </p>
-                    <video controls muted>
-                        <source src="./assets/dishHolder.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/petridish_holder" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Fish-Embryo-Box">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/embryo.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Fish Embryo Box</h1>
-                <div class="details">
-                    <h2>Fish Embryo Box</h2>
-                    <p>A container for transporting live fish embryos.</p><p>It is designed to make shipping embryos much more reliable, compact, and organized. Using a damp paper towel inside the lid allows it to hold enough moisture for shipping. The grid layout allows up to 100 embryos to be neatly stored and extracted.</p>
-                    <img src="./assets/embryoExample.jpg" title="A partially filled up embryo box" alt="A partially filled up embryo box" />
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_embryo_box" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Tape-Holder-Holder">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/tapetape.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Tape Holder Holder</h1>
-                <div class="details">
-                    <h2>Tape Holder Holder</h2>
-                    <p>A bracket that secures rolls of tape inside a dispenser.</p><p>The tape dispensers we used had a problem when you pulled straight up, causing the rolls to fall out. To hold the tape rolls down, I designed a simple clip that slid over the frame and held the spool down.</p>
-                    <video controls muted>
-                        <source src="./assets/PXL_20221123_044725566.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/tape-holder-holder" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Gel-Extractor">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/agarExtract.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Gel Extractor</h1>
-                <div class="details">
-                    <h2>Gel Extractor</h2>
-                    <p>A handy tool which cuts and preserves a piece of agar.</p><p>Yet again, commercial gel extractors proved to be expensive and overpriced for what they do. Gel Extractors are disposable devices that can cut and pick up a small piece of agar from a larger chunk. I designed a square tube which would be the main cutting surface of the extractor. In the back, there was a slider which could be pushed to eject the cut agar. Using my experience in making single print parts,  I made the slider and tube print in a single piece with some internal stoppers to prevent the slider from falling out. The final gel extractor is barely 1 gram, cost cents to produce, and is as effective as the commercial edition.</p>
-                    <video controls muted>
-                        <source src="./assets/gel cutting demo.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gel_extractor" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="item" id="Pipette-Tip-Ejector">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/tipEjector.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Pipette Tip Ejector</h1>
-                <div class="details">
-                    <h2>Pipette Tip Ejector</h2>
-                    <p>A alternative to expensive pipette tip ejectors.</p><video controls muted>
-                        <source src="./assets/PXL_20220602_182957499.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p>Typical pipette tip ejectors sell for around $20 from most companies. However they pretty much are just static pieces of plastic, not very hard to 3D print. After studying the original design and its function, I made a design that takes just under an hour to print and costs cents in material. The only potential drawback is that it is potentially not an easy print, but a few tries is still cheap in comparison to the factory price.</p>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/pipette_tip_ejector" target="none">Stl Files</a>
                     </p>
                 </div>
             </div>
@@ -273,21 +83,424 @@
                 <div class="square"><img src="./assets/fridge.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
+
                 <h1>Door Lock</h1>
                 <div class="details">
                     <h2>Door Lock</h2>
-                    <p>A latch that prevents a door from opening.</p><p>In California, it is standard practice to have a lock on fridge in case of earthquakes. Besides that, they are also good for making sure the fridge is properly shut. In New York, earthquakes are less common, but we still wanted to make sure fridges were shut properly. Thus, I designed a latch which ensures a door has been shut properly and holds it shut. Each closer consists of a base which mounts to the side of the fridge, an L shaped bar which actually locks the fridge, and a stopper for the bar.</p>
-                    <video controls muted>
-                        <source src="./assets/door.mp4" type="video/mp4" />
+                    <p>A latch lock that can can be used to secure fridges, freezers, and carbinets and prevents them from being not properlly shut or accidentally left open. Designed to have an adjustable arm with two variants to fit any fridge, freezer, or carbinet.</p><video controls muted>
+                        <source src="./assets/PXL_20211229_165110488.mp4" type="video/mp4" />
                         Sorry, your browser doesn't support embedded videos.
                     </video>
-                    <p>Due to the bar section breaking often, I redesigned the bar to be stronger. There was also a cabinet next to an expensive microscope that could be damaged if the cabinet was opened carelessly. To address this, I made a variant of the lock which actually could lock in the closed position.</p>
+                    <p>    A freezer accidentally left with an unclosed door is the most feared nightmare in the lab. I designed this latch to ensure a door is properly shut and holds it shut. Each unit consists of a base which mounts to the side of the target object, an L shaped bar to lock the fridge, and a stopper to adjust the working length of the bar. It only cost 43 cents to make one. </p><p>  </p>
+                    <img src="./assets/door_lock_edited.png" title="Adjustable arm to fit any freezer. Can latch on freezer using common double-sided tape" alt="Adjustable arm to fit any freezer. Can latch on freezer using common double-sided tape" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20220108_175040571.jpg" title="The door lock can be used on freezers to ensure the door is properly closed" alt="The door lock can be used on freezers to ensure the door is properly closed" />
+                    <p>    Later, as the original lock secures a door from not properly closed, I added a new variant for the opposite purpose, to prevent a door from being accidentaly opened. The new design added a 'push-and-turn" unlocking mechanism. Without unlocking first, the door will stay shut when trying to open the door with an pulling force outward. This is especially useful for protecting lab equipment from accidental collisions. </p><p>  </p>
                     <video controls muted>
                         <source src="./assets/PXL_20221226_220415748.mp4" type="video/mp4" />
                         Sorry, your browser doesn't support embedded videos.
                     </video>
+                    <p>  </p>
+                    <img src="./assets/PXL_20221226_215308073.jpg" title="The door lock prevents the accidental collisions between doors and equipment)" alt="The door lock prevents the accidental collisions between doors and equipment)" />
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/shutter" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Multi-purpose-Holder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/pipetteHolder.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Multi-purpose Holder</h1>
+                <div class="details">
+                    <h2>Multi-purpose Holder</h2>
+                    <p>A modularized holder set that can be used broadly for multiple purposes in the lab. Designed to fit into various lab settings with many base variants and to be able to expand its functionality with add-on modules.</p><img src="./assets/hangers_edited.png" title="The fixed and adjustable-base holders" alt="The fixed and adjustable-base holders" />
+                    <p>    Space is one of the most precious properties in the lab. With various forms of items and equipment, it is thus important to maximize the use of lab space without comprimising convenience and functionality. To fit into different lab settings, these multi-purpose holders has multiple bases. The fixed bases offer convenience to directly mount to common shelves and tables. The adjustable bases allow the same holder to be flexibly applied on different surfaces. The holders can work independently to hold large items such as pipettes, scissors, tools, clothes & bags, as well as arranging wires and cords. The holders can also couple with adaptors to further expand their fucntions, for instance, an O-ring to hold smaller items such as tweezers, or a common lab 50ml tube for placing pens and scalpels. </p><p>  </p>
+                    <img src="./assets/PXL_20220506_222719251.jpg" title="The holder being used to hold an assortment of equipment" alt="The holder being used to hold an assortment of equipment" />
+                    <p>  </p>
+                    <img src="./assets/4x_edited.png" title="The holder is multi-purpose" alt="The holder is multi-purpose" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20220510_155150851.jpg" title="An O-ring attachment which can be used to hold more tools" alt="An O-ring attachment which can be used to hold more tools" />
+                    <p>     I love this project because of its usefulness and direct impact on research. Most of the commercially available counterparts are ridiculously expensive. One good example is the pipette holder, which usually charges >$150 for simply a piece of plastic. The holders are also incompataible between pipettes of different brands. All these cause hurdles of research accessibility. With that in mind, when I designed the pipette holders, I specifically chose to work with the head knob, as it is the component shared by most of the brands. I then designed an additional adaptor to cover the other brands without the head knob. Important to note, for the same reason, I prioritize designs that can be robustly printed even with consumer-grade printers. For instance, this design is designed to be completely printable without support material, saving material and hassle. Consequently, most of my printed objects look simple instead of fancy. And everyone can print and use them in their research easily. </p><p>  </p>
+                    <img src="./assets/PXL_20230629_181537733.jpg" title="The pipette holders for pipettes of different brands" alt="The pipette holders for pipettes of different brands" />
+                    <p>    This is a open-end project and I continue to expand the sets. One of the later addition is the version that can be taped or screwed on flat surface. </p><p>  </p>
+                    <img src="./assets/PXL_20230627_160236326.jpg" title=" The hanger variant that can be taped or screwed on flat surface" alt=" The hanger variant that can be taped or screwed on flat surface" />
+                    <p>  </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20230627_160559170.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/pipette_holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Tower-Dispenser">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/tower_dispenser_cover.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Tower Dispenser</h1>
+                <div class="details">
+                    <h2>Tower Dispenser</h2>
+                    <p>A dispenser that can be used to hold and dispense paper tissue tower. Designed to be positioned anywhere in the lab using my multi-purpose holders.</p><video controls muted>
+                        <source src="./assets/PXL_20230605_134839303.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    Paper towels are an abolutely required item for lab bench work. However, people usually have to compromise between accessibility and convenience of using it. Either it is installed on the wall away from the bench, or it is left in a messy fashion on the bench. My design provides a neat solution to cover both bases. Coupling with my Multi-purpose Holders, the dispenser can be positioned almost everywhere in the lab. </p><p>  </p>
+                    <img src="./assets/with_hanger_edited.png" title="Using with Multi-purpose holders to hold the dispenser above the bench" alt="Using with Multi-purpose holders to hold the dispenser above the bench" />
+                    <p>    It can also be used as a stand-alone. The tissue papers can be accessed from both the top and the bottom. </p><p>  </p>
+                    <img src="./assets/standalone_edited.png" title=" Using it as a stand-alone system" alt=" Using it as a stand-alone system" />
+
+                </div>
+            </div>
+
+            <div class="item" id="Disposable-Gel-Extractor">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/agarExtract.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Disposable Gel Extractor</h1>
+                <div class="details">
+                    <h2>Disposable Gel Extractor</h2>
+                    <p>A disposible kit that can be used to extract and preserve a targeted agarose gel piece. Designed to be extremely low-cost and very compact.</p><video controls muted>
+                        <source src="./assets/gel_cutting.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    Gel cutting for DNA/RNA extraction is a common lab practice. It is usually done by razors which carry risk of both sample contamination and sharp object injury. To address this issue, I designed a square tube which would be the main cutting surface of the extractor. In the back, there was a slider which could be pushed to eject the cut agar. Using my experience in making single print parts, I made the slider and tube print in a single piece with some internal stoppers to prevent the slider from falling out. The final gel extractor is barely 1 gram, and cost cents to produce. Over 1000 units can be printed with a common $20 1 KG spool of PLA. </p><p>  </p>
+                    <img src="./assets/PXL_20220717_195259441.jpg" title="The disposable gel extractor" alt="The disposable gel extractor" />
+                    <p>  </p>
+                    <img src="./assets/gel_cutter_edited.png" title="The slider to extrude the extracted gel" alt="The slider to extrude the extracted gel" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gel_extractor" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Needle-Holding-Kit">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/Needle_holding_kit.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Needle Holding Kit</h1>
+                <div class="details">
+                    <h2>Needle Holding Kit</h2>
+                    <p>A device that can be used to store and secure delicate microinjection needles. Designed to be a compact and easy to use system that supports housing needles with various diameters.</p><video controls muted>
+                        <source src="./assets/PXL_20230630_135650387.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    Microinjection needles are extremely delicate items made from capillary tubes in lab to inject cells or embryos. The needles are commonly stored in home-made containers with clay which dries out and needs to be replaced with time. I designed a 3D printable needle holding device that is easier to use and lasts forever. Taking advantge of the flexible nature of printed material, I designed the holding slot to use this flexibility to hold various needles while keeping it easy to insert and remove them. Furthermore, the needle-holding assembly can be rotated upright, making it easy to access when in use. </p><p>  </p>
+                    <img src="./assets/PXL_20230629_195427249_noted.jpg" title=" Clay-mediated needle holder vs 3D-printed needle holder" alt=" Clay-mediated needle holder vs 3D-printed needle holder" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20230630_140229550.jpg" title="The holding slot that holds the needles" alt="The holding slot that holds the needles" />
+                    <p>    The needle holding kit includes a lid and a bump-lock to secure the needles inside from accidental damages such as falling or shaking. This feature make it suitable for shipping. </p><p>  </p>
+                    <img src="./assets/PXL_20230630_140201763.jpg" title="The lid and bump-lock" alt="The lid and bump-lock" />
+                    <p>    During microinjection, frequently the needles are loaded from the back and will require extra time for the loaded reagent to flow down to the needle tip. My designed kit can also function as the stand-by needle holder, allowing preparation of multuple needles to shorten the experiment duration. </p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20230704_222402101.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+
+                </div>
+            </div>
+
+            <div class="item" id="Micro-Measuring-Spoon">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/scoop.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Micro Measuring Spoon</h1>
+                <div class="details">
+                    <h2>Micro Measuring Spoon</h2>
+                    <p>A set of scoops that can be used to deliver an ultra-fine amount of reagent in lab. Designed to minimize excess build-up and deliver a consisitant amount every scoop.</p><img src="./assets/PXL_20220217_150954740.jpg" title=" Vertical neck measuring spoon" alt=" Vertical neck measuring spoon" />
+                    <p>    This is an idea-driven design by request from the people in lab. I realized the idea and optimized the spoon design. One key innovation is the vertical neck. All commercial spoons have a horizontal neck, which is good for mass producting and stacking but a drag for consistency. Taking advantage of the customizable nature of 3D priting, I introduced the vertical neck design which makes the spoons far more consistent than the commercial spoons. </p><p>    I coined the names Splash, Dribble, and bit for my designed spoons, fitting the nomenclature of common measuring spoons (Tad, Dash, Pinch, Smidgen, and Drop). </p><p>  </p>
+                    <img src="./assets/graph_1_edited.png" title="The spoons are specialized to extend the measuring range below the limits of common measuring spoons" alt="The spoons are specialized to extend the measuring range below the limits of common measuring spoons" />
+                    <p>  </p>
+                    <img src="./assets/graph_2_edited.png" title="The spoons are specialized to extend the measuring range below the limits of common measuring spoons" alt="The spoons are specialized to extend the measuring range below the limits of common measuring spoons" />
+                    <p>    The vertical neck design significantly improves the consistency issue in delivering small volumes. Our Splash spoon evidently delivers more than the Drop, but with much lower variation. </p><p>  </p>
+                    <img src="./assets/171434.jpg" title="The spoons provide better consistency and precision than commercial spoons" alt="The spoons provide better consistency and precision than commercial spoons" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/scoop" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Feeding-Appartus">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/feeder.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Feeding Appartus</h1>
+                <div class="details">
+                    <h2>Feeding Appartus</h2>
+                    <p>A modularized feeding appartus that can be used to feed aquatic research animals in lab. Designed to be capable of depositing a consistant amount of food with ease.</p><video controls muted>
+                        <source src="./assets/PXL_20211015_143715635.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    Feeding is an environmental variable that needs to be tightly controled in all animals used for research. It is frequently a selection between manual feeding (which is affordable but inconsistent) and automatic feeders (which are precise but very expensive). Trying to break this dilemma, I designed manual feeders as a good middle ground solution between full manual feeding and automatic feeders. Make feeding easier, faster, and more consistent. </p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/feederCutaway.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  The whole apparatus is comprised of a funnel which connects to the tank, an adapter, and the single-print feeder. The funnels fit various size of tanks, providing a universal base for the feeder. The feeder stores food in a upper hopper, which feeds into a rotating compartment. When the lever is pushed, this compartment rotates and dispenses the food. The the inlet and outlet of the rotating compartment is offset in such a way that food is only allowed to either flow in or flow out, but never at the same time. This guarantees that the amount of food dispensed per lever push is consistent</p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/Storyboard1.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  </p>
+                    <img src="./assets/PXL_20211004_160707541.jpg" title="The funnels fit various size of tanks" alt="The funnels fit various size of tanks" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20211011_174606960.jpg" title="The feeder stores food in a upper hopper" alt="The feeder stores food in a upper hopper" />
+                    <p>    The feeders come in 2 sizes so far, printed in a single print, with reasonably good consistency. </p><p>  </p>
+                    <img src="./assets/quantification.jpg" title="The feeders come in 2 sizes so far" alt="The feeders come in 2 sizes so far" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_feeder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Tape-Holder-Holder">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/tapetape.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Tape Holder Holder</h1>
+                <div class="details">
+                    <h2>Tape Holder Holder</h2>
+                    <p>An attachment that can be used to secure rolls of tape inside a dispenser. Designed to address an infamous issue of a lab tape dispenser.</p><video controls muted>
+                        <source src="./assets/PXL_20221123_044725566.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    This is a relative unique experience. Different to most of my other projects, what I have learned in this case was not about engineering per se, but instead the positive impact that engineering can have, and how direactly the impact can reach people in modern world. </p><p>    It started from a tweet in 2022, by a scientist complaining his lab tape dispenser. It is a model almost unversially used in all labs, and is also notoriously infamous for its bad design. The tape rolls consistently fall out from the dispenser when pulling the tapes straight up, a problem that everyone working in the lab has suffered but no answers for. </p><p>   </p>
+                    <img src="./assets/235001.png" title="The tweet in 2022" alt="The tweet in 2022" />
+                    <p>    Within hours, I designed a printable clip over the frame to hold the spool down. The design is simple, with a special considertion to strength the structure for resistening pulling force. The design was then quickly released via the twitter as a response and immediately helped many solve this longtime pain.This whole interacting experience made me realize that even a very small simple design can have a broad and meaningful impact on a lot of people. And it is also a showcase of the power of 3D printing and how it can be helpful to everybody's life and work. </p><p>  </p>
+                    <img src="./assets/PXL_20221123_041056333.jpg" title="The design is simple" alt="The design is simple" />
+                    <p>  </p>
+                    <img src="./assets/012420.png" title="Public response" alt="Public response" />
+                    <p>  </p>
+                    <img src="./assets/012705.png" title="Public response" alt="Public response" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/tape-holder-holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Scope-Gliding-Table">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/plate.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Scope Gliding Table</h1>
+                <div class="details">
+                    <h2>Scope Gliding Table</h2>
+                    <p>A gliding table that can be used to reposition samples under microscopes. Designed to provides a precise and convinient way to move samples on a microscope stage.</p><video controls muted>
+                        <source src="./assets/PXL_20220420_205459424.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    A gliding table to move samples in two axes is fundimental for research-grade microscopes, but rarely seen in elementary grade microscopes such as the ones for elementary school classrooms. To fill this void, I designed a 3D printable microscope gliding table. It can upgrade a $100 camera scope from Amazon to be able to make & stitch high-resolution images at the organismal level. </p><p>  </p>
+                    <img src="./assets/PXL_20220419_214600708.jpg" title="The gliding table can go with elementary level commerical grade scopes from Amazon" alt="The gliding table can go with elementary level commerical grade scopes from Amazon" />
+                    <p>    The design includes several pieces, including an optional extension table for transmitted light scopes. From this work, I have optimized the design to minimize friction by printing sharp guide rails. This ensures both minimal contact and shaking. A pair of knobs are included to ease the pinion operation. </p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/Assembly_intro.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20211231_175944260.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  </p>
+                    <img src="./assets/PXL_20220419_214612888.jpg" title="The plate with adjusting knobs attached" alt="The plate with adjusting knobs attached" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gliding_table" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Lens-Ring-Lamp">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/ring_lamp_cover.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Lens Ring Lamp</h1>
+                <div class="details">
+                    <h2>Lens Ring Lamp</h2>
+                    <p>An adaptor set that can attach a commercial LED ring lamp directly onto microscope objectives. Designed to provide an affordable epi-illuminiation light source for inverted mircoscopes.</p><img src="./assets/PXL_20230622_161616114.jpg" title="The lens ring lamp for microscopes" alt="The lens ring lamp for microscopes" />
+                    <p>    There are two illuminating methods in microscopy: transmitted illumination for transparent specimen (light source and the lens on the opposite sides of specimen) and epi-illumination for opaque specimen (light source and the lens on the same side of specimen). Almost all modern microscopes work with transmitted illumination for regular light and epi illumination for fluorescent light. It requires adding additional light sources to do epi-illumination with regular light. This is easier to be done in up-right microscopes with a goose-neck lamp to illuminate specimen from atop, but very difficult on inverted microscopes where the space under the specimen is extremely limited. To solve this problem, I designed an addaptor to attach commonly found commercial ring LEDs around the lens, to achieve the goal of epi illuminiation on inverted microscopes. </p><p>  </p>
+                    <img src="./assets/PXL_20230622_161406031.jpg" title="The adaptor to latch the commonly found commercial ring LED on the lens" alt="The adaptor to latch the commonly found commercial ring LED on the lens" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20230622_161331128.jpg" title="The adaptor to latch the commonly found commercial ring LED on the lens" alt="The adaptor to latch the commonly found commercial ring LED on the lens" />
+                    <p>  </p>
+                    <img src="./assets/ring_lamp_top_and_bottom.png" title="The adaptor to latch the commonly found commercial ring LED on the lens" alt="The adaptor to latch the commonly found commercial ring LED on the lens" />
+                    <p>  </p>
+                    <p>PXL_20230622_161616114,The adaptor to latch the commonly found commercial ring LED on the lens</p>
+                    <p>  </p>
+                    <img src="./assets/PXL_20230622_153658986.jpg" title="The adaptor achieve the goal of epi illuminiation on inverted microscopes" alt="The adaptor achieve the goal of epi illuminiation on inverted microscopes" />
+                    <p>    The adaptor was designed to be flexible and thus was printed with TPU filement, which is a very soft and flexible material. The grip on the lens is tight allowing it to be used on up-right microscopes where the lens is on top of the specimen. </p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20230622_162255869.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  </p>
+                    <img src="./assets/PXL_20230622_163705605.jpg" title="The lens ring lamp can also be used for up-right microscopes where the lens are on top of the specimen" alt="The lens ring lamp can also be used for up-right microscopes where the lens are on top of the specimen" />
+
+                </div>
+            </div>
+
+            <div class="item" id="Microinjection-Mold">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/agar.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Microinjection Mold</h1>
+                <div class="details">
+                    <h2>Microinjection Mold</h2>
+                    <p>A imprinting mold that can be used to imprint embryo-holding agarose plates for microinjection. Designed to operate with a print-in-place handle for convenience.</p><video controls muted>
+                        <source src="./assets/PXL_20210929_153849406.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    An injection plate is required to hold embryos in position for microinjection. A common way to make injection plate is via molding an agarose plate. Many people have attempted to make 3D printable molds. The problem is that agarose is usually very hot when poured and causes warping in the molds. I designed a mold which will not deform under the heat. I minimized the surface area contacting the agar and included three handles for convenient lifting. This included a print-in-place joint for a lift-out handle on the top of the mold. Also, I was inspired by this project to try higher melting temperature materials such as PETG to prevent warping. </p><p>  </p>
+                    <img src="./assets/PXL_20210929_154717693.jpg" title="The mold includes a print-in-place joint for a lift-out handle on the top" alt="The mold includes a print-in-place joint for a lift-out handle on the top" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20210929_154117892.jpg" title="The mold can be repetitively used to imprint an agarose plate" alt="The mold can be repetitively used to imprint an agarose plate" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20210928_213418703.jpg" title="The mold can be repetitively used to imprint an agarose plate" alt="The mold can be repetitively used to imprint an agarose plate" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/agar_imprinter" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Fry-Measuring-Kit">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/fryPlate.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Fry Measuring Kit</h1>
+                <div class="details">
+                    <h2>Fry Measuring Kit</h2>
+                    <p>A kit that can be used to stage, document, and measure the size of newly hatched fish. Designed to fit multiple fish with multiple built-in references for scale.</p><img src="./assets/PXL_20221002_154727873.jpg" title="The specialized plate for measuring length of newly hatched fish" alt="The specialized plate for measuring length of newly hatched fish" />
+                    <p>    For newly hatched fish, due to their small size, it is difficult to precisely measure their body-length. I designed a simple grooved plate where fish could fit into the grooves and be easily measured in a safe and non-invasive manner via images. Different types of grooves are designed to accomodate fish of various sizes. These features, along with built-in tick marks as the length reference, allow the length of fish in images to be easily converted into real body length. Despite its simplicity, it is one of the most used designs in the lab. </p><p>  </p>
+                    <img src="./assets/PXL_20221002_154719895.jpg" title="The measuring plate can be used on commercial digital microscopes" alt="The measuring plate can be used on commercial digital microscopes" />
+                    <p>  </p>
+                    <img src="./assets/PICA1072_edited.png" title="Example of two 3-day-old fish being measured" alt="Example of two 3-day-old fish being measured" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fry_plate" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Petri-Dish-Organizer">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/petri.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Petri Dish Organizer</h1>
+                <div class="details">
+                    <h2>Petri Dish Organizer</h2>
+                    <p>A modularized organizer that can be used to efficiently manage Petri dishes in lab. Designed to be connected with hexagonal bases for minimize footprint.</p><video controls muted>
+                        <source src="./assets/PXL_20211127_185121067.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    Petri dishes are probably the most used consumable in labs. They are sold in sleeves without a fitted container or holder. Commercial petri dish organizers are avaialble, but overpriced. I designed a modualrized petri dish organizer set that can be freely assembled and disassembled based on needs and for multiple purposes. </p><p>  </p>
+                    <img src="./assets/PXL_20211108_173143922.jpg" title="Petri dish organizer sets" alt="Petri dish organizer sets" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20211127_185403369.jpg" title="A modularized petri dish organizer to be freely assembled and desiassembled based on needs and purposes" alt="A modularized petri dish organizer to be freely assembled and desiassembled based on needs and purposes" />
+                    <p>    To minimize the footprint, I designed a hexagonal base which can be tiled by dovetail connectors. Vertical poles can be interlocked to stablize the assembly. </p><p>  </p>
+                    <img src="./assets/PXL_20211110_212836452.jpg" title="The hexagonal base being tiled by dovetail connectors" alt="The hexagonal base being tiled by dovetail connectors" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20211119_224438804.jpg" title="Vertical poles being interlocked by a ring" alt="Vertical poles being interlocked by a ring" />
+                    <p>    The petri dish holder can be easily converted into a petri-dish container by applying the hexagon lid on the top with the labeling area included poles. </p><p>  </p>
+                    <img src="./assets/PXL_20211123_222024024.jpg" title="The lid securing the top of the holder and preventing the dishes from falling out" alt="The lid securing the top of the holder and preventing the dishes from falling out" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/petridish_holder" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Embryo-Shipping-Kit">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/embryo.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Embryo Shipping Kit</h1>
+                <div class="details">
+                    <h2>Embryo Shipping Kit</h2>
+                    <p>A kit that can be used to ship live fish embryos internationally. Designed to house up to 100 embryos and keep them alive for mailing.</p><img src="./assets/PXL_20211027_173753212.jpg" title="The embryo shipping plate" alt="The embryo shipping plate" />
+                    <p>    Fish embryo shipping is tricky and challenging. I designed this fish embryo shipping plate to make shipping embryos much more securd, reliable, compact, and organized. </p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/shipping_plate_assembly.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  </p>
+                    <img src="./assets/PXL_20211027_173539922.jpg" title="The embryo shipping plate makes shipping embryos much more secure" alt="The embryo shipping plate makes shipping embryos much more secure" />
+                    <p>    The grid layout allows up to 100 embryos to be neatly stored and extracted. Especially useful as it shields each embryo from other accidentally hatched/dead embryos. Using a damp paper towel inside the lid allows it to hold enough moisture for shipping, and it has proven good for overnight domestic shipping. Can be further coupled with heat pads or plastic bags for longer international shipping. </p><p>  </p>
+                    <img src="./assets/PXL_20211027_173150873.jpg" title="The grid layout of the shipping plate" alt="The grid layout of the shipping plate" />
+                    <p>  </p>
+                    <img src="./assets/embryo plate.jpg" title="The view of an individual well under a transmitted light microscope" alt="The view of an individual well under a transmitted light microscope" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fish_embryo_box" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Gel-Shovel-Kit">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/gelShovel.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Gel Shovel Kit</h1>
+                <div class="details">
+                    <h2>Gel Shovel Kit</h2>
+                    <p>A kit that can be used to handle agarose gels with ease. Designed to secure the gel for operations between electrophoresis and imaging apparatuses</p><img src="./assets/PXL_20220502_135604886.jpg" title="A shovel and catcher for moving agarose and other gels" alt="A shovel and catcher for moving agarose and other gels" />
+                    <p>    Gel handling is a routine task in the lab. It requires removing the gel from a cast and transferring the gel for following steps such as imaging. I designed this Gel Shovel Kit to make this task easy. It comes with two models to fit gels with different sizes. </p><p></p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gel_shovel" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Pipette-Tip-Ejector">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/tipEjector.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <h1>Pipette Tip Ejector</h1>
+                <div class="details">
+                    <h2>Pipette Tip Ejector</h2>
+                    <p>An alternative that can replace expensive commercial pipette tip ejectors. Designed to be a printable replica reverse engineering the existing product.</p><video controls muted>
+                        <source src="./assets/PXL_20220602_182957499.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    This project is a direct response to overpriced commercial products. Typical pipette tip ejectors are just static pieces of plastic but sold for around $20 from large companies. After studying the original design and its function, I reverse engineered a design that takes just under an hour to print and costs cents in material. We released all our printing files to the public for free. </p><p>  </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20220601_142111898.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>  </p>
+                    <img src="./assets/PXL_20220602_182804300.jpg" title="The printed tip ejector fits perfectly on pipettes" alt="The printed tip ejector fits perfectly on pipettes" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20220602_182849554.jpg" title="The printed tip ejector fits perfectly on pipettes" alt="The printed tip ejector fits perfectly on pipettes" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/pipette_tip_ejector" target="none">Stl Files</a>
                     </p>
                 </div>
             </div>
@@ -297,11 +510,15 @@
                 <div class="square"><img src="./assets/label.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
+
                 <h1>Fridge Label</h1>
                 <div class="details">
                     <h2>Fridge Label</h2>
-                    <p>A hanging label for wire racks in a fridge.</p><p>In order to label some wire shelves in a fridge, there needed to be a smooth surface to put labels on. I designed this label that hangs on the wire ledges. I also made some arrows that attach to the sides of the label to indicate where a label was referring.</p>
-                    <img src="./assets/fridgeLabel.png" title="A fridge with a few labels and arrows on the shelves" alt="A fridge with a few labels and arrows on the shelves" />
+                    <p>A modualized label set that can be used to organize shared fridges and freezers. Designed to clearly allocate and mark space inside of fridges and freezers.</p><img src="./assets/PXL_20220407_214122314.jpg" title="The fridge label sets" alt="The fridge label sets" />
+                    <p>    To better organize the space in fridges and freezers, I designed a set of hanging labels for various types of shelves, with a smooth surface to write or put actual labels on. They can hang on the wire ledges and the door shelves of a fridge. I also made coupling side arrows to better indicate where a label was referring to. </p><p>  </p>
+                    <img src="./assets/PXL_20220407_214114238.jpg" title="A fridge with a few labels and arrows on the shelves" alt="A fridge with a few labels and arrows on the shelves" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20220407_214658890.jpg" title="The labels work with door shelves as well]" alt="The labels work with door shelves as well]" />
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fridge_label" target="none">Stl Files</a>
                     </p>
@@ -313,104 +530,98 @@
                 <div class="square"><img src="./assets/tweezer.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
+
                 <h1>Tweezer Limiter</h1>
                 <div class="details">
                     <h2>Tweezer Limiter</h2>
-                    <p>An adjustable attachment which limits a tweezer's range of movement and allows for finer control.</p>
-                    <img src="./assets/limiter.jpg" title="The adjustable limiter mounted on a tweezer" alt="The adjustable limiter mounted on a tweezer" />
+                    <p>An adaptor that can be used to help the operation of tweezers. Designed to limit the travel of tweezer arms and ease the pressure on samples.</p><img src="./assets/PXL_20220213_160923709.jpg" title="An adjustable attachment which limits a tweezer's range of movement and allows for finer control" alt="An adjustable attachment which limits a tweezer's range of movement and allows for finer control" />
+                    <p>    I designed this adaptor with the goal to shorten the range for tweezer tips to meet. By limiting tweezer tips' range of movement, it allows finer control when using the tweezers, which is especially useful for handling fragile specimens. A screw is integrated for adjusting the extent of limitation. </p><p>  </p>
+                    <img src="./assets/PXL_20220213_161049084.jpg" title="A screw is integrated for adjusting the extent of limitation" alt="A screw is integrated for adjusting the extent of limitation" />
+                    <p>  </p>
+                    <img src="./assets/PXL_20220213_161143250.jpg" title="A screw is integrated for adjusting the extent of limitation" alt="A screw is integrated for adjusting the extent of limitation" />
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/tweezer_limiter" target="none">Stl Files</a>
                     </p>
                 </div>
             </div>
 
-            <div class="item" id="Gel-Shovel">
+            <div class="item" id="Agarose-Scoop">
                 <input type="checkbox" />
-                <div class="square"><img src="./assets/gelShovel.png" /></div>
+                <div class="square"><img src="./assets/agaroseScoop.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
-                <h1>Gel Shovel</h1>
+
+                <h1>Agarose Scoop</h1>
                 <div class="details">
-                    <h2>Gel Shovel</h2>
-                    <p>A shovel and catcher for moving agarose and other gels.</p>
-                    <img src="./assets/gelShovelExample.jpg" title="A gel shovel and two catchers of different sizes" alt="A gel shovel and two catchers of different sizes" />
+                    <h2>Agarose Scoop</h2>
+                    <p>A scoop that can be used to directly deposit a fixed amount of agarose for gel making. Designed to save time from weighing agarose.</p><video controls muted>
+                        <source src="./assets/PXL_20221004_220255242.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    This project was initiated from an interesting observation that people always made agarose gel using the same amount of agarose into the same amount of buffer solution. Even so, people still weigh the gel constitutes everytime. To make this task easier, I designed a small scoop to be kept in the agarose container and give a fixed amount of agarose powder. It is similar to the idea of having a scoop come with infant formula powders. I made a ready-to-print 0.6 g scoop, easy for preparing commonly used 1.2% & 1.5% gels. I also released the original Inventor file, so people can adjust the scoop volume, going by the formula: </p><p>    875w = 4/3r^3 + 5r^2 Unit: w(g), r(mm)    </p><p>  </p>
+                    <img src="./assets/PXL_20221004_182023545.jpg" title=" The scoops give a fixed amount of powder" alt=" The scoops give a fixed amount of powder" />
+                    <p>  </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20221004_183341023.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
                     <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/gel_shovel" target="none">Stl Files</a>
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/powder_scoop" target="none">Stl Files</a>
                     </p>
                 </div>
             </div>
 
-            <div class="item" id="Fry-Plate">
+            <div class="item" id="Tube-Opener">
                 <input type="checkbox" />
-                <div class="square"><img src="./assets/fryPlate.png" /></div>
+                <div class="square"><img src="./assets/tube_opener_cover.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
-                <h1>Fry Plate</h1>
-                <div class="details">
-                    <h2>Fry Plate</h2>
-                    <p>A tool for measuring small fish.</p><p>Needing a way to accurately measure small fish, I designed a simple grooved plate where fish could fit into the grooves and easily be measured using built in tick marks.</p>
-                    <img src="./assets/Screenshot 2022-12-11 130432.png" title="A screenshot of the design in Inventor" alt="A screenshot of the design in Inventor" />
-                    <p>Despite its simplicity, it is one of the most used designs in the lab.</p>
-                    <img src="./assets/PICA1072.jpg" title="Two fish being measured" alt="Two fish being measured" />
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/fry_plate" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
 
-            <div class="item" id="Tiny-Scoop">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/scoop.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <h1>Tiny Scoop</h1>
+                <h1>Tube Opener</h1>
                 <div class="details">
-                    <h2>Tiny Scoop</h2>
-                    <p>A small multipurpose scoop. Designed to scoop up the right amount of food for a single fish. After conducting trials, it turns out that this scoop is far more consistent than other ones.</p>
-                    <img src="./assets/Quantification all.png" title="A chart of the mg of food to scoop size" alt="A chart of the mg of food to scoop size" />
-                    <p>The three sizes marked in red are the 3D printed scoops and the orange sizes are commericial version.</p>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/scoop" target="none">Stl Files</a>
-                    </p>
+                    <h2>Tube Opener</h2>
+                    <p>A tool that can be used to pry open tube lids. Designed to work on most tubes and save effort and time.</p><video controls muted>
+                        <source src="./assets/PXL_20220717_194537001.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p>    Opening and closing tubes is physically demanding when in high numbers, frequently hurting fingers. I designed this tube opener to help open various types of tubes, making the life easier in the lab. It has two separate ends that work with both flip-top caps and screw caps. </p><p>  </p>
+                    <img src="./assets/PXL_20220717_192746093.jpg" title="The tube opener to open various types of tubes in the lab" alt="The tube opener to open various types of tubes in the lab" />
+
                 </div>
             </div>
 
         </div>
 
-
         <div class="group school">
             <input type="checkbox" />
             <div class="cover">
                 <div class="square"><img src="./assets/school.png" /></div>
-
                 <div class="background"></div>
                 <div class="arrow"></div>
             </div>
-
             <div class="desc">
-                <p>
-                    Engineering related projects in school, including for Principles of Engineering, Robotics, and designs for school activities.
-                </p>
+                <p>Engineering related projects in school, including for Principles of Engineering, Robotics, and designs for school activities.</p>
             </div>
 
-            <div class="item" id="Diffy-Swerve">
+            <div class="item" id="Differential-Swerve-Drive">
                 <input type="checkbox" />
                 <div class="square"><img src="./assets/diffydiffy.png" /></div>
                 <div class="background"></div>
                 <div class="arrow"></div>
                 <p class="year">'22</p>
-                <h1>Diffy Swerve</h1>
+
+                <h1>Differential Swerve Drive</h1>
                 <div class="details">
-                    <h2>Diffy Swerve</h2>
-                    <p>An experimental swerve drive for robotics during 11th grade.</p><p>After getting into robotics at Ward Melville, I was talking to a friend from my old school Gunn about the FIRST Robotics Competition and various technical aspects of competing. We were discussing drive systems, and the topic of swerve drive came up. Swerve drive is a type of drive system where each wheel can be individually steered and is the drive most high level teams use. The Gunn Robotics Team is well known for designing and manufacturing their own swerve drives, and I wanted to try that out with the Ward Melville team. However, most of the team believed that it would be too hard to do since we were less experienced and lacking in funds. I needed to prove that designing a drive system would be feasible first. I decided to look into differential swerve drives as my pick for the drive system for a few reasons. They use both motors to steer and drive instead of one for each, and they had a lower part count meaning they would be easier to machine. Using fusion 360, I was able to design a few 3D printable prototypes. I still started off with a traditional swerve drive, before trying to design anything experimental. My second drive was a bit stranger, using an off-center wheel to stop the motor from being backdriven when the module rotates. This design was one of the two actually printed and assembled for testing.</p>
-                    <img src="./assets/20221101_212525.jpg" title="The off-center swerve module" alt="The off-center swerve module" />
-                    <p>Other than traditional swerve, I also made a differential or diffy swerve design. This was the most fleshed out design with actual motors and mounting points.</p>
-                    <img src="./assets/combined.png" title="Two of my swerve drive designs" alt="Two of my swerve drive designs" />
-                    <p>After several nights of troubleshooting my printer and stealing bolts from the engineering classroom, I finished the module and connected it up to a battery pack. The module worked fine, but the motors I used did not have any fine control built in, and I did not have time to properly build a controller for it. I also had planned to make a second module, so it could be fully tested on a robot, but I did not have time for that either. Unfortunately, the robotics team decided to buy pre-made swerve modules for this year. I hope that I can finish this later in the summer and possibly use them in the robot next year.</p>
-                    <video controls muted>
+                    <h2>Differential Swerve Drive</h2>
+                    <p>An experimental swerve drive for robotics during 11th grade. <br />This was a proposal to manufacture an in-house drive system for the FRC season. </p><video controls muted>
                         <source src="./assets/20221115_193048.mp4" type="video/mp4" />
                         Sorry, your browser doesn't support embedded videos.
                     </video>
+                    <p> I wanted to try bringing a home-grown swerve drive to the Ward Melville robotics team. Swerve drive is a type of drive system in robotics where each wheel can be individually steered, and it is the drive most high level teams use. This proposal was inspired by the robotics team at my old high school, Gunn, which is known for manufacturing their own swerve drives every season. To prove that my idea was feasible to the rest of the team, I looked to produce a presentable prototype. I decided to look into differential swerve as my pick for the drive system for multiple reasons. Instead of using one motor for each function, a differential swerve would have greater power using both motors to steer and drive, and each module has a lower part count meaning it would be easier to manufacture. As a proof of concept, I started off with a traditional swerve drive, and I was able to design a few 3D printable prototypes using fusion 360.  </p>
+                    <img src="./assets/20221101_212525.jpg" title="The off-center swerve module" alt="The off-center swerve module" />
+                    <p> After getting my bearings, I began work on my final differential swerve proposal. This design is centered around a VEX robotics wheel mounted on a steel axle with 3D printed gears driving it. A 3D printed case holds the entire system together and acts as a mounting point for motors and electronics. </p>
+                    <img src="./assets/combined.png" title="Two of my swerve drive designs" alt="Two of my swerve drive designs" />
+                    <p> Once assembled, the swerve drive worked exactly as designed, demonstrating both forwards movement and steering. The next step from here would be to design a finalized design to be machined, and integrated onto the robot.</p>
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/diffy-swerve" target="none">Fusion Files</a>
                     </p>
@@ -423,15 +634,72 @@
                 <div class="background"></div>
                 <div class="arrow"></div>
                 <p class="year">'22</p>
+
                 <h1>Hydraulic Arm</h1>
                 <div class="details">
                     <h2>Hydraulic Arm</h2>
-                    <p>The final project of my Principles of Engineering class in 10th grade.</p><img src="./assets/arm1.jpg" title="The finished arm alongside a sketch of the initial design" alt="The finished arm alongside a sketch of the initial design" />
-                    <p>We were given a budget, and tasked to create a hydraulic arm to compete against other teams. The intent was for teams to buy wood and other materials from the teacher to use for their creation. I could not help but notice, however, that there was no cost on 3D printing, which is why I decided to print the entire thing. With this, we also made it our main objective to make an overall profit. The actual hydraulics and tubing were our only expense, which meant we still had to earn money somehow. We ended up selling 3D print services to other teams, but other teams had less money than anticipated. Ultimately we were a tiny bit short from breaking even. The arm itself uses multiple techniques I learned from previous projects, the planetary gears from the gearbox project, low friction guide rails from the microscope plate, and integrated usage of bolts. I also got to use several new techniques, generative design using inventor, a workflow between different software, and compliant mechanisms. The teacher also required me to submit professional drawings which I learned to produce using Fusion. My partner was in charge of all the electronics for the electromagnet mounted at the end of the arm, and I helped out with the batteries and mounts.</p>
+                    <p>A hydraulic arm, designed to be almost fully 3D Printed and as strong as possible. The final project of my Principles of Engineering class in 10th grade.</p><img src="./assets/20220603_095856.jpg" title="The finished arm after electronics were attached" alt="The finished arm after electronics were attached" />
+                    <p> This hydraulic arm incorporates many old and new techniques into a single system. This project was done in teams of two, and each team were given funds to used to purchase wood and other materials from the teacher. I started off with considering design goals with my teammate, and decided to pursue maximum strength and cost-effectiveness. It was then I realized there was no cost on 3D printing, convincing me to pursue printing the entire design. </p>
+                    <img src="./assets/arm1.jpg" title="The finished arm alongside a sketch of the initial design" alt="The finished arm alongside a sketch of the initial design" />
+                    <p> To ensure stability when lifting heavy objects, we used a three (later upgraded to four) legged base. Sitting on the base, was the most complex piece of engineering in the project, the turntable. Although allowed free reign with most of the design, we were restricted to using syringes as our only moving component. Thus, in order to have full 360 rotation, I designed a planetary gearbox hidden in the central stack that steps up the travel of a small 9 cm syringe to full rotation. </p>
+                    <video controls muted>
+                        <source src="./assets/20230720_232022.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p> The arm design is optimized for a balance between strength and movement, and was tested using simulations and scale prototypes. To increase strength and reduce weight, I used Autodesk Inventor's built in generative design feature. This process produced the unique geometry of each segment. </p><p> The design of the arm uses multiple techniques I learned from previous projects, I used planetary gears from the gearbox project, low friction guide rails from the microscope gliding table, and integrated usage of hardware. I also got to learn several new techniques, including generative design using inventor, a workflow between different software, and compliant joints. Another new technique I developed was making professional engineering drawings, which I made for every part designed in this project. </p>
                     <img src="./assets/arm2.jpg" title="The final position of the arm" alt="The final position of the arm" />
-                    <p>After the end of the project, I took the arm home to display. I took some pictures of it functioning, and then stripped it of most active hydraulic components. Currently, it is holding up a Lego Saturn V moon rocket. Minor upgrades have been made to improve strength and durability for this purpose.</p>
+                    <p> After the end of the project, I took the arm home to display. Currently, it is holding up a Lego Saturn V moon rocket. Minor upgrades have been made to improve strength and durability for this purpose.</p>
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/hydraulic-arm" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Gearbox">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/gearbox.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <p class="year">'21</p>
+
+                <h1>Gearbox</h1>
+                <div class="details">
+                    <h2>Gearbox</h2>
+                    <p>A 3D printed hoist designed to lift over 100 pounds. The first project for my Principles of Engineering class in 10th grade. </p><img src="./assets/20211108_072911.jpg" title="A picture of the completed hoist" alt="A picture of the completed hoist" />
+                    <p> The idea was to engineer a hoist with a high lift-to-weight ratio working in teams of two. I researched different types of gearboxes and materials. I chose 3D printing over other methods such as lasercutting due to its flexibililty to work in all three dimensions. As a proof of concept, I piloted a design using planetary gears, and successfully demonstrated the feasibility of 3D printed gears under a high-stress enviroment. </p>
+                    <img src="./assets/planetary.png" title="The planetary gears I made" alt="The planetary gears I made" />
+                    <p> In the final design, I integrated a chain of herringbone gears for its advantage in strength and ability to lock gears together, stacked on two shafts to conserve space. In the process, I utilized various materials, including steel shafts, laser-cut wooden sides, and 3d printed gears. Our final product uses 8 gears to achieve a total reduction of 2048:1, all powered by a brushless motor. It was equipped with 550 cord to lift objects, and successfully lifted 100 pounds. This is impressive as all the gears and the spool were printed from PLA plastic, which is generally known to be a brittle material. </p>
+                    <img src="./assets/gearSketch.png" title="The final sketch I submitted as our design" alt="The final sketch I submitted as our design" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/gearboxes" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Marbleslides">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/20220304_072106.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <p class="year">'21</p>
+
+                <h1>Marbleslides</h1>
+                <div class="details">
+                    <h2>Marbleslides</h2>
+                    <p>A marble machine with a trebuchet and counting ability. The second project for my Principles of Engineering class in 10th grade.</p><video controls muted>
+                        <source src="./assets/PXL_20230312_165650242.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p> The idea was to create a marble machine utilizing recycled materials such as cardboard and toothpicks. Each person had to create their own marble lifting system and the rest was done as a team. We were given much more freedom this project, so my team started off with the most ambitious ideas. Our first idea was to use the Lorentz force to push the steel marbles up, or in other words, a railgun. We vastly underestimated the power demands of a system like this and it went, literally, nowhere. </p><p> Keeping with the theme of throwing the marble, my second idea was a trebuchet. The mechanism uses a large rubber band on a 3D printed frame to provide the force to throw the marble and used a snail cam to reload the trebuchet. The device was surprisingly consistent, and could hit the same spot many times in a row. </p>
+                    <img src="./assets/20220304_072110.jpg" title="The completed catapult module" alt="The completed catapult module" />
+                    <p> The most difficult part of the project was loading one marble at a time into the system. My solution was a seesaw which is pushed down by the trebuchet arm and lifts a marble out of the queue, but balanced in such a way that marbles would not be pushed forward by other marbles. </p>
+                    <video controls muted>
+                        <source src="./assets/PXL_20230312_170911684.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <p> After the catapult, we needed a module for the marbles to go down. I got inspiration from mechanical calculators, and decided to add a binary marble counter I designed using a series of switches. They then go up a conveyor belt my partner designed and then back down to the queue for the catapult to complete the circuit.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/marbleslide" target="none">Stl Files</a>
                     </p>
                 </div>
             </div>
@@ -442,12 +710,13 @@
                 <div class="background"></div>
                 <div class="arrow"></div>
                 <p class="year">'22</p>
+
                 <h1>Drinkinator</h1>
                 <div class="details">
                     <h2>Drinkinator</h2>
-                    <p>A device that let me drink water from water bottle refillers, started in 9th grade.</p><p>For covid reasons, the school turned off all the water fountains. However, even after the majority of the threat has passed, they still have not turned them back on. I had two options, either carry a water bottle or buy overpriced bottled water from the school. With my small bag though, I could not fit a water bottle into it. I also really did not want to buy water, so I decided to solve the problem with engineering. The school turned off all the regular water fountains, but left all the water bottle refills on. If I could somehow catch the water, I could then drink it. Towards the end of my sophomore year, I made the first version of my solution. It was a cone shaped cup with a hole for a straw at the bottom. It worked well for letting me drink from the fountains, but had several flaws that made it impractical. It was hard to carry in my small bag as it was a fairly wide cone. It would also overflow and get my hands wet everytime I took a drink for more than 2 seconds. For the rest of my sophomore year, I decided to just tough it out and drink water once I got back from school.</p>
+                    <p>A device that let me drink water from water bottle refillers. Designed to be lightweight and convinient to use.</p><p>For covid reasons, the school turned off all the water fountains. However, even after the majority of the threat has passed, they still have not turned them back on. I had two options, either carry a water bottle or buy overpriced bottled water from the school. With my small bag, I could not fit a water bottle and I really did not want to buy water, so I decided to solve the problem with engineering. The school turned off all the regular water fountains, but left all the water bottle refills on. If I could somehow catch the water, I could then drink it. Towards the end of my sophomore year, I made the first version of my solution. It was a cone shaped cup with a hole for a straw at the bottom. It worked well for letting me drink from the fountains, but had several flaws that made it impractical. It was hard to carry in my small bag and it would overflow everytime I took a drink for more than 2 seconds. </p>
                     <img src="./assets/20220201_192338.jpg" title=" The first version of the drinkinator" alt=" The first version of the drinkinator" />
-                    <p>The need for water rose again during my junior year though. I had clubs almost every day of the week and needed to stay hydrated. So, I redesigned my invention to be a flat shape, and made a special channel for excess water to drain out of. I was also able to apply a lot of new techniques to my creation, further improving it.</p>
+                    <p>During my junior year, I decided to improve on the design; especially since I had clubs almost every day of the week and needed to stay hydrated. So, I redesigned my invention to be a flat shape, and made a special channel for excess water to drain out of. I also added a ergonomic grip, made it fully 3D printable without supports, and addeds a compliant lid.</p>
                     <img src="./assets/20221023_150147.jpg" title=" The new drinkinator with and without the cap" alt=" The new drinkinator with and without the cap" />
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/drinkinator" target="none">Stl Files</a>
@@ -461,53 +730,86 @@
                 <div class="background"></div>
                 <div class="arrow"></div>
                 <p class="year">'22</p>
+
                 <h1>ID Card Holder</h1>
                 <div class="details">
                     <h2>ID Card Holder</h2>
-                    <p>A clip that holds my id card on my bag.</p><p>For whatever reason, the school decided to make wearing ID cards mandatory. The school did provide lanyards with the IDs, but I was not keen to add more straps around my neck. Instead, I wanted to attach my ID to the strap of my messenger bag. To do this, I made a custom clamp using compliant mechanisms. Then a keychain ring attaches the ID card.</p>
+                    <p>A clip that holds my id card on my bag. Designed using principles from compliant mechanisms.</p><p>Halfway through the year, the school decided to make wearing ID cards mandatory. The school provided lanyards, but I was not keen to add more straps around my neck. Instead, I wanted to attach my ID to the strap of my messenger bag. To do this, I made a custom clamp using a compliant hinge, then a keychain ring attaches the ID card.</p>
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/3d-thingies/tree/main/id-card-holder" target="none">Stl Files</a>
                     </p>
                 </div>
             </div>
 
-            <div class="item" id="Marble-Slide-Project">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/20220304_072106.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <p class="year">'21</p>
-                <h1>Marble Slide Project</h1>
-                <div class="details">
-                    <h2>Marble Slide Project</h2>
-                    <p>The second project for my Principles of Engineering class in 10th grade.</p><p>This was quite different from the gearbox. We had to create a marble machine, mostly utilizing cheap materials like cardboard and toothpicks. I decided to work in the same team as I did for the gearbox. Each person had to create their own marble lifting system and the rest was collaborative. We were given much more freedom this project, so we started off with the most insane ideas. Our first one, was to use the Lorentz force to push the steel marbles up. In other words, a railgun. We vastly underestimated the power demands of a system like this, and it went, literally, nowhere. Luckily, I had a backup plan, and I kept the theme of ballistics with a trebuchet. I used a rubber band to provide the force to throw the marble and used a snail cam to reload. The catapult was actually pretty consistent, and a small platform was all that was needed to catch the marble. The actual difficult part was to load one marble at a time into the system.</p>
-                    <img src="./assets/20220304_072110.jpg" title="The completed catapult module" alt="The completed catapult module" />
-                    <p>How I ended up doing it was a seesaw which is pushed down by the trebuchet arm and lifts a marble out of the queue. After the catapult, we were supposed to have a module for the marbles to go down. I decided to add a binary marble counter I designed using a series of switches for the marbles to go down. They then go up a conveyor belt my partner designed and then back down to the queue for the catapult to complete the circuit.</p>
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/marbleslide" target="none">Stl Files</a>
-                    </p>
-                </div>
-            </div>
+        </div>
 
-            <div class="item" id="Gearbox">
-                <input type="checkbox" />
-                <div class="square"><img src="./assets/gearbox.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <p class="year">'21</p>
-                <h1>Gearbox</h1>
-                <div class="details">
-                    <h2>Gearbox</h2>
-                    <p>The first project for my Principles of Engineering class in 10th grade.</p><p>The goal was to make the smallest hoist that could lift the most amount of weight in teams of 2. Beforehand, the teacher taught us everything we needed to know about gears. I started this project with researching gearboxes and thinking about 3D printing them. My first idea was a set of planetary gears, which I quickly 3D printed.</p>
-                    <img src="./assets/planetary.png" title="The planetary gears I made" alt="The planetary gears I made" />
-                    <p> Unfortunately these were too large to be useful and I had to come up with a different design. Next I used a much more standard gear chain, only stacked on two shafts to conserve space.</p>
-                    <img src="./assets/gearSketch.png" title="The final sketch I submitted as our design" alt="The final sketch I submitted as our design" />
-                    <p>To make this design, I used, steel shafts, laser-cut wooden sides, and 3d printed gears. The completed hoist uses 8 gears to achieve a total reduction of 2048:1. The hoist was powered by a small brushless motor and used 550 cord to lift objects, which was my partner's side of the project. In testing, this design successfully lifted 100 pounds, which is impressive considering most of the gears and spool were 3D printed.</p>
-                    <img src="./assets/20211108_072911.jpg" title="A picture of the completed hoist" alt="A picture of the completed hoist" />
-                    <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/gearboxes" target="none">Stl Files</a>
-                    </p>
-                </div>
+        <div class="item" id="Air-Purifier">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/airPurifier.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <p class="year">'23</p>
+
+            <h1>Air Purifier</h1>
+            <div class="details">
+                <h2>Air Purifier</h2>
+                <p>A functional air purifier made with 3D printed parts. Designed to filter out dangerous fumes and particulates from the air using on-hand components.</p><img src="./assets/20230724_182329.jpg" title="The completed and assembled air purifier" alt="The completed and assembled air purifier" />
+                <p> Printing ABS is always a hassle due to unhealthy fumes it produces, so I needed a filtering system to purify the printing room post-printing. My goals for this project were to make a working device to keep my printing room safe, do it with mostly 3D printed or inexpensive parts, and to further my understanding of the aerodynamics behind it. </p>
+                <img src="./assets/20230425_223826.jpg" title=" The first three impellers I designed" alt=" The first three impellers I designed" />
+                <p> </p>
+                <video controls muted>
+                    <source src="./assets/20230401_204042.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p> Most of the project was creating the fan that drives the air purifier. Basing my design off of existing references, I went with a snail blower which would move sufficient air with significant pressure. I designed several different impellers to test, and used the results to improve upon the design. To power the fan, I used a small DC motor. It directly drove the fan for the prototypes, and was changed to driving a gear chain in order to save space in the final version. The intake features a velocity stack as a part of the lid which ensures smoother airflow into the fan. </p>
+                <img src="./assets/20230504_193952.jpg" title="The turbocharger prototype" alt="The turbocharger prototype" />
+                <p> To see how far I could push the small DC motor, I designed a remix of the project based on a turbocharger. The impeller for the turbo is one of the most complex shapes I have ever 3D printed. almost all of it was produced using layered 3D sketches and lofting them together. Printing was a challenge as well. The impeller has to be perfectly balanced and accuracy was paramount. I was able to succesfully complete the print by using my salvaged Monoprice Ultimate 3D printer which offers greater accuracy. Printed completely solid, I dynamically balanced the product afterward using gravity and a pair of scissors to trim material. It sounded like a jet engine when I spun it up for the first time, and produced a constant stream of high pressure air. At this point, the motor was the limiting factor for the fan's performance, and I plan to revisit this project in the future with a more powerful device.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/air-purifier" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="Train">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/train.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <p class="year">'23</p>
+
+            <h1>Train</h1>
+            <div class="details">
+                <h2>Train</h2>
+                <p>A 3D printable toy train that is fully compatible with the GeoTrax train set. Designed to be able to tow around rail cars and advertise my robotics team during our competition.</p><video controls muted>
+                    <source src="./assets/20230320_214701.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p> As my robotics team began preparing for the Long Island Regional competition, I had an idea to make a toy train that advertised the team in our pit area. The foundation of my design is GeoTrax, a discontinued train set that I loved when I was younger, and it was my goal to make a fully compatible train. In the short time before the competition, I intended to design a locomotive and one rail car. Using both GeoTrax toy trains and real trains as reference, I started off with designing the wheels: a universal component on the project. I tested multiple different profiles, tweaking the angle and flange size until the wheels rolled smoothly and could handle curves without derailing. Knowing my car would be significantly longer than any intended for GeoTrax, I implemented a system of bogies, or individually rotating sets of wheels, to handle narrow turns.  </p>
+                <img src="./assets/20230309_211909.jpg" title="The completed car with the team number" alt="The completed car with the team number" />
+                <p> the locomotive was significantly more complicated than I anticipated. I started off simple with creating the chassis and something that could roll. 3D printed shafts would not rotate smoothly, so I commissioned my friend ahead of time to machine some aluminium D shafts for the wheels. Most Geotrax locomotives use a cog system that engages with a rack gear on the track to move forwards. Like my wheels, it took several iterations to get the cog to engage smoothly. On the other side, I was using a cheap DC motor with a small gearbox for drive. Powering this was 4 AA batteries in a 3D printed battery pack. To transmit torque from the motor to the wheels, I designed a 4 gear chain that drove the cog connected to the drive axle.  </p>
+                <img src="./assets/PXL_20230716_015452215.PORTRAIT.jpg" title="The locomotive after the competition" alt="The locomotive after the competition" />
+                <p> The night before the competition, I tested it for the first time. I placed it on the track, and it proceeded to stall out after moving a few centimeters. With little time, I printed another motor module and mounted a second motor on top of the first. To balance out the train and to give it a bit more weight, I taped some heavy bolts on both front and back of the train. I packed everything into a filament box, and got ready for the next day.  </p><p> At the competition, I set up the train to run in a loop on one of our tables, and it succesfully showed off our team until it ran out of battery.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/train" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="Crawford-Barn-Model">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/barn.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <p class="year">'23</p>
+
+            <h1>Crawford Barn Model</h1>
+            <div class="details">
+                <h2>Crawford Barn Model</h2>
+                <p>An architectural model of a planned local barn. Designed to provide an accurate model of the building and surrounding property.</p><img src="./assets/20230516_120948.jpg" title="The completed barn and property model" alt="The completed barn and property model" />
+                <p> The Three Village Historical Society were in the process of contructing a new barn and they needed a 3D architectural model. I was contacted by my engineering teacher to fulfill this project.  </p><p> The first problem I needed to solve was how large to make the replica. It needed to be as large as possible, but both the house and the property it sits on had to be within the capabilities of my 3D printer. The best balance I found was at 1:100, printing the property in two pieces which would then be joined together. Using the architectural drawings provided to me, I carefully modeled a scale replica of the building using the given dimensions. For the property, I used a plat map to create a a model to the same scale as the barn. After these were printed, I handed the completed project to the engineering teacher who delievered it to the Historical Society.</p>
+                <p class="a_container">
+                    <a href="https://github.com/croissantderp/3d-thingies/tree/main/barn" target="none">Stl Files</a>
+                </p>
             </div>
         </div>
 
@@ -517,16 +819,17 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'22</p>
+
             <h1>Motion Sensor Light Switch</h1>
             <div class="details">
                 <h2>Motion Sensor Light Switch</h2>
-                <p>A motion sensing light switch created during the summer before 11th grade.</p><p>My second project with my Arduino. After figuring out how to use a servo for my gecko mister project, I discovered that I could flip switches with the same servo. In the basement of my house, there is a annoyingly positioned switch at the bottom of a staircase; because that is a frequently travelled part of the house, I decided to install a motion detector at the switch to turn on the light as soon as anyone approached.</p>
-                <img src="./assets/20220712_225334.jpg" title="The initial wiring of the device" alt="The initial wiring of the device" />
-                <p>I wired up the design using an arduino as the core. Then, I added two buttons which would be an on/off switch and a button which turns off the motion detector. After wiring the electronics, I designed a 3D printable shelf and box to mount everything in. I used some double-sided tape to mount everything in the basement.</p>
-                <video controls muted>
+                <p>A motion sensing light switch using an arduino. Designed to make the basement much more convinient to access.</p><video controls muted>
                     <source src="./assets/20221228_090331.mp4" type="video/mp4" />
                     Sorry, your browser doesn't support embedded videos.
                 </video>
+                <p> I wanted to test out my new arduino skills, and help solve some problems around the house. In the basement of my house, there is a annoyingly positioned switch at the bottom of a staircase. It is a frequently used portion of the house, so I decided to install a motion detector at the switch to turn on the light automatically as soon as anyone walked by. </p>
+                <img src="./assets/20220712_225334.jpg" title="The initial wiring of the device" alt="The initial wiring of the device" />
+                <p> I wired up the design using an arduino as the core. I pulled from my programming experience to make the switch as smart as possible, including an automatic off after a few minutes. I further pushed my skills by adding two buttons which would be an on/off switch and a button which turns off the motion detector along with their respective indicator lights. After wiring the electronics, I designed a 3D printable shelf and box to mount everything in.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/arduino-light-switch" target="none">Stl Files</a>
                 </p>
@@ -539,13 +842,15 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'22</p>
+
             <h1>Printer Pulley System</h1>
             <div class="details">
                 <h2>Printer Pulley System</h2>
-                <p>A fix to my printer's sag using pulleys made in 11th grade.</p><p>After around a year of reliable printing, I noticed that one side of my printer was beginning to sag a bit. Usually the solution would be to add another z-axis motor on the sagging side, but I did not have another stepper motor and Monoprice did not design the printer to accommodate that. The solution I came up with was to make a pulley system that transfers the height from the stable side to the sagging side. By tieing a cable to the bottom of one side, I could run it to a pulley at the base of the printer, then up over the top and attach it to the sagging side. I bought some slot nuts and designed some brackets that mounted on the top of the printer frame. Using a thin steel cable, I was able to attach and fix the sag.</p>
+                <p>A fix to my printer's sag using pulleys made in 11th grade.</p><p>After around a year of reliable printing, I noticed that one side of my printer was beginning to sag. Usually the solution would be to add another z-axis support motor on the sagging side, but I did not have another stepper motor and Monoprice did not design the printer to accommodate that. The solution I came up with was to make a pulley system that transfers the height from the stable side to the sagging side.  </p>
                 <img src="./assets/20221126_200307.jpg" title="The base pulley assembly" alt="The base pulley assembly" />
-                <p>However, because of the stiffness of the cable, it began sagging after a while. It also was pretty difficult to precisely tune the cable. To properly tension the cable, I then made a scissor mechanism that lifted the cable upwards at the top of the printer.</p>
+                <p> By tying a cable to the bottom of one side, I could run it to a pulley to the base of the printer, then up over the top, and attach it to the sagging side. I bought some slot nuts and designed some brackets that mounted on the top of the printer frame. Using a thin steel cable, I was able to attach and fix the sag. </p>
                 <img src="./assets/20221202_201434.jpg" title="The cable tensioner mounted on the printer" alt="The cable tensioner mounted on the printer" />
+                <p> However, because of the the cable gradually unstiffening, it became loose after a while. To properly tension the cable, I then made a scissor mechanism mounted to the top of the printer that lifted the cable upwards at the top of the printer.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/printer-tensioner" target="none">Stl Files</a>
                 </p>
@@ -558,14 +863,41 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'22</p>
+
             <h1>Gecko Mister</h1>
             <div class="details">
                 <h2>Gecko Mister</h2>
-                <p>A rapidly developed automatic gecko mister during the summer after 10th grade.</p><p>With an impending one week trip to London coming up, I began to worry about my geckos not getting enough moisture. Fortunately, I had been learning Arduino recently, and I thought about using one to activate a spray bottle pointed into my geckos' cage. With less than a week left to produce and test the device, I had to work fast. I used a combination of old parts from other projects and new parts. The arduino mounted on the body of the spray bottle would turn a servo every 30 minutes. The servo was attached to the spray bottle with zip ties and pulled the trigger with a steel wire. the entire assembly would hang on the top of the gecko cage aimed downwards. In the few days left, I would run it overnight to test how much water it used. It turned out to be fairly efficient, only using a fraction of its maximum capacity. On the day of my departure, I filled the bottle completely and started the contraption. Every 3 hours, it would also reboot in case the arduino ran into a problem. </p>
+                <p>A rapidly developed automatic gecko mister during the summer after 10th grade.</p><p>With an impending one week trip to London coming up, I began to worry about my geckos not getting enough moisture. Fortunately, I had been learning Arduino recently, and I thought about using one to activate a spray bottle pointed into my geckos' cage. With less than a week left to produce and test the device, I had to work fast. </p><p> I used a combination of old parts from other projects and new parts. The arduino mounted on the body of the spray bottle would turn a servo every 30 minutes. The servo was attached to the spray bottle with zip ties and pulled the trigger with a steel wire. the entire assembly would hang on the top of the gecko cage aimed downwards. </p>
                 <img src="./assets/20220715_140755.png" title="The completed assembly of parts" alt="The completed assembly of parts" />
-                <p>When I returned from London, it was still going with around a quarter of the water left. My geckos were also alive and doing fairly well. I dismantled the device to use the spray bottle and arduino on other projects.</p>
+                <p> In the few days left, I would run it overnight to test how much water it used. It turned out to be fairly efficient, only using a fraction of its maximum capacity. On the day of my departure, I filled the bottle completely and started the contraption. Every 3 hours, it would also reboot in case the arduino ran into a problem. </p>
+                <img src="./assets/signal-2023-01-25-003032.png" title="Setting up the device right before we left" alt="Setting up the device right before we left" />
+                <p> When I returned from London, it was still going with around a quarter of the water left. My geckos were also alive and doing fairly well, sucessfully achieving the goal.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/gecko-mister" target="none">Stl Files</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="item" id="Gecko-Figure">
+            <input type="checkbox" />
+            <div class="square"><img src="./assets/geckoFigure.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <p class="year">'21</p>
+
+            <h1>Gecko Figure</h1>
+            <div class="details">
+                <h2>Gecko Figure</h2>
+                <video controls muted>
+                    <source src="./assets/20230722_151410.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p> A 3D figure I designed based on the icon that I often use as my profile. This project taught me how to extrude shapes from images by tracing in Inventor. I plan to take this figure to any trips I go on as a personal symbol. GunnHacks 9.0 was the first event I took it to, and I intend to keep using it into the future. </p>
+                <img src="./assets/geckoPlaces.png" title="Places I have taken the gecko figure to. Top-left, backyard sunflower. Top-right, SFO before GunnHacks. Bottom-left, departing from JFK. Bottom-right, arriving at SFO." alt="Places I have taken the gecko figure to. Top-left, backyard sunflower. Top-right, SFO before GunnHacks. Bottom-left, departing from JFK. Bottom-right, arriving at SFO." />
+                <p> </p>
+                <img src="./assets/Frame 70.png" title=" The figure at GunnHacks 9.0" alt=" The figure at GunnHacks 9.0" />
+                <p class="a_container">
+                    <a href="https://drive.google.com/file/d/1_1lD4i98V2BI4oEH2Is-opbr0L9emgmi/view?usp=sharing" target="none">Stl File</a>
                 </p>
             </div>
         </div>
@@ -576,11 +908,15 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'21</p>
+
             <h1>Shoulder Rest</h1>
             <div class="details">
                 <h2>Shoulder Rest</h2>
-                <p>A custom shoulder rest for my YEV-105 electric violin designed in 9th grade.</p><img src="./assets/20210122_154843.jpg" title="The initial design of the shoulder rest in Autodesk Inventor" alt="The initial design of the shoulder rest in Autodesk Inventor" />
-                <p>After a crack developed in one of the wooden sides, a regular shoulder rest would no longer work. Instead, I designed a custom rest which mounts on the central body of the violin and does not put stress on the crack. This is one of my most difficult projects in terms of the geometry involved.</p>
+                <p>A custom shoulder rest for my YEV-105 electric violin designed in 9th grade.</p><video controls muted>
+                    <source src="./assets/20230724_181255.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p> After a crack developed in one of the wooden sides of my electric violin, a regular shoulder rest would no longer work, so I needed a new one. There was no commerical product that fit my unique needs, so I designed everything from scratch. The result was a shoulder rest which mounts on the central body of the violin instead of the sides, thereby not putting any stress on the cracked wooden sides. The mounting point is a two-part 3D printed clip which snaps in place. A pin is then used to connect it to a large curved part which is designed to fit my shoulder shape. </p><p> As a result of the non-geometric shape of the violin and human body, this is one of my most difficult projects in terms of the geometry involved. I learned how to use splines and curves in Inventor and how to interface between them.  </p>
                 <img src="./assets/shoulderRestOld.png" title="An older prototype of the shoulder rest" alt="An older prototype of the shoulder rest" />
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/shoulder-rest" target="none">Stl Files</a>
@@ -594,12 +930,14 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'21</p>
+
             <h1>Gecko Cage</h1>
             <div class="details">
                 <h2>Gecko Cage</h2>
-                <p>A homemade acrylic gecko cage created during 9th grade.</p><p>After moving to New York, I needed to figure out how to house my geckos. I could use the same cage as I did in Palo Alto, but it was a bit small. I could use the cage of my old bearded dragon, but it was missing a lid and I could not find any online. The most cost-effective solution I found was to build my own cage. I used acrylic sheet from Home Depot with some aquarium sealant. I drew a design out in Inventor. I cut the acrylic and assembled the panels with the sealant.</p>
+                <p>A homemade acrylic gecko cage created during 9th grade.</p><img src="./assets/20230722_144304.jpg" title="The cage as it sits in my room" alt="The cage as it sits in my room" />
+                <p> After moving to New York, I needed to figure out how to house my geckos. I could use the same cage as I did in Palo Alto, but it was a bit small. I could also use the cage of my old bearded dragon, but it was missing a lid and I could not find any online. The most cost-effective solution I found was to build my own cage. I first decided on a design by drawing it out in Inventor. Once complete, I cut acrylic panels for the sides and assembled them with aquarium sealant. </p>
                 <img src="./assets/20210808_124127.png" title="The cage as I assembled it" alt="The cage as I assembled it" />
-                <p>After waiting a few days for the sealant to cure, I moved the cage into my room and filled it up with dirt and my geckos' stuff. After a year of service, I did clean it out and do a bit of resealing, but it has held together remarkably well.</p>
+                <p> After waiting a few days for the sealant to cure, I moved the cage into my room and filled it up with dirt and the terrarium decor. After a year of service, I cleaned it out and repaired some damaged sealant, but it has held together remarkably well.</p>
 
             </div>
         </div>
@@ -610,12 +948,18 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'21</p>
+
             <h1>Wire Coiler</h1>
             <div class="details">
                 <h2>Wire Coiler</h2>
-                <p>A compact spool for wires, created in 9th grade.</p><p>This is what I would consider to be the first of my "modern" designs. Designed in the beginning of 2021, it is substantially more complex than any of my previous designs. Anyway, I used to use wired headphones back then, and the wire kept getting tangled in my set-up. My idea was to make a spool that the wire winds around with a rotating cap that automatically wound and unwound the wire. It would also have a knob at the bottom of the spool to make winding and unwinding faster.</p>
+                <p>A compact spool for wires, created in 9th grade.</p><video controls muted>
+                    <source src="./assets/20230722_152827.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p> The wire from my headphones kept getting tangled in my set-up, and when i had it neatly bundled, I would pull out the cord accidently. What I came up with is what I would consider to be the first of my "modern" designs, being considerable more complex than anything so far. My idea was to make a spool that the wire winds around with a rotating cap that automatically wound and unwound the wire. It would also have a knob at the bottom of the spool to make winding and unwinding faster. </p>
                 <img src="./assets/20221225_142339.jpg" title="The disassembled coiler" alt="The disassembled coiler" />
-                <p>The entire design had a total of 6 parts and combined various techniques I had only used separately at that point. Although the design worked fine, I ultimately stopped using wired headphones. Now, the device is occasionally used for my electric violin and amp.</p>
+                <p> The entire design had a total of 6 parts and combined various techniques I had only used separately at that point. When I stopped using wired headphones, it was easily transferred to other useful functions. Now, the device is used for organizing the cords of my electric violin and amp and saving space with long wires. </p>
+                <img src="./assets/coiler_combined.png" title="An unwrapped cable and how it saves space with the coiler" alt="An unwrapped cable and how it saves space with the coiler" />
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/wire-coiler" target="none">Stl Files</a>
                 </p>
@@ -628,13 +972,14 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'21</p>
+
             <h1>Sliding Curtain</h1>
             <div class="details">
                 <h2>Sliding Curtain</h2>
-                <p>A unique 3D printable curtain started in 9th grade.</p><p>I gave my future room very much thought when moving in to the new house. The style I wanted to try out was industrial, and I needed some decorations that matched. One idea I had was to make a sliding curtain that rolls along a long curtain rod. One of the challenges with this was to 3D print such a long object. To solve this, I made the contraption out of many small segments that could join together. To roll, I made ending segments with wheels that suspended the curtain below. It worked pretty well after I installed it, and it was surprisingly easy to roll the curtain back and forth. However, after a while the curtain began to buckle in the middle due to the segmented nature of the rod.</p>
-                <img src="./assets/20220422_193221.png" title="The original curtain configuration" alt="The original curtain configuration" />
-                <p>Eventually, I retired it after a few segments failed, and I ultimately did not use it all that much. That would have been the end of this project, but half a year later, I needed a way to suspend a 3d printed moon from the ceiling as part of my moon rocket diorama for the hydraulic arm. Instead of creating a new system, I recycled the curtain rod and reversed it to act like a pulley instead. The pulleys let me raise and lower the height of the moon easily. Then, I printed a mount to stick it onto the ceiling which rotated so I could adjust the position of the moon. The segments also received some strengthening sleeves for try to keep them from breaking. Despite these upgrades, the segments are still slowly bending over time, but they are holding for now.</p>
+                <p>A unique 3D printable curtain started in 9th grade.</p><img src="./assets/20220422_193221.png" title="The original curtain configuration" alt="The original curtain configuration" />
+                <p> I needed curtains that would fit the industrial style of my room. The idea I had was to make a sliding curtain that rolls along a long curtain rod. One of the challenges with this was to 3D print such a long object. To solve this, I made the contraption out of many small segments that could join together using integrated connectors. To roll, I designed wheeled segments that suspended the curtain below. It worked very well after I installed it, and it was easy to roll the curtain back and forth.  </p>
                 <img src="./assets/20220620_203750.png" title="The current configuration used to hold up the moon" alt="The current configuration used to hold up the moon" />
+                <p> Later, this project would discover an alternative use as well. I needed a way to suspend a 3d printed moon from the ceiling as part of my moon rocket diorama for the hydraulic arm. Instead of creating a new system from scratch, I recycled the curtain rod and flipped it upside-down it to act like a pulley instead. The pulleys let me raise and lower the height of the moon easily. Then, I printed a mount to stick it onto the ceiling which rotated so I could adjust the position of the moon. The segments also received some strengthening sleeves to keep them from breaking.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/curtain-slider" target="none">Stl Files</a>
                 </p>
@@ -647,10 +992,15 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'21</p>
+
             <h1>Headphones Hanger</h1>
             <div class="details">
                 <h2>Headphones Hanger</h2>
-                <p>A place to put my headphones created in 9th grade.</p><p>A classic 3D printer project is the headphone holder, and I happened to need one of those. I decided to make a hangar that attached to the side of my monitor. I first made a modular rack that mounted to two holes at the side of the monitor. The headphones holder would then attach to the rack along with any other modules I needed.</p>
+                <p>A place to put my headphones created in 9th grade.</p><video controls muted>
+                    <source src="./assets/20230722_143359.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p> A classic 3D printer project is the headphone holder, and I wanted to design my own for my own needs. With a quick look through my options, I found that the side of my monitor was the most accessible as well as the simplest. I first made a modular rack that mounted to two holes at the side of the monitor. Besides the headphones holder module, this allows me to design new modules in the future and easily connect them to the stand.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/monitor-rack" target="none">Stl Files</a>
                 </p>
@@ -663,10 +1013,11 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'21</p>
+
             <h1>Stand Modifier</h1>
             <div class="details">
                 <h2>Stand Modifier</h2>
-                <p>A device which hangs under my music stand designed in 9th grade.</p><p>My music stand has always been cluttered with various objects, and it makes organizing my music excessively difficult without at least a pencil falling off. To fix this, I decided to make a extension to my stand that hangs off one side to increase the space I have. This new module would be able to carry a metronome and a few pencils.</p>
+                <p>A device which hangs under my music stand designed in 9th grade.</p><p>My music stand has always been cluttered with various objects, and it makes organizing my music excessively difficult without at least a pencil falling off. To fix this, I decided to make a extension to my stand that hangs off one side to increase the space I have. The extension consists of a clip which mounts to the stand and a shelf below and the design is a single 3D printable piece. The completed module is able to hold a metronome and a few pencils.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/stand-modifier" target="none">Stl Files</a>
                 </p>
@@ -679,10 +1030,11 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'20</p>
+
             <h1>Cloak</h1>
             <div class="details">
                 <h2>Cloak</h2>
-                <p>A wearable velvet cloak started around 8th grade.</p><p>Around 2020, the Joann in Palo Alto closed. Before closing, they had a grand sale of everything left on their shelves and I went with my mom to check it out. On one of these expeditions, I found this bolt of turquoise velvet and I knew I wanted to make a cloak with it. Before getting started, I researched how to make cloaks. After figuring out that you need a 180 degree piece of fabric. I used Autocad to draw a suitable design. Then, with help from my mom, I made sewing patterns which I used to cut out the cloak. Over winter break, I used a combination of sewing machine and hand sowing to stitch the parts together. After the cloak itself was complete, I needed a clasp to finish it. I was going to purchase one, but I decided to 3D print one instead. I designed a modular clasp that let me design decorative elements in the future which could then attach to the existing clasp. The bare part on it's own also looks quite good. Unfortunately, the project went on hiatus when I moved to New York and it sat in my closet for more than a year. Finally, in the fall of 2022, I decided to finish it. Because of the increased cold of New York, I bought some warm fabric to line the inside of the cloak. After sewing that on, I finished by finally sowing the clasp onto the cloak.</p>
+                <p>A wearable velvet cloak started around 8th grade.</p><p>Around 2020, the Joann in Palo Alto closed. Before closing, they had a grand sale of everything left on their shelves and I went with my mom to check it out. On one of these expeditions, I found a bolt of turquoise velvet and I wanted to make a cloak with it. Before getting started, I researched how to make cloaks. After figuring out that you need a semicircle of fabric. I used Autocad to draw a suitable design that would fit on the piece of velvet I had. Then, with help from my mom, I made sewing patterns  to assist cutting out the cloak. Over winter break, I used a combination of sewing machine and hand sowing to stitch the parts together. After the cloak itself was complete, I needed a clasp to finish it. I could not find anything that I enjoyed online, so I decided to 3D print my own. I designed a modular clasp that let me design decorative elements in the future which could then attach to the existing clasp. In the fall of 2022, I decided to make some changes after moving to New York. Because of the much colder winters, I bought some warm fabric to line the inside of the cloak. After sewing that on, I finished by finally sowing the clasp onto the cloak.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/cloak-clasp" target="none">Stl and Design Files</a>
                 </p>
@@ -695,10 +1047,12 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'20</p>
+
             <h1>Fountain</h1>
             <div class="details">
                 <h2>Fountain</h2>
-                <p>A model of a fountain from a video game made in 9th grade.</p><p>At this point, I had experience designing functional items. I was interested in trying out some artistic modeling though. Usually, people use programs like Blender for this, but I decided to use Inventor because I was familiar with it. The object I wanted to design and print was the fountain from the City of Tears in Hollow Knight. The original purpose was as a decoration for my geckos, but I decided to use it as a desk ornament instead. Inventor is not meant to be used for artistic purposes, but  most of the fountain being symmetrical made it surprisingly easy. When it came to the top of the fountain where the statues are, I experimented with the loft feature to create the bodies. To assemble the fountain, I just used superglue. I was pretty happy with the final product, and it was pretty good looking.</p>
+                <p>A model of a fountain from a video game made in 9th grade.</p><img src="./assets/20230722_144912.jpg" title="A shot of the finished fountain" alt="A shot of the finished fountain" />
+                <p> At this point, I had experience designing functional items. I was interested in trying out some artistic modeling. Usually, people use programs like Blender for this, but I decided to use Inventor in order to leverage my experience. The object I wanted to design and print was the fountain from the City of Tears from the video game Hollow Knight. The original purpose was as a decoration for my geckos, but it works just as well as a desk ornament. </p><p> Inventor is not intended to be used for artistic purposes, but the symmetry of the fountain simplified the process. The result is one of the most complex designs I have ever made in terms of feature count. This project allowed me to fully explore the suite of tools Inventor offered. I learned how to use the loft feature for complicated 3D geometry, and combine multiple tools to produce fine details. The whole fountain is 3D printed in a eight parts which simply fit together.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/fountain" target="none">Stl Files</a>
                 </p>
@@ -711,10 +1065,11 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'20</p>
+
             <h1>Tower</h1>
             <div class="details">
                 <h2>Tower</h2>
-                <p>A hand modeled version of a skyscraper from the game Hollow Knight designed in 8th grade. It was meant for my geckos, but was never constructed.</p>
+                <p>When I upgraded my geckos' cage, I wanted to theme the decorations after an area from the game Hollow Knight. This tower is based on a structure from that game, and was intended to complement a fountain I modeled also from Hollow Knight. I completely modeled this using Autodesk Inventor to be fully 3D printable.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/tower" target="none">Stl Files</a>
                 </p>
@@ -726,12 +1081,15 @@
             <div class="square"><img src="./assets/geckogecko.png" /></div>
             <div class="background"></div>
             <div class="arrow"></div>
-            <p class="year">'19</p>
+            <p class="year">'18</p>
+
             <h1>Lizard Project</h1>
             <div class="details">
                 <h2>Lizard Project</h2>
                 <p>A collection of designs for my reptiles, the first of my 3D designs starting in 7th grade.</p><img src="./assets/geckostuff.png" title="Various designs made for the project" alt="Various designs made for the project" />
-                <p>This collection includes lizard carriers, terrarium decor, and functional pieces. This includes my very first design and was the reason I got into 3D printing in the first place. My very first project was a set of tubes that my geckos could crawl through. This branched out into other projects for my lizards like a two compartment lizard carrier and many themed decorations.</p>
+                <p> This collection of reptile related creation includes my very first design and was the reason I got into 3D printing in the first place.  </p>
+                <img src="./assets/20221228_091721.jpg" title="The very first design I made with the printer it was printed on" alt="The very first design I made with the printer it was printed on" />
+                <p> My very first project was a set of tubes that my geckos could crawl through; this set was continuously expanded over the years and it is still in use in my modern gecko habitat. This branched out into other projects for my lizards like a two compartment lizard carrier that interfaced with the tube section and many themed decorations. </p>
                 <img src="./assets/IMG_20190712_150553.jpg" title="The large gecko carrier being printed" alt="The large gecko carrier being printed" />
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/lizard-projects" target="none">Stl Files</a>
@@ -745,16 +1103,18 @@
             <div class="background"></div>
             <div class="arrow"></div>
             <p class="year">'18</p>
+
             <h1>Phone Holder</h1>
             <div class="details">
                 <h2>Phone Holder</h2>
-                <p>A segmented phone stand for a friend in 7th grade.</p><p>My friend was an aspiring youtuber, and I would occasionally help as the cameraman. I was also just getting into 3D printing and designing, so one day, I suggested designing, printing a phone holder and selling it to him. The actual design was a three segment arm with a table clamp on one end, and a phone holder on the other. It had some minor issues, like being shaky and not easy to adjust, but I was satisfied back then. I sold the arm for $20 to my friend, but I am not sure how it was used since he stopped making videos soon after.</p>
-                <img src="./assets/phoneHolder.png" title="A 3D model of the phone holder arm" alt="A 3D model of the phone holder arm" />
+                <p>A segmented phone stand for a friend in 7th grade.</p><img src="./assets/phoneHolder.png" title="A 3D model of the phone holder arm" alt="A 3D model of the phone holder arm" />
+                <p> My friend was an aspiring youtuber, and I wanted to create something to help in his process. Using my new 3D printer and CAD skills, I created a camera holder for him. The resulting design is a two segment design which could be clamped onto a table and hold a phone for recording. For me, this project demonstrated the potential and value of developing skills like CAD and 3D printing.</p>
                 <p class="a_container">
                     <a href="https://github.com/croissantderp/3d-thingies/tree/main/phone-mount" target="none">Stl Files</a>
                 </p>
             </div>
         </div>
+
 
     </div>
 
