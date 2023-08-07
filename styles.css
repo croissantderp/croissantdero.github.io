@@ -27,6 +27,7 @@ body {
     font-family: raleway;
     min-height: 100vh;
     font-weight: 200;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1275px) {
@@ -827,7 +828,19 @@ p {
             volume: 0;
         }
 
-        .item .details p:first-of-type{
+        .item .details div.break {
+            display: block;
+            width: 60%;
+            min-width: 300px;
+            min-height: 30px;
+            max-height: 30px;
+            background-image: url(./assets/divider.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+        .item .details p.blurb {
             font-weight: bold;
         }
 
