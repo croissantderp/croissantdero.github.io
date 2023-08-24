@@ -821,23 +821,24 @@ p {
         }
 
         .item .details video {
-            padding-top: 25px;
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
             max-width: 60%;
             height: auto;
             max-height: 500px;
-            volume: 0;
         }
 
         .item .details div.break {
             display: block;
             width: 60%;
-            min-width: 300px;
-            min-height: 30px;
-            max-height: 30px;
+            min-width: 400px;
+            min-height: 32px;
+            max-height: 32px;
             background-image: url(./assets/divider.svg);
             background-size: contain;
             background-repeat: no-repeat;
             background-position-x: center;
+            background-position-y: center;
         }
 
         .item .details p.blurb {
