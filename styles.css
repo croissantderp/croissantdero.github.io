@@ -42,6 +42,12 @@ p {
     text-align: justify;
 }
 
+h1 {
+    color: white;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
 #menu {
     display: flex;
     z-index: 5000000;
@@ -52,7 +58,7 @@ p {
     align-items: center;
     color: white;
     max-width: unset;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #243A2D;
     transition: background-color 0.25s;
 }
@@ -63,7 +69,7 @@ p {
 
     #menu a {
         font-family: quicksand;
-        font-size: 24px;
+        font-size: clamp(12px, 4vw, 24px);
         color: white;
         text-decoration: none;
         margin-right: 7.5px;
@@ -674,6 +680,7 @@ p {
 
             .item input:checked ~ .details * {
                 opacity: 1;
+                display: initial;
                 zoom: 1;
             }
 
@@ -741,7 +748,7 @@ p {
         min-width: 0;
         font-weight: 300;
         font-size: 20px;
-        top: 100px;
+        top: 80px;
         right: 0;
         transition: font-size 0.5s ease,padding-top 0.5s ease;
         max-width: 180px;
@@ -789,6 +796,7 @@ p {
 
         .item .details * {
             opacity: 0;
+            display: none;
             transition: opacity 0.25s ease;
             padding: 0px;
         }
@@ -889,7 +897,9 @@ p {
     }
 
         .intro h1 {
+            margin-left: 0;
             font-size: 40px;
+            margin-top: 0;
         }
 
 #badApple {
