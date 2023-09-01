@@ -680,8 +680,11 @@ h1 {
 
             .item input:checked ~ .details * {
                 opacity: 1;
-                display: initial;
                 zoom: 1;
+            }
+
+            .item input:checked ~ .details img {
+                display: initial;
             }
 
         .item input:checked ~ .arrow {
@@ -733,6 +736,13 @@ h1 {
         background-color: #1A281F;
     }
 
+.star {
+    background-image: url(./assets/star.svg);
+    background-position: 5px 40px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
         .item .square img {
             filter: grayscale(0.5) brightness(0.75);
             margin-left: 35px;
@@ -748,7 +758,7 @@ h1 {
         min-width: 0;
         font-weight: 300;
         font-size: 20px;
-        top: 80px;
+        top: 65px;
         right: 0;
         transition: font-size 0.5s ease,padding-top 0.5s ease;
         max-width: 180px;
@@ -796,7 +806,6 @@ h1 {
 
         .item .details * {
             opacity: 0;
-            display: none;
             transition: opacity 0.25s ease;
             padding: 0px;
         }
@@ -813,6 +822,7 @@ h1 {
         }
 
         .item .details img {
+            display: none;
             padding-top: 12.5px;
             padding-bottom: 12.5px;
             max-width: 60%;
