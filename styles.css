@@ -121,11 +121,12 @@ h1 {
     margin-bottom: 0px;
     margin-left: clamp(2.5vw, 5vw, 10vw);
     margin-right: 0;
-    height: 20vh;
-    min-height: 350px;
-    width: 30vw !important;
-    min-width: 200px;
-    max-width: 400px;
+    height: 40vw;
+    min-height: 200px;
+    max-height: 450px;
+    width: 80vw !important;
+    min-width: 275px;
+    max-width: 1000px;
     background-image: url("./assets/geckoSquare.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -134,11 +135,10 @@ h1 {
 
     .header h1 {
         padding-top: 100px;
-        padding-top: clamp(30px, 5vw, 50px);
+        padding-top: clamp(30px, 7vw, 100px);
         padding-left: 75px;
-        padding-left: clamp(80px, 12vw, 125px);
-        font-size: 50px;
-        font-size: clamp(40px, 10vw, 100px);
+        padding-left: clamp(80px, 16vw, 200px);
+        font-size: clamp(30px, 6vw, 75px);
         font-weight: 400;
         margin: 0;
     }
@@ -147,7 +147,7 @@ h1 {
         margin: 0;
         padding-top: 0px;
         padding-left: 75px;
-        padding-left: clamp(80px, 12vw, 125px);
+        padding-left: clamp(80px, 16vw, 200px);
         font-size: 20px;
         font-size: clamp(20px, 3vw, 36px);
         font-weight: 200;
@@ -173,10 +173,20 @@ h1 {
         min-width: 200px;
     }
 
+        #about .imageContainer .imageContainer2 {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+    
+
         #about .imageContainer img {
-            width: 95%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
             padding-top: 0;
-            border-radius: 5px;
+            border-radius: 200px;
         }
 
         #about .imageContainer p {
@@ -318,6 +328,151 @@ h1 {
                 margin-left: 24px;
                 margin-bottom: 0;
             }
+
+#projectWrapper {
+    margin-top: 100px;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+    #projectWrapper h1 {
+        font-size: 40px;
+        margin-left: 0;
+    }
+
+    #projectWrapper h2 {
+        color: white;
+    }
+
+    #projectWrapper .thatOneDiv {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #projectWrapper .thatOneDiv img {
+        height: 65px;
+        margin-left: 10px;
+    }
+
+    #projectWrapper .projects {
+        justify-content: center;
+    }
+
+    #projectWrapper .projects .item {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+        #projectWrapper .projects .item input {
+            width: 100%;
+            height: 100%;
+        }
+
+        #projectWrapper .projects .item h1 {
+            top: 0;
+            margin: 0;
+            max-width: 300px;
+            width: 286px;
+        }
+
+        #projectWrapper .projects .item .type {
+            position: absolute;
+            top: 27px;
+            right: 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+            #projectWrapper .projects .item .type p {
+                padding: 5px;
+                border-radius: 10px;
+                margin-right: 5px;
+            }
+
+        #projectWrapper .projects .item .square {
+            background-color: unset;
+            width: 100%;
+            height: 100%;
+        }
+
+            #projectWrapper .projects .item .square img {
+                background-color: unset;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+#projectWrapper .projects .item .details h2 {
+    color: black;
+}
+
+
+.buttonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: contain;
+    margin: 10px;
+    justify-content: center;
+}
+
+    .buttonWrapper div {
+        position: relative;
+        margin-bottom: 10px;
+        max-width: 300px;
+        height: 90px;
+        flex-basis: 50%;
+        margin: 10px;
+    }
+
+    .buttonWrapper a div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        margin: 0;
+    }
+
+        .buttonWrapper a img {
+            border-radius: 15px;
+        }
+
+        .buttonWrapper a h4 {
+            margin: 0 0 0 10px;
+            font-size: 20px;
+            width: 60%;
+            color: white;
+        }
+
+        .buttonWrapper a .arrow {
+            position: absolute;
+            top: calc(50% - 20px);
+            height: 40px;
+            right: 12px;
+            animation: 1s bounce ease-in-out infinite paused;
+        }
+
+            .buttonWrapper a:hover .arrow {
+                animation-play-state: running;
+            }
+
+@keyframes bounce {
+    0% {
+        right: 12px;
+    }
+
+    65% {
+        right: 5px;
+    }
+
+    100% {
+        right: 12px;
+    }
+}
 
 #workspace {
     padding-bottom: 125px;
@@ -608,6 +763,10 @@ h1 {
         background-image: url(./assets/folderOpen.svg);
     }
 
+    .group input:checked ~ .cover .clippy {
+        opacity: 0;
+    }
+
     .group input:checked ~ .cover .square img {
         filter: none;
     }
@@ -668,6 +827,22 @@ h1 {
             transition: background-image 0.5s ease;
             z-index: 5;
             transform-origin: 50% 25%;
+        }
+
+        .group .cover .clippy {
+            position: absolute;
+            width: 90px;
+            height: 50px;
+            top: 145px;
+            left: 75px;
+            background-image: url(./assets/click2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-origin: content-box;
+            transition: background-image 0.125s ease;
+            z-index: 5;
+            transform-origin: 50% 25%;
+            transition: opacity 0.5s ease;
         }
 
 .lab, .lab .desc {
@@ -770,7 +945,7 @@ h1 {
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
         position: absolute;
-        width: 35px;
+        width: 70px;
         height: 35px;
         top: 0;
         left: 0;
@@ -808,7 +983,7 @@ h1 {
         padding: 7px;
         min-width: 0;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 20px !important;
         top: 65px;
         right: 0;
         transition: font-size 0.5s ease,padding-top 0.5s ease;
@@ -822,7 +997,7 @@ h1 {
         position: absolute;
         width: 35px;
         height: 35px;
-        top: 155px;
+        bottom: 10px;
         right: 10px;
         background-image: url(./assets/arrow3.svg);
         background-repeat: no-repeat;

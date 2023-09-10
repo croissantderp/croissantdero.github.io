@@ -33,13 +33,15 @@
     <div id="background"></div>
 
     <div class="header">
-        <h1>Croissantderp</h1>
-        <h2>Yiunfan Hu's Portfolio</h2>
+        <h1>Yiunfan Hu's Portfolio</h1>
+        <h2>Croissantderp.github.io</h2>
     </div>
 
     <div id="about">
         <div class="imageContainer">
-            <img src="./assets/20221218_232756_2.png" alt="A picture of me with my electric violin" />
+            <div class="imageContainer2">
+                <img src="./assets/20221218_232756_2.png" alt="A picture of me with my electric violin" />
+            </div>
         </div>
         <div class="container">
             <h1>
@@ -93,13 +95,228 @@
         </div>
     </div>
 
+    <div id="projectWrapper">
+        <h1>My Projects</h1>
+        <h2>Full Categories</h2>
+
+        <div class="buttonWrapper">
+            <div>
+                <a href="./engineering.html" title="Engineering Projects">
+                    <div style="background-color: #F6C28BA0 ">
+                        <h4>Engineering Projects</h4>
+                    </div>
+                    <img class="arrow" src="./assets/arrowRight.svg" alt="arrow" />
+                    <img src="./assets/engLink.svg" alt="link" />
+                </a>
+            </div>
+            <div>
+                <a href="./cs.html" title="Computer Science Projects">
+                    <div style="background-color: #E072A4A0 ">
+                        <h4>Computer Science Projects</h4>
+                    </div>
+                    <img class="arrow" src="./assets/arrowRight.svg" alt="arrow" />
+                    <img src="./assets/csLink.svg" />
+                </a>
+            </div>
+            <div>
+                <a href="./art.html" title="Art Projects">
+                    <div style="background-color: #3D3B8EC0 ">
+                        <h4 style="width: 50%">Art Projects</h4>
+                    </div>
+                    <img class="arrow" src="./assets/arrowRight.svg" alt="arrow" />
+                    <img src="./assets/artLink.svg" />
+                </a>
+            </div>
+        </div>
+
+        <div class="thatOneDiv"><h2>Featured</h2><img src="./assets/click.png" /></div>
+        <div class="projects">
+
+            <div class="item" id="Homemade-Laptop">
+                <input type="checkbox" />
+                <div class="square"><img src="./assets/laptop.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <div class="type">
+                    <p style="background-color: #F6C28BC0">Engineering</p>
+                    <p style="background-color: #E072A4C0">CS</p>
+                </div>
+
+                <h1>Homemade Laptop</h1>
+                <div class="details">
+                    <h2>Homemade Laptop</h2>
+                    <p class="blurb">A Raspberry Pi powered Laptop. Designed with a fully 3D printable case and modular electronics in 11th grade (16 years old)</p><img loading="lazy" src="./assets/20230701_165351.jpg" title="Using the laptop as its name implies" alt="Using the laptop as its name implies" />
+                    <div class="break"></div><p>I wanted to create a computer device that is truly customized to my needs. It needed to be small, lightweight, fit inside my bag, plus a large screen area to work on. With my interests in electronics, and lack of variety in pre-built laptops, I made my own, a self-built laptop. </p><p>Self-built laptops are farily rare. This is mostly because compact computer parts are rarely sold, especially not in a form meant for DIY hobbyists. Thus, as a base to work on, the Raspberry Pi stood out as the best option available, being small, efficient, and reasonably powerful. </p><p>I composed my laptop with two modules. One is the compute module including a Raspberry Pi 4 powered by a 40000mAh battery and a breadboard for electronics. The other is the interface module including two 10 inch touchscreens and an optional remote keyboard.</p>
+                    <video controls>
+                        <source src="./assets/showcase.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>I designed and 3D printed the housing framework to integrate both modules in a compact fashion. The design process was significantly more rigorous than it appears. Space efficiency was key. Every part had to fit perfectly using minimum space. The shell of the display module was a legitimate challenge to make and assemble. The margin of error is extremly small. The sensitive touchscreens needed to be delicately pressed and secured into the shell. The wiring for both monitors also needed to be run through an internal channel and carefully linked up.</p>
+                    <img loading="lazy" src="./assets/laptopDisassem.png" title="The wiring for the dual monitors" alt="The wiring for the dual monitors" />
+                    <div class="break"></div><p>On the software front, I chose Ubuntu Linux, as it is fully capable of browsing the internet and supporting most development tools that a daily driver would need. </p>
+                    <video controls>
+                        <source src="./assets/browserDemo.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>With my unique hardware configuration, it took significant work to get Ubuntu fully functional. One of these problems was mapping the touchscreen input onto the correct screen and I spent many nights working on this one problem.</p>
+                    <img loading="lazy" src="./assets/PXL_20230128_194224981.jpg" title="Working on the software front of the laptop" alt="Working on the software front of the laptop" />
+                    <div class="break"></div><p>When required, I can also emulate Windows applications using Wine and Box86, as shown below with the iconic Windows 3D Pinball Space Cadet.</p>
+                    <video controls>
+                        <source src="./assets/pinballDemo.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>Taking advantage of the Raspberry Pi structure, I designed my laptop as an expandable system which can be easily used as a component of future electronics projects. Through controling the GPIO pins, using the C programming language, I used this functionality to install a power botton and an automatic cooling fan. </p>
+                    <img loading="lazy" src="./assets/breadboard.png" title="The internals of the laptop" alt="The internals of the laptop" />
+                    <div class="break"></div><p>While my home-made laptop is not outright comparable to an expensive commerical product, it only cost around $250 and is much more useful being designed around my daily use-case. My design reached a great balance between economics, functionality, and my personal needs.</p>
+                    <img loading="lazy" src="./assets/laptopBag.png" title="The laptop fitting inside the bag" alt="The laptop fitting inside the bag" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/pi-top" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Mosaic-Maker">
+                <input type="checkbox" />
+                <div class="square star"><img src="./assets/geckoinatorSample.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <p class="year">'21</p>
+
+                <div class="type">
+                    <p style="background-color: #E072A4C0">CS</p>
+                    <p style="background-color: #6C6AA9F0">Art</p>
+                </div>
+
+                <h1>Mosaic Maker</h1>
+                <div class="details">
+                    <h2>Mosaic Maker</h2>
+                    <p class="blurb">A customizable mosaic maker and one of the most complete and advanced piece of software I have created. Started in 9th grade (14 years old).</p><img loading="lazy" src="./assets/geckoinator.png" title="An example output of a photo with a zoom in" alt="An example output of a photo with a zoom in" />
+                    <div class="break"></div><p>I wanted to design something that could create mosaics from a selection of smaller images.</p>
+                    <img loading="lazy" src="./assets/20200507_185122.png" title="Another example output of a photo of a wheat field" alt="Another example output of a photo of a wheat field" />
+                    <div class="break"></div><p>A mosaic maker replaces pixels in an input image with smaller images pulled from a collection that closest matches each pixel's color. As my collection, I used a set of images I collaboratively drew with a friend of mine known as the Gecko Collection, thus we named this project the "Geckoinator". The code is written in C# and built upon my image processing experience from taking a computer science class.After the basic framework was finished, I introduced a feature to improve the quality of the images using Floyd-Steinberg dithering, which blends pixels of different colors to fill in limitations in color.</p>
+                    <img loading="lazy" src="./assets/ditherCompare.png" title="Top image" alt="Top image" />
+                    <div class="break"></div><p>I also introduced batch processing and multithreading in order to be able to process videos, and of course...<iframe height="300" src="https://www.youtube.com/embed/L4Iy6brUc1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe height="300" src="https://www.youtube.com/embed/U5X27hgFYck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <div class="break"></div><p>I would probably consider this one of my, if not the, most technically challenging programs I have ever written. This used a lot of skill involving array processing and algorithms.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/geckoinator9000" target="none">Github</a>
+                        • <a href="https://www.youtube.com/watch?v=U5X27hgFYck" target="none">Another Example Video</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Spring-Dovetail-Blocks">
+                <input type="checkbox" />
+                <div class="square "><img src="./assets/dovetailBlocks.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+
+                <div class="type">
+                    <p style="background-color: #F6C28BC0">Engineering</p>
+                </div>
+
+                <h1>Spring Dovetail Blocks</h1>
+                <div class="details">
+                    <h2>Spring Dovetail Blocks</h2>
+                    <p class="blurb">A modularized tube rack set based on my novel joint design called Spring Dove tail. Designed to be freely assembled by needs and disassemble with ease.</p><video controls>
+                        <source src="./assets/PXL_20220818_191855557.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <img loading="lazy" src="./assets/PXL_20220818_184850358.jpg" title="Modularized tube racks that can be freely arranged based on needs with the spring dovetail design for easy assembly and disassembly." alt="Modularized tube racks that can be freely arranged based on needs with the spring dovetail design for easy assembly and disassembly." />
+                    <div class="break"></div><p>One of my proundest designs so far. I designed a new joinery for modulization of 3D-printed items, by adding my own touch on the historical dovetail joint of woodworking. I coined the term "Spring Dovetail" for it.</p><p> An extra curved spring layer is added in the dovetail junction to buffer printing errors and prevent over-tight/loose engagement.</p>
+                    <img loading="lazy" src="./assets/PXL_20220818_180916214.PORTRAIT.jpg" title="The dovetail spring" alt="The dovetail spring" />
+                    <img loading="lazy" src="./assets/dovetail_showcase_edited.png" title=" An extra curved layer in the dovetail junction to rase rack assembly and disassembly" alt=" An extra curved layer in the dovetail junction to rase rack assembly and disassembly" />
+                    <div class="break"></div><p>A good application of my Spring Dovetail design is for a system of modularized tube rack sets. Existing commercial products consist of a single molded part with large foorprint. This makes them difficult to use, especially when many tube types are required in the experiments. I thus designed modularized racks which can connect together via Spring Dovetail. The spring tension is fine-tuned to be just right so the block unis could be connected and disconnected without much hassle and still stay together.</p>
+                    <img loading="lazy" src="./assets/dovetail_pipette_edited.png" title=" Save desk space" alt=" Save desk space" />
+                    <div class="break"></div><p> This design ended up being one of my most popular, and gained a lot of traction <a href="https://twitter.com/ChiKuoHimself/status/1560526602508828677" target="none">online</a> . The original editable files are also shared with the public under Creative Commons Public License. Not only they are used by many, but also some derived versions are customized by the community, including integrated into a commercial product made by a startup company <a href="https://twitter.com/pioreactor/status/1584607971744845824" target="none">integrating my design into their commercial bio-reactor products</a>. </p>
+                    <img loading="lazy" src="./assets/FyHqNWaaAAA5uKT_with_credit.png" title=" A modified version from the community" alt=" A modified version from the community" />
+                    <img loading="lazy" src="./assets/Ff2m6snXwAANA7m_with_credit.png" title=" Integration into a commercial bioreactor" alt=" Integration into a commercial bioreactor" />
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/lab-equipment/dovetail_blocks" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="item" id="Air-Purifier">
+                <input type="checkbox" />
+                <div class="square star"><img src="./assets/airPurifier.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <p class="year">'23</p>
+
+                <div class="type">
+                    <p style="background-color: #F6C28BC0">Engineering</p>
+                </div>
+
+                <h1>Air Purifier</h1>
+                <div class="details">
+                    <h2>Air Purifier</h2>
+                    <p class="blurb">A functional air purifier made with 3D printed parts. Designed to filter out dangerous fumes and particulates from the air using on-hand components in 11th grade (16 years old)</p><video controls>
+                        <source src="./assets/20230719_192932.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>As a frequent 3D printer user, I needed a filtering system to purify the air in the room post-printing, as many materials (such as ABS) are  a hassle to print due to unhealthy fumes it produces. The goals for this project were to make a working device to keep my printing room safe, do it with mostly 3D printed or inexpensive parts, and at the same time, using this as an opportunity to further my understanding of the aerodynamics underneath. </p><p>A signficant effort was focused on creating the fan that drives the air purifier. Basing my design off of existing references, I went with a snail blower which would move sufficient air with significant pressure. I designed several different impellers to test, and used the results to improve upon the design.</p>
+                    <img loading="lazy" src="./assets/20230425_223826.jpg" title=" The first three impellers I designed" alt=" The first three impellers I designed" />
+                    <video controls>
+                        <source src="./assets/20230401_204042.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>Before an impeller could be used, each had to be balanced to ensure smooth operation at high RPMs. Printed completely solid, I dynamically balanced each product afterward using gravity to locate heavy spots and a pair of scissors to trim material. </p>
+                    <video controls>
+                        <source src="./assets/PXL_20230820_173102483.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>To power the fan, I used a small DC motor. It directly drove the fan for the prototypes, and was changed to driving a gear chain in order to save space in the final version. The intake features a velocity stack as a part of the lid which ensures smoother airflow into the fan.</p><p>To see how far I could push the small DC motor, I designed a remix of the project based on a turbocharger. The impeller for the turbo is one of the most complex shapes I have ever 3D printed. almost all of it was produced in Autodesk Inventor using layered 3D sketches and lofting them together. </p>
+                    <img loading="lazy" src="./assets/20230504_193952.jpg" title="The turbocharger prototype" alt="The turbocharger prototype" />
+                    <div class="break"></div><p>Printing was a real challenge, as the impeller has to be perfectly balanced and accuracy was paramount. I was able to succesfully complete the print by using my salvaged Monoprice Ultimate 3D printer which offers the greatest accuracy out of my printers. Balancing was also much more difficult, requiring hours of work to get it within working limits.</p><p>It sounded like a jet engine when I spun it up for the first time, and produced a constant stream of high pressure air. At this point, the motor was the limiting factor for the fan's performance, and I plan to revisit this project in the future with a more powerful device.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/air-purifier" target="none">Stl Files</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" id="Fractal-Generators">
+                <input type="checkbox" />
+                <div class="square star"><img src="./assets/fractalCover.png" /></div>
+                <div class="background"></div>
+                <div class="arrow"></div>
+                <p class="year">'22</p>
+
+                <div class="type">
+                    <p style="background-color: #E072A4C0">CS</p>
+                </div>
+
+                <h1>Fractal Generators</h1>
+                <div class="details">
+                    <h2>Fractal Generators</h2>
+                    <p class="blurb">Two fractal generators in C that I used as challenges to further my skills. Started in 9th grade and revisited in 11th grade (16 years old).</p><div class="break"></div><p>When I was taking CS50x, I was introduced to the concept of recursion. With this new knowledge, I wondered if I could use this to make some fractals. The first one I wanted to try was a Sierpinski triangle. After finishing the CS50 assignment for the week, I got to work on my generator using C. The generation method I went for was duplication, I took the previous shape, and added on two more copies of it below.</p>
+                    <img loading="lazy" src="./assets/11iter.png" title="11th iteration of the triangle" alt="11th iteration of the triangle" />
+                    <div class="break"></div><p>After more than a year, I was messing around with C during a CS club meeting. This time I aimed for the much more difficult dragon curve to recreate. Like the first, I would use C for added challenge. It took me 5 days to complete. Unlike with the first fractal, I had no idea where to start with the dragon curve. Eventually I settled on using a rotational method to create the fractal. </p><p>To convert my idea into code, I decided to draw out my thinking onto paper. I noticed some patterns in the iterations when I drew them out, and came up with a step-by-step algorithm to get the job done.</p>
+                    <img loading="lazy" src="./assets/20220929_232428.jpg" title="The work I did to figure out how to generate a dragon curve" alt="The work I did to figure out how to generate a dragon curve" />
+                    <div class="break"></div><p>With a method figured out, it was trivial to implement it into code. By the morning of day 5, I had finished the program. It worked for all iterations I tested, up to 20.</p>
+                    <img loading="lazy" src="./assets/output2.png" title=" 20th iteration of the dragon curve" alt=" 20th iteration of the dragon curve" />
+                    <p>As the final touch to the programs, I made a C# script that converted the ascii outputs of the C code into pixels on an image which greatly improved their viewability.</p>
+                    <p class="a_container">
+                        <a href="https://github.com/croissantderp/C-nanigans/tree/main/triangle" target="none">Triangle Github</a>
+                        • <a href="https://github.com/croissantderp/C-nanigans/tree/main/dragon" target="none">Dragon Github</a>
+                        • <a href="https://github.com/croissantderp/textToImage" target="none">Text to Image Github</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
     <div id="workspace">
         <h1>
             My Makerspace
         </h1>
 
         <div>
-            <img src="./assets/20230904_160018 1.png" />
+            <img src="./assets/20230902_165941.jpg" />
             <div>
                 <h2>
                     Study and Computing Corner
@@ -133,7 +350,7 @@
                     My printer room for all things 3D printing. It is a walk-in closet in the study room turned walk-in printer room. With a separate printer room, the conditions inside are much more stable and I can print much more reliably. It also keeps all my printing equipment neatly out of sight and helps to isolate the noise.
                 </p>
                 <p>
-                    My array consists of four Monoprice printers (Ordered by date obtained: MP10 mini, Maker Select, Ultimate, MP10), each with unique capabilities. 
+                    My array consists of four Monoprice printers (Ordered by date obtained: MP10 mini, Maker Select, Ultimate, MP10), each with unique capabilities.
                 </p>
             </div>
         </div>
