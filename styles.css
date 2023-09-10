@@ -357,10 +357,12 @@ h1 {
 
     #projectWrapper .projects {
         justify-content: center;
+        margin: 0;
     }
 
     #projectWrapper .projects .item {
         width: 300px;
+        min-width: 300px;
         height: 300px;
         border-radius: 10px;
         overflow: hidden;
@@ -408,13 +410,51 @@ h1 {
     color: black;
 }
 
+.actButton {
+    position: relative;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+    .actButton a div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to right, #1A281F, #FFFFFF00)
+    }
+
+    .actButton a h4 {
+        margin: 0 0 0 10px;
+        font-size: 24px;
+        width: 65%;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .actButton a .arrow {
+        position: absolute;
+        top: calc(50% - 20px);
+        height: 40px;
+        right: 12px;
+        animation: 1s bounce ease-in-out infinite paused;
+    }
+
+        .actButton a:hover .arrow {
+            animation-play-state: running;
+        }
 
 .buttonWrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: contain;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     justify-content: center;
 }
 
@@ -475,9 +515,9 @@ h1 {
 }
 
 #workspace {
-    padding-bottom: 125px;
     margin-left: 50px;
     padding-right: 25px;
+    padding-bottom: 50px;
 }
 
     #workspace h1 {
@@ -525,6 +565,9 @@ h1 {
 
 }
 
+#bottomSpacer {
+    padding-bottom: 150px;
+}
 
 #experience {
     color: white;
