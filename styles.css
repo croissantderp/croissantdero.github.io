@@ -206,6 +206,13 @@ h1 {
         padding-left: 10px;
     }
 
+@media screen and (max-width: 606px) {
+    #about .container {
+        width: 85%;
+    }
+}
+
+
         #about .container h1 {
             font-size: 40px;
             width: 100%;
@@ -222,6 +229,11 @@ h1 {
             #about .container div p {
                 padding: 0;
             }
+
+                #about .container div p a {
+                    color: #C8E6D3;
+                }
+    
 
             #about .container div p + p {
                 margin-top: 8px;
@@ -330,11 +342,21 @@ h1 {
             }
 
 #projectWrapper {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-top: 50px;
     position: relative;
     margin-left: 50px;
     margin-right: 50px;
 }
+
+    #projectWrapper .bg {
+        position: absolute;
+        height: calc(100% - 50px);
+        width: 100vw;
+        left: calc( -50vw + 50%);
+        background-color: #617469;
+        z-index: -1;
+    }
 
     #projectWrapper h1 {
         font-size: 40px;
@@ -430,7 +452,6 @@ h1 {
     }
 
     .actButton a h4 {
-        margin: 0 0 0 10px;
         font-size: 24px;
         width: 65%;
         color: white;
@@ -448,6 +469,30 @@ h1 {
         .actButton a:hover .arrow {
             animation-play-state: running;
         }
+
+.homeButton {
+    border-radius: 5px;
+    width: 235px;
+    margin: auto;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+    .homeButton a div {
+        background-image: linear-gradient(to left, #1A281F, #FFFFFF00);
+        justify-content: flex-end;
+    }
+
+    .homeButton a h4 {
+        margin-right: 20px;
+    }
+
+    .homeButton a .arrow {
+        transform: rotate(180deg);
+        left: 12px;
+        animation: 1s bounceRev ease-in-out infinite paused;
+    }
+
 
 .buttonWrapper {
     display: flex;
@@ -511,6 +556,20 @@ h1 {
 
     100% {
         right: 12px;
+    }
+}
+
+@keyframes bounceRev {
+    0% {
+        left: 12px;
+    }
+
+    65% {
+        left: 5px;
+    }
+
+    100% {
+        left: 12px;
     }
 }
 
