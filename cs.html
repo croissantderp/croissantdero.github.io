@@ -73,49 +73,6 @@
         -->
 
         <div class="projects">
-            <div class="item" id="Combat-Robot">
-                <input type="checkbox" />
-                <div class="square star"><img src="./assets/combatRobot.png" /></div>
-                <div class="background"></div>
-                <div class="arrow"></div>
-                <p class="year">2023</p>
-
-                <h1>Combat Robot</h1>
-                <div class="details">
-                    <h2>Combat Robot</h2>
-                    <p class="blurb">A 12 lb combat robot named YOB TROHS (SHORT BOY spelled backwards). Designed to compete in the National Havoc Robotics League (NHRL), built from scratch over 5 months starting in 11th grade (17 years old)</p><img loading="lazy" src="./assets/yobtrohs-removebg.png" title="The official photo of the robot" alt="The official photo of the robot" />
-                    <div class="break"></div><p>As a long-time BattleBots fan, I have always wanted to built a combat robot. I spearheaded this project and assembled a team with friends from my school's Robotics team to design, build, and then compete with a full 12 lb robot from scratch. The goal is not only to gain experience with hands-on robotics, but also to initiate and establish a new activity for people into robotics in the community.</p><p>The majority of the time was spent on designing the bot. Onshape was the design software of choice for its collaborative features, and the final design is viewable <a href="https://cad.onshape.com/documents/38bad504d3484345ac6cf3a3/w/e066d07a8376ce05bc1f1825/e/37c417fcdb0c41031a4f98ad">here</a>.</p><p>I organized the design of the robot, it was one of the largest and most detailed assemblies I had ever created, with every screw and bolt represented. At major versions, I reached out to members of the NHRL community to review our design, and communicated what needed to change to the rest of the team. The robot was given the name "YOB TROHS" after someone compared the design as a short version of <a href="https://wiki.nhrl.io/wiki/index.php/YOB_GNOL">YOB GNOL</a>.</p>
-                    <img loading="lazy" src="./assets/Screenshot 2023-10-21 232941.png" title="The finished CAD of the robot" alt="The finished CAD of the robot" />
-                    <div class="break"></div><p>The components were mostly manufactured in-house. I worked on printing everything we needed, and I learned how to print with exotic filaments like carbon-fiber nylon and TPU for their special properties. To work with metals, My team and I used the school machine shop. Complex parts were made on the lathe and mill, and I learned how to operate the plasma-cutter to make the armor.</p>
-                    <video controls>
-                        <source src="./assets/20230802_163935.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <div class="break"></div><p>I alsp worked on the electronics and code. I soldered all the connectors and joints inside the robot. To translate the controller inputs into our motors, I used an arduino nano microcontroller and wrote some basic code. </p>
-                    <img loading="lazy" src="./assets/connectors.png" title="My first attempts at soldering connectors" alt="My first attempts at soldering connectors" />
-                    <video controls>
-                        <source src="./assets/20230923_151814.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <div class="break"></div><p>As the target event approached, our combat robot YOB TROHS was put together for the first time, and was finally tested.</p>
-                    <img loading="lazy" src="./assets/20230924_132955.jpg" title="The nearly complete robot on my workbench" alt="The nearly complete robot on my workbench" />
-                    <video controls>
-                        <source src="./assets/20230927_213747.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <div class="break"></div><p>On the day before the competition, I travelled to the event to finalize the robot before the mandatory safety inspection. YOB TROHS passed safety at a weight of 11.98 lbs, barely making the 12 lb cut-off.</p>
-                    <img loading="lazy" src="./assets/20230930_075604.jpg" title="Barely weighing in" alt="Barely weighing in" />
-                    <div class="break"></div><p>Many last-minute surprises and fixes awaited us. During one of our tests, the weapon hit its own pulley and exploded, so we were forced to go into our first fight without a weapon. Our first match was Whomper, a terrifying horizontal spinner. The results was not good, Whomper had bent one of the frame sides, bending the gearbox axle underneath. </p><p>The builder community is a very friendly environment, and we got tips from many of the other competitors after the match. To repair our robot, I took the bent parts to the competitor machine shop and bent most of the components back into a usable shape with a press. The second match was against Darkstar. The newly-repaired YOB TROHS went the whole 3 minutes and managed to engage Darkstar properly.</p>
-                    <video controls>
-                        <source src="./assets/20230930_144334.mp4" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                    <p class="a_container">
-                        <a href="https://cad.onshape.com/documents/38bad504d3484345ac6cf3a3/w/e066d07a8376ce05bc1f1825/e/37c417fcdb0c41031a4f98ad" target="none">Onshape</a>
-                    </p>
-                </div>
-            </div>
-
             <div class="item" id="Homemade-Laptop">
                 <input type="checkbox" />
                 <div class="square star"><img src="./assets/PXL_20230905_132459179 1.png" /></div>
@@ -190,8 +147,20 @@
                     <h2>Fractal Generators</h2>
                     <p class="blurb">Two fractal generators in C that I used as challenges to further my skills. Started in 9th grade and revisited in 11th grade (16 years old).</p><div class="break"></div><p>When I was taking CS50x, I was introduced to the concept of recursion. With this new knowledge, I wondered if I could use this to make some fractals. The first one I wanted to try was a Sierpinski triangle. After finishing the CS50 assignment for the week, I got to work on my generator using C. The generation method I went for was duplication, I took the previous shape, and added on two more copies of it below.</p>
                     <img loading="lazy" src="./assets/11iter.png" title="11th iteration of the triangle" alt="11th iteration of the triangle" />
-                    <div class="break"></div><p>After more than a year, I was messing around with C during a CS club meeting. This time I aimed for the much more difficult dragon curve to recreate. Like the first, I would use C for added challenge. It took me 5 days to complete. Unlike with the first fractal, I had no idea where to start with the dragon curve. Eventually I settled on using a rotational method to create the fractal. </p><p>To convert my idea into code, I decided to draw out my thinking onto paper. I noticed some patterns in the iterations when I drew them out, and came up with a step-by-step algorithm to get the job done.</p>
+                    <div class="break"></div><p>After more than a year, I was messing around with C during a CS club meeting. This time I aimed for the much more difficult dragon curve to recreate. Like the first, I would use C for added challenge. It would take a lot of head-scratching and 5 days to complete.</p><p>One of the classic and most simple ways to produce a dragon curve is to repeatedly fold a piece of paper in half in the same direction, then unfold it at right angles. It was this idea that inspired my approach.</p>
+                    <video controls>
+                        <source src="./assets/20231106_191547.mp4" type="video/mp4" />
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                    <div class="break"></div><p>To emulate unfolding a piece of paper into a right angle, I start with a line. A copy of that line is created, rotated 90 degrees, then attached to the original at a rotation point. Taking the output, the process can be repeated on it, and so on... This is the core concept this project is built on.<a style="display: flex; justify-content: center" title="Jahobr, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Dragon_Curve_unfolding_zoom_numbered.gif"><img width="256" alt="Dragon Curve unfolding zoom numbered" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Dragon_Curve_unfolding_zoom_numbered.gif"></a></p>
+                    <div class="break"></div><p>To convert my idea into code, I decided to draw out my thinking onto paper. I noticed some patterns in the iterations when I drew them out, and came up with a step-by-step algorithm to get the job done.</p>
                     <img loading="lazy" src="./assets/20220929_232428.jpg" title="The work I did to figure out how to generate a dragon curve" alt="The work I did to figure out how to generate a dragon curve" />
+                    <div class="break"></div><p>The resulting algorithm consists of three major hurdles. </p><p>First, the location of the rotation point is needed to know where to merge the pieces together. </p>
+                    <img loading="lazy" src="./assets/dragon1.png" title="The first hurdle of my process" alt="The first hurdle of my process" />
+                    <div class="break"></div><p>Next, the size of the final output is needed to create a container large enough to house it. </p>
+                    <img loading="lazy" src="./assets/dragon2.png" title="The second hurdle of my process" alt="The second hurdle of my process" />
+                    <div class="break"></div><p>With both pieces of information, the original and copy can be joined together to create the output.</p>
+                    <img loading="lazy" src="./assets/dragon3.png" title="The third hurdle of my process" alt="The third hurdle of my process" />
                     <div class="break"></div><p>With a method figured out, it was trivial to implement it into code. By the morning of day 5, I had finished the program. It worked for all iterations I tested, up to 20.</p>
                     <img loading="lazy" src="./assets/output2.png" title=" 20th iteration of the dragon curve" alt=" 20th iteration of the dragon curve" />
                     <p>As the final touch to the programs, I made a C# script that converted the ascii outputs of the C code into pixels on an image which greatly improved their viewability.</p>
@@ -305,9 +274,14 @@
                     <p class="blurb">A customizable mosaic maker and one of the most complete and advanced piece of software I have created. Started in 9th grade (14 years old).</p><img loading="lazy" src="./assets/geckoinator.png" title="An example output of a photo with a zoom in" alt="An example output of a photo with a zoom in" />
                     <div class="break"></div><p>I wanted to design something that could create mosaics from a selection of smaller images.</p>
                     <img loading="lazy" src="./assets/20200507_185122.png" title="Another example output of a photo of a wheat field" alt="Another example output of a photo of a wheat field" />
-                    <div class="break"></div><p>A mosaic maker replaces pixels in an input image with smaller images pulled from a collection that closest matches each pixel's color. As my collection, I used a set of images I collaboratively drew with a friend of mine known as the Gecko Collection, thus we named this project the "Geckoinator". The code is written in C# and built upon my image processing experience from taking a computer science class.After the basic framework was finished, I introduced a feature to improve the quality of the images using Floyd-Steinberg dithering, which blends pixels of different colors to fill in limitations in color.</p>
-                    <img loading="lazy" src="./assets/ditherCompare.png" title="Top image" alt="Top image" />
-                    <div class="break"></div><p>I also introduced batch processing and multithreading in order to be able to process videos, and of course...<iframe height="300" src="https://www.youtube.com/embed/L4Iy6brUc1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe height="300" src="https://www.youtube.com/embed/U5X27hgFYck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <div class="break"></div><p>A mosaic maker replaces pixels in an image with smaller images pulled from an imageset that closest matches each pixel's color. As my set, I used a collection of images I collaboratively drew with a friend of mine known as the Gecko Collection, thus I named this project the "Geckoinator". The code is written in C# and built upon my experience and interest in image processing.</p><p>Generating the mosaic can be divided into two primary steps: pixelizing and tiling. After the user inputs an image, in pixelizing, the image's quality is reduced to a desired amount (this controls the resolution of the final output). Then, in tiling, each of the new pixels is replaced by a smaller image that closest matches the color of that pixel.</p>
+                    <img loading="lazy" src="./assets/mosaic.png" title="The three step process visualized" alt="The three step process visualized" />
+                    <div class="break"></div><p>After the basic framework was finished, I realized there was a problem with bands of color forming due to the fewer available colors in the imageset. To fix this issue, I introduced a feature to improve the quality of the images known as Floyd-Steinberg dithering. Dithering in graphics is a technique using a combination of colors placed next to each other to create an illusion of an intended color. An example would be early comic books, who were limited by how many colors they could print and commonly employed this tactic. This helps eliminate color banding by smoothing the transition between two colors. It also increases the accuracy of the colors in the output.</p>
+                    <img loading="lazy" src="./assets/dither.png" title="An explanation of Floyd-Steinberg dithering" alt="An explanation of Floyd-Steinberg dithering" />
+                    <p>Floyd-Steinberg dithering works by scanning through an image pixel by pixel. On each pixel, the difference between the original color and the closest available color is added to the neighboring pixels in a predetermined pattern (as shown above). Thus, instead of the error being lost with each pixel, it is perserved in other pixels.</p>
+                    <div class="break"></div><p>This algorithm is integrated between the pixelizing and tiling steps, and applies the error dispersion to the entire image. This addition greatly improves the color-depth and apperance of the output images, especially when viewed from a distance where they can even be passable as unedited images.</p>
+                    <img loading="lazy" src="./assets/ditherCompare.png" title="Left image: no dithering" alt="Left image: no dithering" />
+                    <div class="break"></div><p>I also introduced batch processing and multithreading in order to be able to process videos, and of course...<iframe height="300" src="https://www.youtube.com/embed/L4Iy6brUc1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe height="300" src="https://www.youtube.com/embed/cUEZvW_tGuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe height="300" src="https://www.youtube.com/embed/1agog0brgKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>(best experienced in full 4K and fullscreen)</p>
                     <div class="break"></div><p>I would probably consider this one of my, if not the, most technically challenging programs I have ever written. This used a lot of skill involving array processing and algorithms.</p>
                     <p class="a_container">
                         <a href="https://github.com/croissantderp/geckoinator9000" target="none">Github</a>
