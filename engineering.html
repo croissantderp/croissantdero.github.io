@@ -625,7 +625,7 @@
                     </video>
                     <div class="break"></div><p>The idea was to develop a home-grown swerve drive for the Ward Melville robotics team. Swerve drive is a type of drive system in robotics where each wheel can be individually steered. It grants significant maneuvering advantages and thus is broadly used by most high-level teams. This prototype was produced as proof of feasibility to the rest of the team. </p><p>After researching swerve, I chose differential swerve as the target drive system. A differential swerve would have greater power using both motors to steer and drive, and each module has a lower part count meaning it would be easier to manufacture. </p><p>As a warm-up project, I started off with a traditional swerve drive, designed with Fusion 360. </p>
                     <img loading="lazy" src="./assets/20221101_212525.jpg" title="The off-center swerve module" alt="The off-center swerve module" />
-                    <div class="break"></div><p>After the success, I moved on to the final design. Centered around a VEX robotics wheel,  two large 3D-printed ring gears surrounded it driving a steel axle. A 3D-printed case holds the entire system together and acts as a mounting point for motors and electronics. </p>
+                    <div class="break"></div><p>After the success, I moved on to the final design. Centered around a VEX robotics wheel,  two large 3D-printed ring gears surrounded it driving a steel axle. A 3D-printed case holds the entire system together and acts as a mounting point for motors and electronics. The design is viewable alongside a upgraded version two <a href="https://cad.onshape.com/documents/1bac47abcf72dd376b334f88/w/0e6a0c98d612156c62e668a9/e/fe9b6d87a704d74dff8b919f?renderMode=0&uiState=65bc75770ff7c47e00c52932">here</a>.</p>
                     <img loading="lazy" src="./assets/20230831_190855.jpg" title="All the 3D printed parts for the swerve drive" alt="All the 3D printed parts for the swerve drive" />
                     <video controls>
                         <source src="./assets/20221115_193048.mp4" type="video/mp4" />
@@ -633,7 +633,8 @@
                     </video>
                     <div class="break"></div><p>Once assembled, the swerve drive worked exactly as designed, demonstrating both forward movement and steering. The next step from here would be to design a finalized design to be machined, and integrated onto the robot.</p>
                     <p class="a_container">
-                        <a href="https://github.com/croissantderp/3d-thingies/tree/main/diffy-swerve" target="none">Fusion Files</a>
+                        <a href="https://cad.onshape.com/documents/1bac47abcf72dd376b334f88/w/0e6a0c98d612156c62e668a9/e/fe9b6d87a704d74dff8b919f?renderMode=0&uiState=65bc75770ff7c47e00c52932" target="none">Onshape</a>
+                        • <a href="https://github.com/croissantderp/3d-thingies/tree/main/diffy-swerve" target="none">Fusion Files</a>
                     </p>
                 </div>
             </div>
@@ -777,6 +778,37 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="item" id="Differential-Shuffler-Swerve-Drive">
+            <input type="checkbox" />
+            <div class="square "><img src="./assets/DSS-cover.png" /></div>
+            <div class="background"></div>
+            <div class="arrow"></div>
+            <p class="year">2024</p>
+
+            <h1>Differential Shuffler-Swerve Drive</h1>
+            <div class="details">
+                <h2>Differential Shuffler-Swerve Drive</h2>
+                <p class="blurb">A second generation experimental swerve drive, designed as a combination of a differential swerve drive and shuffler drive. A proposal for a new robot for NHRL combat robotics.</p><video controls>
+                    <source src="./assets/DSS-demo.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p>I wanted to adapt a new swerve drive system for a combat robot concept. Using my experience with designing a differential swerve drive in 2022 (10th grade), I wanted to create a new version with updated mechanics. In addition to the omni-directional movement and power of a differential swerve drive, I also wanted to integrate a shuffling walking mechanism instead of a wheel. The benefit is two-fold: allowing the robot to take advantage of the "Non-Traditional Locomotion" weight bonus offered by NHRL, as well as being able to fit in a much narrower profile compared to a wheel. </p><p>The differential swerve uses the difference between the turning of two ring gears to control both direction and speed of the module. When the gears rotate in opposite directions, the module moves forwards. When the gears rotate in the same direction, the entire module changes direction with it. The shuffling system uses a series of mechanical cams mounted on a center axle to produce a relatively good approximation of walking. The version mounted inside the swerve drive was designed to fit a tall and narrow profile, shown below is an early proof-of-concept prototype.</p>
+                <video controls>
+                    <source src="./assets/2024-02-01 23-35-44.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <div class="break"></div><p>This combination of ideas is an experimental design that has not been throughly explored before, and most design elements were developed de novo. The <a href="https://cad.onshape.com/documents/1bac47abcf72dd376b334f88/w/0e6a0c98d612156c62e668a9/e/fe9b6d87a704d74dff8b919f?renderMode=0&uiState=65bc75770ff7c47e00c52932">completed design</a> is similar in structure to my first differential-swerve drive, with two large ring gears driving a central axle with the wheel or shuffler attached. However, it is under half of the width while only being marginally taller. Much like the first version, it is designed to primarily be manufactured through in-house capabilities such as 3D-printing and plasma cutting.</p>
+                <video controls>
+                    <source src="./assets/2024-02-01 23-52-24.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <div class="break"></div><p>This version is also much more complete in terms of electronics. Each module uses two sensored brushless inrunner motors for power, and a magnetic encoder for sensing the current angle of the drive unit. To support the encoder, an additional 1:1 set of gears has been fitted to the very top of the module and the encoder nested in-between both of the motors. Although appearing bulky, this has the benefit of allowing the drive unit angle to be directly measured, negating the need for any complex reductions and calculations.</p>
+                <p class="a_container">
+                    <a href="https://cad.onshape.com/documents/1bac47abcf72dd376b334f88/w/0e6a0c98d612156c62e668a9/e/fe9b6d87a704d74dff8b919f?renderMode=0&uiState=65bc75770ff7c47e00c52932" target="none">Onshape</a>
+                </p>
+            </div>
         </div>
 
         <div class="item" id="Combat-Robot">
@@ -1275,6 +1307,7 @@
 
             </div>
         </div>
+
 
 
     </div>
